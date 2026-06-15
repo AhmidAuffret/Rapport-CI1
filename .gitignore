@@ -1,0 +1,26 @@
+# System and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+~$*
+
+# Nextcloud temporary or conflict files
+*.part
+*conflicted copy*
+*sync-conflict*
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
