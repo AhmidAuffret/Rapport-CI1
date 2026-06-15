@@ -24,3 +24,7 @@ credentials.
 
 tmp
 temp
+
+# Ignore le fichier temporaire de consigne Codex
+
+consigne.md
