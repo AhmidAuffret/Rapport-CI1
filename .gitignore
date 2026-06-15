@@ -1,26 +1,26 @@
-# System and editor files
+# Exports lourds ou temporaires
+
+.tmp
+.bak
+~$
 .DS_Store
 Thumbs.db
-desktop.ini
-*.tmp
-*.bak
-*.swp
-~$*
 
-# Nextcloud temporary or conflict files
-*.part
-*conflicted copy*
-*sync-conflict*
+# Exports finaux éventuellement générés localement
 
-# LaTeX build artifacts
-*.aux
-*.bbl
-*.bcf
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.run.xml
-*.synctex.gz
-*.toc
+99_export.docx
+99_export.pdf
+99_export.zip
+
+# Fichiers sensibles éventuels
+
+.env
+secrets.
+credentials.
+.key
+.pem
+
+# Dossiers temporaires
+
+tmp
+temp
