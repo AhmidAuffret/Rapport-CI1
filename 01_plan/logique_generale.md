@@ -8,6 +8,8 @@ Comment une première année d’alternance en administration systèmes et rése
 
 Ce fil conducteur doit rester le repère principal du rapport. Il permet de relier le contexte Leroux, les missions techniques et le bilan personnel sans transformer le rapport en simple catalogue d’actions.
 
+Décision de plan associée : le rapport doit montrer une progression de première année, pas une démonstration d’expertise complète. Les missions sont donc sélectionnées parce qu’elles permettent d’expliquer une contribution concrète, des limites, des vérifications et un recul personnel.
+
 ## Pourquoi ce fil conducteur correspond au niveau CI1
 
 Le rapport CI1 doit surtout montrer la compréhension du contexte de travail et le bilan d’une première année d’apprentissage. Le fil conducteur correspond à ce niveau car il ne présente pas l’étudiant comme responsable unique du système d’information, mais comme un alternant qui découvre progressivement l’environnement, participe à des projets concrets et apprend à prendre du recul.
@@ -21,6 +23,14 @@ Il permet aussi de montrer une progression :
 - construire une posture d’apprenti ingénieur fondée sur la rigueur, la prudence et l’analyse.
 
 ## Comment les trois missions principales répondent au fil conducteur
+
+Les trois missions principales couvrent les trois axes du fil conducteur :
+
+| Mission principale | Continuité | Sécurité | Modernisation |
+| --- | --- | --- | --- |
+| Microsoft Intune / Android Enterprise | Préparation d’équipements plus homogènes et maintenables | Restrictions, mot de passe, effacement après échecs | Gestion centralisée des tablettes professionnelles |
+| Registre visiteurs Power Apps / SharePoint / Power Automate | Simplification d’un processus d’accueil | Traçabilité et confidentialité des données visiteurs | Passage d’un registre papier à une solution numérique |
+| Sécurité opérationnelle AD / Microsoft 365 | Diagnostic visant à limiter l’impact sur les utilisateurs | Analyse de connexions, verrouillages et journaux | Construction d’une méthode d’investigation structurée |
 
 ### Microsoft Intune / Android Enterprise
 

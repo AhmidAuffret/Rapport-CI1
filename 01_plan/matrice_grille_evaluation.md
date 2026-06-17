@@ -4,6 +4,12 @@ Statut : matrice détaillée construite à partir des consignes IMT, de la grill
 
 ## Couverture des critères IMT
 
+Lecture du niveau de couverture attendu :
+
+- Fort : critère à traiter explicitement dans le corps du rapport, avec exemples et recul.
+- Moyen : critère à contrôler sur l’ensemble du rapport, surtout en relecture.
+- Faible : critère présent en soutien, sans développement autonome prévu.
+
 | Critère évalué | Partie du rapport qui répond au critère | Preuves attendues | Niveau de couverture attendu | Statut / vigilance |
 | --- | --- | --- | --- | --- |
 | Présentation de l’entreprise, du service et de son organisation | Partie I — Présentation de Leroux et du service informatique | Histoire, culture, valeurs, organisation, processus, organigramme utilisable, service informatique, rôle de l’étudiant | Fort | `[À compléter]` avec sources publiques et validation interne. |
@@ -24,11 +30,13 @@ Statut : matrice détaillée construite à partir des consignes IMT, de la grill
 
 Les critères suivants doivent être vérifiés dès la phase de rédaction, car ils portent une part importante de l’évaluation ou présentent un risque d’invention :
 
-- analyse des résultats obtenus ;
-- difficultés rencontrées et solutions apportées ;
-- gestion des moyens et ressources ;
-- perspectives futures et améliorations possibles ;
-- usage judicieux des illustrations.
+| Critère à sécuriser | Pourquoi c’est sensible | Point de contrôle avant validation |
+| --- | --- | --- |
+| Analyse des résultats obtenus | Risque d’annoncer des gains non mesurés ou non validés. | Séparer résultats obtenus, résultats attendus et éléments `[À vérifier]`. |
+| Difficultés rencontrées et solutions apportées | Critère central de démarche ingénieur. | Relier chaque difficulté à une démarche, une solution ou une limite assumée. |
+| Gestion des moyens et ressources | Les ressources financières, humaines ou matérielles peuvent manquer. | Utiliser `[À compléter]` plutôt que créer un budget ou une organisation non confirmée. |
+| Perspectives futures et améliorations possibles | Risque de présenter une piste comme une décision officielle. | Formuler en possibilités sauf validation explicite. |
+| Usage judicieux des illustrations | Risque de schémas décoratifs ou de données sensibles. | Vérifier utilité, titre, numérotation, commentaire et anonymisation. |
 
 ## Vérification par partie
 

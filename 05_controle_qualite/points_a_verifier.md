@@ -2,6 +2,17 @@
 
 Statut : points de contrôle avant rédaction du rapport.
 
+## Points prioritaires avant rédaction
+
+- Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
+- Noms et postes des personnes à remercier : `[À compléter]`.
+- Description exacte de l’équipe informatique : `[À compléter]`.
+- Dates ou périodes des missions : `[À compléter]`.
+- Résultats mesurables disponibles : `[À vérifier]`.
+- Illustrations autorisées par l’entreprise : `[À vérifier]`.
+- Niveau de confidentialité demandé par l’entreprise : `[À vérifier]`.
+- Décision finale sur Docker `prd-dkr01` : `[À valider]`.
+
 ## Contexte entreprise
 
 - Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
