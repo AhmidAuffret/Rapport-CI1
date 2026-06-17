@@ -44,6 +44,19 @@ Ils servent principalement à contrôler :
 
 L’agent principal reste responsable des modifications finales.
 
+## Décision — Traitement des informations manquantes
+
+Quand une information manque pour rédiger correctement, l’IA ne doit pas inventer.
+
+Elle doit :
+
+1. écrire `[À compléter]` ou `[À vérifier]` dans les fichiers de contexte ;
+2. formuler une question claire à poser à l’étudiant ;
+3. expliquer pourquoi cette information est nécessaire ;
+4. indiquer dans quelle partie du rapport cette réponse sera utilisée.
+
+Cette règle s’applique à toutes les parties du rapport, aux fichiers de contexte, aux contrôles qualité et aux futures relectures.
+
 ## Décisions à valider
 
 - Plan définitif du rapport : `[À valider]`
@@ -65,3 +78,4 @@ L’agent principal reste responsable des modifications finales.
 | 2026-06-15 | Retenue des missions principales Intune, registre visiteurs Power Platform et sécurité opérationnelle AD / Microsoft 365 | Validé localement |
 | 2026-06-15 | Maintien de Docker `prd-dkr01` comme sujet secondaire ou optionnel | Validé localement |
 | 2026-06-15 | Exclusion de Xibo, uniFLOW et GLPI comme missions principales | Validé localement |
+| 2026-06-17 | Ajout de la règle de traitement des informations manquantes : marquer, questionner, justifier et rattacher au rapport | Validé localement |

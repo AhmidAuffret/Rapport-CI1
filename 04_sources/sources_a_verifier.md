@@ -1,10 +1,23 @@
 # Sources à vérifier
 
-Statut : `[À compléter]`
+Statut : sources pressenties à valider avant citation dans le rapport.
 
-| Sujet | Source possible | Vérification à faire | Statut |
-| --- | --- | --- | --- |
-| Consignes IMT | Documents fournis | Vérifier les exigences exactes | `[À compléter]` |
-| Grille d’évaluation | Grille officielle | Reprendre les critères complets | `[À compléter]` |
-| Outils Microsoft | Documentation officielle | Vérifier les termes techniques | `[À compléter]` |
-| Contexte Leroux | Sources internes validées | Vérifier ce qui peut être cité | `[À compléter]` |
+Ne pas ajouter une information au rapport sans vérifier la source, la date de consultation et l'autorisation d'utilisation. Les sources officielles Leroux sont à privilégier pour la présentation de l'entreprise.
+
+| Sujet | Source pressentie | URL ou référence | Information à vérifier | Statut |
+| ----- | ----------------- | ---------------- | ---------------------- | ------ |
+| Histoire de Leroux | Site officiel Chicorée Leroux - page "Notre entreprise" | https://www.leroux.com/notre-entreprise-chicoree-leroux/ | Chronologie officielle : 1858, 1871, 1899, 1951-1954, 2018, 2022, 2023 | Source officielle repérée, à vérifier avant rédaction |
+| Date de création ou origine de l'entreprise | Site officiel Chicorée Leroux - page "Notre entreprise" | https://www.leroux.com/notre-entreprise-chicoree-leroux/ | Formulation exacte à retenir : rachat de la manufacture Herbo fils & Cie en 1858 ou autre formulation validée | Source officielle repérée, à vérifier avant rédaction |
+| Activité principale | Site officiel Chicorée Leroux - accueil et mentions légales | https://www.leroux.com/ ; https://www.leroux.com/mentions-legales/ | Production, transformation et commercialisation de produits à base de chicorée ; formulation officielle de l'activité | Source officielle repérée, à vérifier avant rédaction |
+| Produits à base de chicorée | Site officiel Chicorée Leroux - boutique et pages produits | https://www.leroux.com/produits/ | Catégories de produits : grains, liquide, soluble, dosettes, infusion ; vérifier les catégories réellement à citer | Source officielle repérée, à vérifier avant rédaction |
+| Chicorée, plante et caractéristiques générales | Site officiel Chicorée Leroux - page "La plante de chicorée" | https://www.leroux.com/plante-de-chicoree/ | Chicorée comme racine, produit d'origine végétale, naturellement sans caféine, cultivée et produite dans les Hauts-de-France | Source officielle repérée, à vérifier avant rédaction |
+| Implantation à Orchies | Site officiel Chicorée Leroux - contact et mentions légales | https://www.leroux.com/contact/ ; https://www.leroux.com/mentions-legales/ | Adresse officielle : 84 rue François Herbo, 59310 Orchies ; différence éventuelle entre siège, usine et service informatique | Source officielle repérée, à compléter avec l'étudiant |
+| Filière française | Site officiel Chicorée Leroux - page "La filière chicorée 100% française" | https://www.leroux.com/nos-engagements/filiere-francaise/ | Formulation "filière 100% française", implantation dans les Hauts-de-France, lien avec les plaines des Flandres | Source officielle repérée, à vérifier avant rédaction |
+| Production dans le Nord de la France | Site officiel Chicorée Leroux - page "Notre fabrication" | https://www.leroux.com/fabrication/ | Culture et transformation dans le nord de la France ; mention des sites d'Orchies et de Vieille-Église | Source officielle repérée, à vérifier avant rédaction |
+| Partenariat avec les agriculteurs-planteurs | Site officiel Chicorée Leroux - page "Notre fabrication" | https://www.leroux.com/fabrication/ | Partenariat avec près de 200 agriculteurs-planteurs ; vérifier si le chiffre peut être repris | Source officielle repérée, à vérifier avant rédaction |
+| Processus de fabrication | Site officiel Chicorée Leroux - page "Notre fabrication" | https://www.leroux.com/fabrication/ | Étapes publiques : sélection, culture, récolte, séchage, micronisation, torréfaction, concassage, extraction, atomisation, conditionnement | Source officielle repérée, à vérifier avant rédaction |
+| Informations officielles de contact | Site officiel Chicorée Leroux - contact et mentions légales | https://www.leroux.com/contact/ ; https://www.leroux.com/mentions-legales/ | Adresse, téléphone, email, RCS et informations de l'éditeur du site | Source officielle repérée, à vérifier avant rédaction |
+| Chiffres clés éventuels à vérifier | Site officiel Chicorée Leroux ; sources institutionnelles éventuelles | Site officiel Leroux ; INSEE/Sirene ou extrait RCS si nécessaire | Effectif, chiffre d'affaires, capital social, RCS, volumes de production ; ne pas utiliser sans validation | À compléter avec sources fiables |
+| Consignes IMT | Documents fournis dans le dépôt | `00_contexte_source/01_consignes_imt.md` ; PDF IMT présents à la racine | Exigences formelles du rapport CI1, annexe IA, longueur, structure minimale | Source locale déjà intégrée, à vérifier si nouvelle version IMT |
+| Grille d'évaluation | Documents fournis dans le dépôt | `00_contexte_source/02_grille_evaluation.md` ; PDF IMT présents à la racine | Critères d'évaluation, barème, attentes sur démarche ingénieur et bilan personnel | Source locale déjà intégrée, à vérifier si nouvelle version IMT |
+| Outils Microsoft | Documentation officielle Microsoft | Microsoft Learn `[URL à compléter selon les pages utilisées]` | Terminologie exacte : Intune, Android Enterprise, Entra, Power Apps, Power Automate, SharePoint, journaux Windows | À compléter avant rédaction technique |

@@ -7,6 +7,17 @@ Tu aides à préparer un rapport d’activité entreprise CI1 pour IMT Nord Euro
 Tu ne dois jamais inventer d’informations.
 Si une information manque, tu dois écrire `[À compléter]` ou `[À vérifier]`.
 
+## Règle de traitement des informations manquantes
+
+Quand une information manque pour rédiger correctement, l’IA ne doit pas inventer.
+
+Elle doit :
+
+1. écrire `[À compléter]` ou `[À vérifier]` dans les fichiers de contexte ;
+2. formuler une question claire à poser à l’étudiant ;
+3. expliquer pourquoi cette information est nécessaire ;
+4. indiquer dans quelle partie du rapport cette réponse sera utilisée.
+
 ## Source de vérité
 
 Les fichiers du dossier `00_contexte_source` sont la source de vérité du projet.

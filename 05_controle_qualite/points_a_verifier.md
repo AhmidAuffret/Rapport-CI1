@@ -46,6 +46,67 @@ Statut général : le plan est cohérent pour commencer une première rédaction
 - Niveau de confidentialité demandé par l’entreprise : `[À vérifier]`.
 - Décision finale sur Docker `prd-dkr01` : `[À valider]`.
 
+## Informations bloquantes ou semi-bloquantes avant rédaction
+
+### Bloquant avant Partie I
+
+Informations nécessaires pour rédiger correctement la présentation de l'entreprise et du service :
+
+- formulation officielle de l'activité principale de Leroux ;
+- sources publiques validées pour l'histoire, l'activité, l'implantation, la filière et les produits ;
+- chiffres clés publics utilisables ou décision explicite de ne pas en utiliser ;
+- sites Leroux pouvant être cités dans le rapport ;
+- description exacte du service informatique ;
+- nom exact du service ;
+- taille de l'équipe informatique ;
+- rôles ou métiers principaux présents dans l'équipe ;
+- rattachement ou positionnement du service dans l'organisation ;
+- interactions principales entre le service informatique et les autres services ;
+- positionnement réel de l'étudiant dans l'équipe ;
+- nom, fonction et autorisation de citation du maître d'apprentissage ;
+- niveau de confidentialité global du rapport ;
+- autorisation ou non d'utiliser des noms de personnes, sites, services, schémas ou captures.
+
+### Bloquant avant Partie II
+
+Informations nécessaires pour rédiger correctement les missions :
+
+- période exacte ou approximative de chaque mission principale ;
+- objectif réel de la mission Microsoft Intune / Android Enterprise ;
+- rôle exact de l'étudiant sur Intune ;
+- actions Intune réellement réalisées ;
+- statut réel de validation ou de déploiement des tablettes ;
+- tests Intune réalisés et résultats confirmés ;
+- objectif réel du registre visiteurs Power Apps / SharePoint / Power Automate ;
+- état actuel du registre visiteurs : prototype, test, production ou utilisation partielle ;
+- statut réel du registre papier : supprimé, maintenu ou remplacé partiellement ;
+- solutions Power Apps / Power Automate réellement validées ;
+- types d'incidents traités dans la mission sécurité AD / Microsoft 365 ;
+- rôle exact de l'étudiant dans les analyses de sécurité ;
+- outils précis utilisés pour les diagnostics ;
+- causes réellement identifiées ou hypothèses encore non confirmées ;
+- exemples anonymisés utilisables ;
+- limites de confidentialité propres aux missions techniques.
+
+### Non bloquant mais à traiter avant version finale
+
+Informations utiles pour améliorer le rapport mais non nécessaires au premier brouillon :
+
+- titre définitif du rapport ;
+- promotion exacte ;
+- logos autorisés ;
+- liste définitive des personnes à remercier ;
+- formulation finale des résumés français et anglais ;
+- choix définitif des illustrations ;
+- table des figures et tableaux ;
+- niveau de détail des annexes techniques ;
+- décision finale sur l'intégration ou non de Docker `prd-dkr01` comme mission secondaire ;
+- autorisation de mentionner SFR Cloud Agility si Docker est cité ;
+- bibliographie finale avec dates de consultation ;
+- annexe IA complète, incluant l'impact environnemental ou le bilan carbone ;
+- correction orthographique et harmonisation de style avant export ;
+- validation finale de la mention CONFIDENTIEL.
+
 ## Contexte entreprise
 
 - Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
