@@ -131,3 +131,18 @@ Avant de considérer une section comme prête, vérifier :
 - clarté du propos ;
 - confidentialité ;
 - orthographe et syntaxe.
+
+## Sous-agents
+
+Les sous-agents peuvent être utilisés pour les tâches complexes ou les relectures spécialisées.
+
+Ils doivent être utilisés selon `00_contexte_source/11_strategie_sous_agents.md`.
+
+Règles :
+
+* ne pas utiliser de sous-agents pour les tâches simples ;
+* un seul agent modifie les fichiers ;
+* les sous-agents produisent des avis et recommandations ;
+* l’agent principal décide des corrections à appliquer ;
+* choisir un modèle adapté à la complexité de la tâche si l’environnement le permet ;
+* ne jamais utiliser de sous-agent pour contourner les règles de confidentialité ou d’absence d’invention.

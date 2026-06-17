@@ -77,3 +77,12 @@ Statut : checklist de contrôle construite à partir des consignes IMT et de la 
 - Validation entreprise pour la diffusion du contenu : `[À vérifier]`
 - Mention CONFIDENTIEL ajoutée si nécessaire : `[À vérifier]`
 - Usage de l’IA déclaré avec impact environnemental ou bilan carbone : `[À vérifier]`
+
+## Contrôle par sous-agents si nécessaire
+
+* [ ] Relecture IMT réalisée si section importante.
+* [ ] Relecture style réalisée si section rédigée.
+* [ ] Relecture technique réalisée si mission technique.
+* [ ] Relecture confidentialité réalisée si données sensibles.
+* [ ] Corrections consolidées par l’agent principal.
+* [ ] Aucune surcorrection du style personnel.
