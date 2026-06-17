@@ -2,6 +2,50 @@
 
 Statut : points de contrôle avant rédaction du rapport.
 
+## Synthèse du contrôle de cohérence du 2026-06-17
+
+Statut général : le plan est cohérent pour commencer une première rédaction cadrée, à condition de conserver les marqueurs `[À compléter]`, `[À vérifier]` et `[REDACTED]` tant que les informations ne sont pas validées.
+
+### Points cohérents
+
+- Structure IMT minimale couverte dans le plan : page de garde, remerciements, sommaire, table des figures, résumés français et anglais, introduction, développement, conclusion, bibliographie, annexe IA obligatoire et annexes éventuelles.
+- Grille d’évaluation couverte par la matrice : entreprise et missions, démarche ingénieur, conception du rapport, illustrations, confidentialité et annexe IA.
+- Trois missions principales correctement placées en Partie II :
+  - Microsoft Intune / Android Enterprise ;
+  - registre visiteurs Power Apps / SharePoint / Power Automate ;
+  - sécurité opérationnelle AD / Microsoft 365.
+- Structure imposée pour chaque mission principale présente dans le plan : contexte, objectifs, contraintes, déroulement, moyens et ressources, difficultés, solutions, résultats et recul personnel.
+- Xibo, uniFLOW et GLPI ne sont pas utilisés comme missions principales dans le plan.
+- Docker `prd-dkr01` reste limité à une mission secondaire ou optionnelle, avec un volume maximal prévu de 0 à 1 page si la décision finale le confirme.
+- Règles de style compatibles avec le plan : progression du contexte vers les actions, première personne pour le retour d’expérience, prudence sur les résultats et refus des formulations trop valorisantes.
+
+### Incohérences ou fragilités détectées
+
+- Le critère IMT sur la présentation des métiers était présent mais insuffisamment explicite dans la section `3.3 Service informatique` du plan : clarification ajoutée dans `01_plan/plan_rapport.md`.
+- Les informations nécessaires à la Partie I restent trop incomplètes pour une rédaction définitive : activité exacte, chiffres clés, sources publiques, histoire, culture, valeurs, organisation et description du service.
+- Les dates, périodes, résultats mesurables et validations de production des missions principales restent à compléter ou vérifier.
+- Les moyens humains, financiers et documentaires doivent encore être précisés ; ne pas inventer de budget, d’équipe ou de décision d’achat.
+- Les illustrations sont prévues, mais aucune ne doit être réalisée ou intégrée avant validation du niveau de détail autorisé et de l’anonymisation.
+- Le niveau de confidentialité demandé par l’entreprise, la mention CONFIDENTIEL et les éléments diffusables restent à vérifier avant toute version finale.
+
+### Décision avant rédaction
+
+- Première rédaction cadrée : possible.
+- Rédaction finale ou validation du rapport : impossible à ce stade, tant que les points `[À compléter]`, `[À vérifier]` et `[À valider]` ci-dessous ne sont pas traités.
+- Règle à appliquer pendant la rédaction : ne jamais transformer un objectif, un résultat attendu ou une hypothèse en fait validé sans source ou validation explicite.
+
+## Points prioritaires avant rédaction
+
+- Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
+- Noms et postes des personnes à remercier : `[À compléter]`.
+- Description exacte de l’équipe informatique : `[À compléter]`.
+- Dates ou périodes des missions : `[À compléter]`.
+- Résultats mesurables disponibles : `[À vérifier]`.
+- Moyens humains, financiers et documentaires mobilisés pour chaque mission : `[À compléter]`.
+- Illustrations autorisées par l’entreprise : `[À vérifier]`.
+- Niveau de confidentialité demandé par l’entreprise : `[À vérifier]`.
+- Décision finale sur Docker `prd-dkr01` : `[À valider]`.
+
 ## Contexte entreprise
 
 - Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
@@ -25,6 +69,7 @@ Statut : points de contrôle avant rédaction du rapport.
 - Description exacte de l’équipe informatique : `[À compléter]`.
 - Taille et organisation de l'équipe : `[À compléter]`.
 - Rattachement ou positionnement du service : `[À compléter]`.
+- Métiers du service informatique et métiers internes en interaction avec l'étudiant : `[À compléter]`.
 - Positionnement de l'étudiant dans l'équipe : `[À compléter]`.
 - Nom et rôle du maître d'apprentissage : `[À vérifier]`.
 - Interactions avec les autres métiers ou services : `[À compléter]`.
@@ -86,6 +131,16 @@ Statut : points de contrôle avant rédaction du rapport.
 - uniFLOW non utilisé comme mission principale : `[À vérifier]`.
 - GLPI non utilisé comme mission principale : `[À vérifier]`.
 - GLPI cité seulement comme lien, outil consultable ou contexte ponctuel si nécessaire : `[À vérifier]`.
+
+## Style d’écriture
+
+- Texte personnel et fidèle à l’expérience réelle de l’étudiant : `[À vérifier]`.
+- Missions non survalorisées et niveau d’autonomie présenté avec prudence : `[À vérifier]`.
+- Explications progressives, du contexte vers les actions techniques : `[À vérifier]`.
+- Première personne utilisée lorsque l’étudiant parle de ses actions, difficultés ou apprentissages : `[À vérifier]`.
+- Style ni trop académique, ni trop générique, ni trop soutenu : `[À vérifier]`.
+- Répétitions et formulations lourdes corrigées sans dénaturer la logique d’écriture de l’étudiant : `[À vérifier]`.
+- Objectifs, actions réalisées, résultats obtenus et points `[À vérifier]` clairement distingués : `[À vérifier]`.
 
 ## Illustrations et annexes
 
