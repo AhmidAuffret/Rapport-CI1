@@ -164,8 +164,8 @@ Contraintes générales :
 ### 3.3 Service informatique
 
 - Objectif de la section : présenter le service dans lequel l’étudiant travaille.
-- Contenu attendu : missions du service, périmètre général, taille de l’équipe, organisation, rattachement, interactions internes.
-- Critères IMT couverts : présentation du service, organisation, métiers avec lesquels l’étudiant interagit.
+- Contenu attendu : missions du service, périmètre général, taille de l’équipe, métiers du service, organisation, rattachement, interactions internes et métiers avec lesquels l’étudiant interagit.
+- Critères IMT couverts : présentation du service, organisation, présentation des métiers et métiers avec lesquels l’étudiant interagit.
 - Volume cible : 1,5 à 2 pages.
 - Éléments à compléter : description exacte de l’équipe, taille, fonctions, rattachement, rôle du maître d’apprentissage.
 - Risques d’invention à éviter : ne pas surdécrire les responsabilités du service ou nommer des personnes sans validation.
