@@ -98,6 +98,16 @@ Statut : points de contrôle avant rédaction du rapport.
 - GLPI non utilisé comme mission principale : `[À vérifier]`.
 - GLPI cité seulement comme lien, outil consultable ou contexte ponctuel si nécessaire : `[À vérifier]`.
 
+## Style d’écriture
+
+- Texte personnel et fidèle à l’expérience réelle de l’étudiant : `[À vérifier]`.
+- Missions non survalorisées et niveau d’autonomie présenté avec prudence : `[À vérifier]`.
+- Explications progressives, du contexte vers les actions techniques : `[À vérifier]`.
+- Première personne utilisée lorsque l’étudiant parle de ses actions, difficultés ou apprentissages : `[À vérifier]`.
+- Style ni trop académique, ni trop générique, ni trop soutenu : `[À vérifier]`.
+- Répétitions et formulations lourdes corrigées sans dénaturer la logique d’écriture de l’étudiant : `[À vérifier]`.
+- Objectifs, actions réalisées, résultats obtenus et points `[À vérifier]` clairement distingués : `[À vérifier]`.
+
 ## Illustrations et annexes
 
 - Illustrations autorisées par l’entreprise : `[À vérifier]`.

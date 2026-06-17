@@ -22,6 +22,12 @@ Statut : décisions de cadrage consolidées localement.
 - GLPI peut être cité uniquement comme lien, outil consultable ou contexte ponctuel.
 - Xibo et uniFLOW peuvent être cités uniquement comme contexte ou activité ponctuelle si nécessaire.
 
+## Décision — Audit du style d’écriture
+
+Les anciens rapports Word de l’étudiant sont utilisés uniquement comme références stylistiques.
+Ils ne sont pas utilisés comme sources factuelles pour le rapport CI1 Leroux.
+La rédaction doit conserver une logique proche du style observé, tout en corrigeant les fautes, répétitions et maladresses.
+
 ## Décisions à valider
 
 - Plan définitif du rapport : `[À valider]`
