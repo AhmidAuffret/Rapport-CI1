@@ -1,7 +1,32 @@
 # Introduction
 
-Objectif : introduire le contexte du rapport, l’alternance, l’entreprise, le service et le fil conducteur.
+Statut : Version brouillon v1
 
-Contenu à rédiger plus tard : `[À compléter]`
+Ce rapport d'activité entreprise CI1 s'inscrit dans le cadre de ma première année du cycle ingénieur à l'IMT Nord Europe, réalisée en alternance. Il a pour objectif de présenter mon activité en entreprise, mais aussi de prendre du recul sur cette première période d'apprentissage. Je ne vais donc pas seulement décrire des missions techniques. Je vais aussi expliquer le contexte dans lequel j'ai travaillé, les méthodes que j'ai découvertes, les difficultés rencontrées et ce que ces expériences m'ont permis de comprendre sur le métier d'administrateur systèmes et réseaux.
 
-Statut : `[Non rédigé]`
+Mon alternance se déroule chez Leroux, au sein du service informatique. Dans cette première version, je retiens uniquement les éléments déjà cadrés : Leroux est l'entreprise d'accueil de mon alternance, et le rapport se concentre sur mon intégration dans son environnement informatique. Les informations détaillées sur l'activité exacte de l'entreprise, son organisation et ses chiffres clés devront être complétées ou vérifiées à partir de sources validées. Le contexte industriel donne une importance particulière à la disponibilité des outils, à la continuité de service, à la sécurité du système d'information et au support des utilisateurs. Ces aspects reviennent régulièrement dans les missions, car une action informatique peut avoir un impact direct sur le fonctionnement quotidien des services.
+
+Au sein du service informatique, j'occupe un rôle d'alternant administrateur systèmes et réseaux. En première année, mon positionnement reste celui d'un étudiant qui découvre progressivement l'environnement, les outils et les pratiques de l'entreprise. Je ne suis pas décideur principal des choix techniques, mais je participe à des missions concrètes, j'apprends à tester avant de valider, à documenter mes actions et à échanger avec l'équipe informatique. Cette progression est importante dans le rapport, car elle montre comment l'autonomie se construit petit à petit, à partir de situations réelles et de besoins rencontrés sur le terrain.
+
+Le fil conducteur retenu pour ce rapport est le suivant : comment une première année d'alternance en administration systèmes et réseaux permet-elle de contribuer à la continuité, à la sécurité et à la modernisation du système d'information d'une entreprise industrielle ? Cette question m'aide à relier les différentes missions sans les présenter comme une simple liste d'activités. Elle correspond aussi au niveau CI1, car elle met l'accent sur la compréhension du contexte, la démarche suivie et le bilan personnel, plutôt que sur une expertise complète ou des résultats non vérifiés.
+
+Les missions principales présentées dans ce rapport s'organisent autour de trois sujets. Le premier sujet concerne Microsoft Intune et Android Enterprise. Il porte sur la gestion de tablettes Android professionnelles, avec l'objectif de mieux comprendre comment une entreprise peut administrer des équipements mobiles de manière plus homogène et plus sécurisée. Cette mission m'a amené à découvrir la logique de gestion centralisée, les restrictions possibles et l'importance des tests avant toute généralisation.
+
+Le deuxième sujet est la création d'un registre visiteurs numérique avec Power Apps, SharePoint et Power Automate. L'objectif était de travailler sur une solution permettant de remplacer ou de réduire l'usage d'un registre papier, tout en centralisant les informations nécessaires et en gérant la signature des visiteurs. Cette mission relie un besoin très concret, l'accueil des visiteurs, à des outils de la Power Platform. Elle m'a aussi montré que la partie visible d'une application n'est qu'une partie du travail : il faut aussi fiabiliser l'enregistrement, gérer les erreurs et vérifier les données traitées.
+
+Enfin, le troisième sujet porte sur la sécurité opérationnelle autour d'Active Directory et de Microsoft 365. Dans ce cadre, j'ai participé à des analyses liées à des connexions suspectes, à des verrouillages de comptes ou à des événements observés dans les journaux. Cette mission m'a surtout appris à avancer avec prudence. En sécurité, un symptôme ne suffit pas à conclure. Il faut comparer plusieurs sources, formuler des hypothèses, vérifier les éléments disponibles et éviter d'affirmer une cause tant qu'elle n'est pas démontrée.
+
+Ces trois missions répondent chacune à une partie du fil conducteur. La gestion des tablettes professionnelles s'inscrit dans une logique de modernisation et de sécurisation des usages. Le registre visiteurs numérique montre comment un outil interne peut contribuer à simplifier un processus tout en améliorant la traçabilité, sous réserve de respecter la confidentialité des données. L'analyse des événements liés aux comptes et aux connexions met en avant l'importance de la sécurité opérationnelle et de la méthode de diagnostic. Ensemble, elles montrent que le rôle d'un alternant ne se limite pas à appliquer des procédures. Il consiste aussi à comprendre pourquoi les actions sont réalisées, quelles contraintes elles doivent respecter et quelles limites doivent encore être vérifiées.
+
+Le rapport suivra une progression en plusieurs parties. Dans un premier temps, il présentera l'entreprise Leroux, son contexte et le service informatique dans lequel j'évolue. Cette partie permettra de situer les missions dans leur environnement réel, en complétant les informations encore manquantes avec des sources ou validations adaptées. Ensuite, le rapport détaillera les trois missions principales en suivant une structure commune : contexte, objectifs, contraintes, déroulement, moyens mobilisés, difficultés rencontrées, solutions apportées, résultats obtenus et recul personnel. Une partie sera également consacrée aux méthodes, aux outils et aux ressources utilisés, afin de montrer comment les missions ont été abordées de manière progressive. Enfin, le rapport se terminera par un bilan personnel sur les compétences développées, les limites rencontrées et les perspectives d'évolution pour la suite de l'alternance.
+
+Cette introduction reste une version brouillon. Elle pose le cadre général du rapport, mais plusieurs éléments devront être complétés ou vérifiés avant la version finale, notamment la description officielle de Leroux, le niveau de confidentialité attendu et les résultats réellement validés pour chaque mission.
+
+## Points à compléter / vérifier
+
+- Description officielle de Leroux, secteur d'activité et éléments publics utilisables dans le rapport : `[À vérifier]`.
+- Organisation exacte du service informatique et positionnement précis de l'alternant : `[À compléter]`.
+- Dates ou périodes des trois missions principales : `[À compléter]`.
+- Résultats réellement obtenus ou validés pour chaque mission : `[À vérifier]`.
+- Niveau de confidentialité demandé par l'entreprise et mention CONFIDENTIEL éventuelle : `[À vérifier]`.
+- Validation finale du fil conducteur et du plan détaillé : `[À vérifier]`.
