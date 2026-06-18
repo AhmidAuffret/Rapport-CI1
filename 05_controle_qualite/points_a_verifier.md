@@ -160,6 +160,11 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Volume de tablettes concernées si diffusable : `[À vérifier]`.
 - Applications réellement déployées ou seulement prévues : `[À vérifier]`.
 - Procédure ou documentation interne produite : `[À compléter]`.
+- Points déplacés ou reformulés lors de la correction v2 : période calendaire exacte, nombre exact de tablettes, résultats précis des tests, documentation interne éventuelle, niveau d'autorisation pour citer les paramètres, outils, modèle de tablette et version Android.
+- Paramètres précis à valider avant citation éventuelle : règle exacte de mot de passe, comportement exact d'effacement après échecs, plage horaire exacte de mise à jour, restrictions détaillées et applications réellement déployées ou seulement prévues.
+- Question à poser à l'étudiant : peux-tu confirmer la période exacte de la mission Intune, le nombre de tablettes concernées, les tests réellement validés, les paramètres exacts autorisés à citer et l'existence ou non d'une procédure interne ?
+- Pourquoi c'est nécessaire : ces informations permettent de préciser les résultats sans inventer de dates, de volumes, de gains ou de validation officielle.
+- Partie du rapport concernée : Partie II, section `1. Microsoft Intune / Android Enterprise`, principalement `1.3 Moyens et outils utilisés`, `1.4 Démarche suivie`, `1.6 Résultats obtenus` et `1.7 Limites et points restant à suivre`.
 
 ### Registre visiteurs Power Apps / SharePoint / Power Automate
 
