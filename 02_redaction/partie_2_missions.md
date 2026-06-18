@@ -130,105 +130,91 @@ Enfin, cette mission fait le lien avec le fil conducteur du rapport. Elle contri
 
 ### 2.1 Contexte et besoin initial
 
-La deuxième mission principale que je présente concerne la création d'un registre visiteurs numérique avec Power Apps, SharePoint et Power Automate. Cette mission s'inscrit dans la continuité des besoins du service informatique : moderniser progressivement certains usages internes, tout en gardant une solution simple pour les utilisateurs.
+La deuxième mission principale que je présente concerne la création d'un registre visiteurs numérique avec Power Apps, SharePoint et Power Automate. Elle répond à un besoin concret de l'accueil : remplacer à terme le registre papier par une solution plus simple à utiliser et plus facile à suivre côté informatique.
 
-À l'accueil, l'entreprise utilisait un registre papier pour noter les passages des visiteurs. Ce fonctionnement peut être suffisant dans beaucoup de situations, mais il présente aussi des limites. Les informations restent sur un support physique, la consultation n'est pas centralisée et la conservation dépend du registre lui-même. L'objectif de la mission était donc de préparer une transition vers une solution numérique, utilisable sur une tablette à l'accueil.
+Au départ, les passages des visiteurs étaient notés sur un support papier. Ce fonctionnement restait utilisable, mais il limitait la centralisation des informations et le suivi des enregistrements. La demande initiale est venue de mon tuteur de l'époque, qui était alors responsable informatique. Le besoin était de disposer d'une application sur tablette capable d'enregistrer les visiteurs, de stocker les données dans SharePoint et d'ajouter une signature réalisée directement sur l'écran.
 
-La demande initiale est venue de Loïc Humman, qui était alors responsable informatique et mon tuteur. Le besoin était de créer une application permettant d'enregistrer les visiteurs, de conserver les informations dans SharePoint et d'ajouter une signature réalisée sur tablette. La mission a duré environ un mois. Elle ne correspond pas à un simple formulaire : il fallait aussi gérer le stockage des données, l'automatisation de la création de l'enregistrement et la signature sous forme de pièce jointe.
+La mission a duré environ un mois. Elle ne consistait pas seulement à créer un formulaire. Il fallait aussi organiser le stockage des informations, automatiser la création de l'enregistrement et traiter correctement la signature pour qu'elle soit conservée comme pièce jointe PNG.
 
-Il est important de préciser l'état réel de la solution. La partie applicative a été terminée et validée techniquement. Les données peuvent être enregistrées dans SharePoint et la signature est bien ajoutée en pièce jointe PNG. En revanche, la solution n'est pas encore utilisée à l'accueil. Sa mise en service dépend encore de l'installation d'un support physique par le service maintenance, afin de sécuriser la tablette et d'éviter le vol. Je ne peux donc pas écrire que le registre papier a été remplacé ou que le déploiement est terminé.
-
-Cette mission répond au fil conducteur du rapport par son lien avec la modernisation et la continuité des usages. Elle vise à remplacer ou réduire l'usage du papier, tout en gardant un fonctionnement compréhensible pour l'accueil. Elle demande aussi une attention particulière à la confidentialité, car un registre visiteurs contient des données personnelles.
+Il est important de préciser dès le départ l'état réel de la solution. La partie applicative a été terminée et validée techniquement. En revanche, elle n'est pas encore utilisée à l'accueil. Sa mise en service dépend toujours de l'installation d'un support physique par le service maintenance afin de sécuriser la tablette. Je ne peux donc pas écrire que le registre papier a déjà été remplacé.
 
 ### 2.2 Objectifs de la mission
 
-Le premier objectif était de créer une application simple à utiliser sur tablette. L'accueil devait pouvoir saisir les informations nécessaires sans avoir à manipuler directement une liste SharePoint ou un outil technique. L'application devait donc présenter les champs utiles de manière claire et limiter les actions inutiles.
+Le premier objectif était de proposer une application simple à utiliser sur tablette. L'accueil devait pouvoir saisir les informations utiles sans passer directement par une liste SharePoint ou par un outil trop technique.
 
-Le deuxième objectif était de centraliser les informations dans SharePoint. La liste SharePoint joue le rôle de registre de données. Elle permet de conserver les passages avec les champs principaux : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage. La date est renseignée automatiquement, ce qui limite la saisie manuelle de cette information.
+Le deuxième objectif était de centraliser les informations dans SharePoint afin de conserver les passages dans un registre numérique plus facile à consulter et à suivre. Les champs retenus couvrent les informations principales : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage.
 
-Le troisième objectif concernait la signature. Dans un registre visiteurs, la signature fait partie des éléments attendus. La difficulté était de récupérer une signature faite sur l'écran de la tablette, puis de l'enregistrer correctement dans SharePoint. La solution retenue consiste à stocker la signature comme pièce jointe PNG sur l'élément SharePoint créé.
+Le troisième objectif concernait la signature. Il fallait pouvoir signer sur la tablette puis conserver cette signature avec l'enregistrement du visiteur. La solution retenue a été de stocker la signature comme pièce jointe PNG sur l'élément SharePoint créé.
 
-Un autre objectif était de fiabiliser l'enregistrement. Au lieu de laisser Power Apps écrire directement toutes les données sans traitement complémentaire, un flux Power Automate a été utilisé. Ce flux reçoit les informations transmises par l'application, crée l'élément SharePoint, traite la signature et l'ajoute en pièce jointe. Cette séparation permet de mieux gérer les étapes techniques, surtout pour la signature.
-
-La mission devait aussi respecter la confidentialité des données visiteurs. Le rapport ne doit pas contenir de vrais noms de visiteurs, de sociétés visitées ou de signatures. Les champs peuvent être décrits de manière générale, mais aucune donnée réelle ne doit être exposée. Cette règle est importante, car la numérisation d'un registre ne doit pas conduire à diffuser plus largement des informations personnelles.
-
-Enfin, l'objectif n'était pas de produire une documentation technique complète sur Power Apps ou Power Automate. Le but était de construire une solution fonctionnelle pour un besoin terrain, puis d'expliquer la démarche, les difficultés et les limites dans un rapport de première année CI1.
+Enfin, je devais fiabiliser l'enregistrement avec Power Automate et rester prudent sur la confidentialité des données visiteurs. Le but n'était pas de faire quelque chose de trop technique, mais de construire une solution qui fonctionne et qui reste compréhensible.
 
 ### 2.3 Moyens et outils utilisés
 
-La solution repose sur trois outils principaux de l'environnement Microsoft : Power Apps, SharePoint et Power Automate. Chaque outil a un rôle distinct dans la mission.
+Je me suis appuyé sur trois outils principaux. Power Apps m'a servi à construire l'interface sur tablette, SharePoint à stocker les informations du registre, et Power Automate à automatiser la création de l'enregistrement ainsi que l'ajout de la signature.
 
-Power Apps a servi à créer l'interface de saisie. C'est l'application que l'utilisateur voit sur la tablette. Elle contient les champs nécessaires au registre visiteurs et un contrôle de signature. L'intérêt de Power Apps est de pouvoir créer une application interne sans développer une application classique complète. Pour cette mission, cela permettait de partir d'un besoin concret et de construire rapidement une interface adaptée.
+La tablette d'accueil fait partie des moyens matériels mobilisés. Son modèle exact reste `[À vérifier]`, mais ce point n'est pas indispensable pour comprendre la mission. L'historique d'exécution Power Automate a aussi été un moyen de travail important, car il m'a permis de vérifier les valeurs reçues et de comprendre les erreurs pendant les tests.
 
-SharePoint a servi de base de stockage. Une liste SharePoint dédiée au registre visiteurs contient les informations saisies. Les colonnes principales sont le nom, le prénom, la société, la personne visitée, l'heure d'arrivée, l'heure de départ et la date de passage. Les pièces jointes sont activées afin de stocker la signature au format PNG. Cette organisation évite de mélanger la signature avec les champs texte du registre.
+Les moyens humains reposaient principalement sur le service informatique. Mon tuteur de l'époque a exprimé le besoin initial et validé les choix importants. De mon côté, j'ai pris en charge la partie opérationnelle : compréhension du besoin, création de l'application, configuration de la liste SharePoint, préparation du flux, tests et corrections. Le service maintenance intervient aussi indirectement, car la mise en service dépend du support physique de la tablette.
 
-Power Automate a été utilisé pour automatiser la création de l'enregistrement. Le flux est déclenché depuis Power Apps. Il reçoit les valeurs saisies, crée l'élément dans la liste SharePoint, nettoie la donnée de signature, vérifie qu'elle correspond bien à une image, puis ajoute la signature en pièce jointe. Le nom exact du flux existe dans le contexte de travail, mais il n'est pas indispensable de l'exposer dans le rapport si cela n'apporte rien à la compréhension.
+Pour les moyens financiers, aucune donnée budgétaire exploitable n'est intégrée à ce stade dans le rapport. Je ne peux donc pas détailler de coût matériel, de coût de licence ou d'arbitrage financier sans validation.
 
-La tablette d'accueil fait aussi partie des moyens matériels. Elle est destinée à être utilisée à l'entrée de l'entreprise pour saisir les passages. Le modèle exact de la tablette reste à vérifier avant la version finale. Dans cette section, je parle donc d'une tablette destinée à l'accueil, sans détailler de caractéristique inutile.
+### 2.4 Contraintes de la mission
 
-Les moyens humains mobilisés reposaient principalement sur le service informatique. Loïc Humman a exprimé le besoin initial et a validé les choix importants. De mon côté, j'ai participé à la conception et à la mise en oeuvre opérationnelle : compréhension du besoin, création de l'application, configuration de la liste SharePoint, création du flux, tests, débogage et ajustements. Les décisions finales restent toutefois validées par le tuteur ou par l'entreprise.
+La première contrainte était de garder une utilisation simple sur tablette, car l'outil devait rester rapide à comprendre à l'accueil. Il fallait aussi protéger la confidentialité des données visiteurs et éviter d'exposer des informations personnelles dans le rapport.
 
-Le service maintenance intervient aussi dans la suite de la mission, mais sur un point différent : l'installation du support physique de la tablette. Tant que ce support n'est pas installé, la solution applicative ne peut pas être présentée comme réellement en service à l'accueil.
+La fiabilité de l'enregistrement constituait une autre contrainte importante, en particulier pour la signature. Il ne suffisait pas que l'application fonctionne en apparence : il fallait vérifier que les données et la signature arrivaient correctement jusqu'à SharePoint.
 
-Les moyens financiers ne sont pas détaillés, car je ne dispose pas d'information validée sur un budget ou un coût associé à cette mission. Je ne peux donc pas inventer de coût matériel, de coût de licence ou d'arbitrage financier. Budget associé : `[À vérifier]`. Je me limite aux ressources techniques, matérielles et humaines connues.
+Enfin, la mission restait dépendante d'un point matériel extérieur à la partie applicative. Même avec une solution validée techniquement, l'absence de support physique empêchait une mise en service immédiate à l'accueil.
 
-### 2.4 Démarche suivie
+### 2.5 Démarche suivie
 
 Dans un premier temps, j'ai cherché à comprendre le besoin métier. Le but n'était pas seulement de remplacer un cahier par un écran. Il fallait identifier les informations nécessaires à l'accueil, réfléchir à la façon de les saisir sur tablette et prévoir le stockage dans un outil accessible au service informatique.
 
-La première étape technique a consisté à préparer la liste SharePoint. Cette liste devait contenir les champs nécessaires au registre. Les informations principales sont des champs simples : nom, prénom, société et personne visitée. La date de passage est automatique et le champ est prévu en date uniquement. Les heures d'arrivée et de départ sont stockées au format texte `HH:MM`, car elles sont saisies via des listes déroulantes dans Power Apps.
+Le travail s'est organisé en plusieurs phases assez simples : cadrage du besoin, préparation de la liste SharePoint, création de l'application Power Apps, mise en place du flux Power Automate, puis tests et ajustements.
 
-Le choix des listes déroulantes pour les heures répondait à un besoin de simplicité. Au lieu de laisser une saisie libre, l'utilisateur choisit une heure et des minutes. Les minutes sont proposées par pas de cinq. Cela limite les erreurs de format et rend l'interface plus adaptée à une tablette. Ce choix reste simple, mais il montre qu'une application doit être pensée pour son usage réel.
+La première étape technique a consisté à préparer la liste SharePoint. Cette liste devait contenir les champs nécessaires au registre : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage. La date est renseignée automatiquement et les heures sont saisies via des listes déroulantes dans Power Apps, ce qui limite les erreurs de format.
 
-J'ai ensuite travaillé sur l'application Power Apps. L'objectif était de créer un formulaire clair, avec les champs nécessaires et une zone de signature. La signature est réalisée avec un contrôle de type Pen Input. Ce contrôle permet à l'utilisateur de signer directement sur l'écran de la tablette.
+J'ai ensuite travaillé sur l'application Power Apps. L'objectif était de créer un formulaire clair, avec les champs nécessaires et une zone de signature. La signature est réalisée directement sur la tablette, puis envoyée au flux Power Automate en même temps que les autres informations.
 
-La difficulté principale est apparue au moment de récupérer cette signature. Une signature dans Power Apps n'est pas seulement un texte ou une valeur simple. Il faut convertir l'image en données exploitables pour pouvoir l'envoyer au flux Power Automate. La solution utilisée consiste à convertir l'image de signature en JSON avec inclusion des données binaires côté Power Apps, puis à transmettre cette donnée au flux.
+Le flux Power Automate prend ensuite le relais. Il reçoit les informations envoyées par Power Apps, crée l'élément SharePoint, puis traite la signature. Concrètement, Power Apps envoie une chaîne image encodée, puis le flux la nettoie avant conversion binaire et ajout de la pièce jointe PNG dans SharePoint.
 
-Le flux Power Automate prend ensuite le relais. Il reçoit les informations envoyées par Power Apps, crée l'élément SharePoint, puis traite la signature. La signature est transmise sous forme de Data URI, c'est-à-dire une chaîne contenant le type de donnée et le contenu encodé de l'image. Le flux doit nettoyer cette chaîne, vérifier qu'elle commence bien par `data:image/`, puis convertir le contenu en binaire pour créer la pièce jointe PNG.
-
-Les tests ont pris une place importante dans la démarche. J'ai utilisé l'historique d'exécution Power Automate pour vérifier les valeurs reçues par le flux. Cela permettait de voir si les champs étaient transmis correctement, si la signature arrivait bien, si la condition de vérification passait et si la pièce jointe était créée. Sans cet historique, il aurait été beaucoup plus difficile de comprendre les erreurs.
+Les tests ont pris une place importante dans la démarche. J'ai beaucoup utilisé l'historique d'exécution de Power Automate pour voir ce que le flux recevait réellement, à quel moment il bloquait et si la pièce jointe était bien créée. Sans cet historique, il aurait été beaucoup plus difficile de comprendre les erreurs.
 
 J'ai aussi testé plusieurs cas autour de la signature. Une vraie signature devait produire un fichier PNG exploitable. Une signature vide devait être détectée pour éviter d'enregistrer une image blanche comme si elle était valide. Ces tests ont montré que le contrôle de signature pouvait renvoyer une image même lorsqu'aucune vraie signature n'était faite.
 
-À partir de ces essais, un seuil empirique a été retenu. Une signature vide retournait une image blanche d'environ 5165 caractères. Un seuil autour de 7000 caractères a donc été utilisé : en dessous, la signature est considérée comme absente ; au-dessus ou à partir de ce seuil, elle est considérée comme valide. Ce seuil n'est pas une règle universelle. C'est une solution pragmatique issue des tests réalisés sur cette application.
+À partir de ces essais, un seuil empirique a été retenu. Une signature vide renvoyait quand même une image blanche. Un seuil autour de 7000 caractères a donc été utilisé, dans ce contexte testé, pour détecter qu'un tracé avait bien été saisi. Ce seuil n'est pas une règle universelle. C'est une solution pragmatique issue des tests réalisés sur cette application et il resterait à revérifier si l'application, le contrôle ou l'appareil changeaient.
 
 Une fois les erreurs principales corrigées, la solution a été validée techniquement avec le tuteur. L'application permet de saisir les informations, le flux crée l'élément dans SharePoint et la signature est ajoutée en pièce jointe PNG. La partie applicative peut donc être considérée comme prête côté technique, mais la mise en service réelle reste dépendante du support physique de la tablette.
 
-### 2.5 Difficultés rencontrées
+### 2.6 Difficultés rencontrées
 
-La première difficulté a été la gestion de la signature. Au départ, la signature PNG obtenue n'était pas toujours exploitable. Le fichier pouvait être cassé ou ne pas correspondre à une vraie image utilisable. Cette difficulté venait surtout de la manière dont la donnée était transmise entre Power Apps et Power Automate.
+La principale difficulté a été la gestion de la signature entre Power Apps et Power Automate. Au départ, la signature PNG obtenue n'était pas toujours exploitable. Le problème venait de la manière dont l'image était transmise, interprétée puis convertie avant d'être ajoutée dans SharePoint.
 
-La conversion entre base64, Data URI et fichier binaire a été un point technique important. Une image de signature doit être transformée en chaîne de caractères, transmise au flux, puis reconvertie en fichier. Si une partie de cette chaîne est mal nettoyée ou mal interprétée, le fichier final peut être inutilisable.
+Lors de certains tests, le paramètre de signature arrivait à `null` dans Power Automate. Cela m'a obligé à vérifier pas à pas si le problème venait de Power Apps, de l'appel du flux ou de l'expression utilisée. J'ai aussi rencontré des difficultés liées à la différence entre texte et expression dans Power Automate, ainsi qu'au nettoyage de la chaîne de signature avant conversion. Tant que cette chaîne n'était pas correctement préparée, la condition de vérification pouvait échouer ou produire un fichier inutilisable.
 
-Une autre difficulté concernait l'utilisation de `JSONFormat.IncludeBinaryData`. Cette option devait être utilisée au bon endroit dans Power Apps. Elle n'a pas le même comportement selon le contexte d'utilisation. Il fallait donc l'utiliser dans une expression comportementale adaptée, afin que la signature soit bien envoyée avec les données binaires.
+Pour résoudre ces points, j'ai repris les tests étape par étape, contrôlé les valeurs reçues dans l'historique du flux et conservé une méthode simple pour la détection de signature vide.
 
-Lors de certains tests, le paramètre de signature arrivait à `null` dans Power Automate. Cela compliquait le diagnostic, car le flux ne pouvait pas traiter une signature absente. Il fallait alors vérifier si le problème venait de Power Apps, de l'appel du flux, du paramètre attendu ou de la manière dont l'expression était écrite.
+Enfin, la signature vide a été une difficulté particulière. Le contrôle de signature renvoyait quand même une image blanche. Il ne suffisait donc pas de vérifier que la signature existait techniquement. Il fallait aussi distinguer une image blanche d'un tracé réellement saisi. C'est ce point qui a conduit à la mise en place du seuil empirique autour de 7000 caractères.
 
-Power Automate a aussi présenté une difficulté liée à la différence entre texte et expression. Dans certains champs, une valeur peut être interprétée comme une chaîne de caractères simple alors qu'on attend une expression. Cette confusion peut produire des conditions fausses ou des traitements qui ne s'exécutent pas comme prévu.
-
-La condition vérifiant la signature pouvait également échouer si la chaîne n'était pas nettoyée correctement ou si elle était nulle. Une condition qui semble correcte peut donc être fausse simplement parce que la donnée reçue n'a pas exactement le format attendu. Cela m'a obligé à contrôler le contenu réel reçu par le flux au lieu de supposer que la signature était transmise correctement.
-
-Enfin, la signature vide a été une difficulté particulière. Le contrôle de signature renvoyait quand même une image blanche. Il ne suffisait donc pas de vérifier que la signature existait techniquement. Il fallait aussi distinguer une image blanche d'une vraie signature. C'est ce point qui a conduit à la mise en place du seuil empirique autour de 7000 caractères.
-
-### 2.6 Résultats obtenus
+### 2.7 Résultats obtenus
 
 Le premier résultat est une application Power Apps fonctionnelle pour le registre visiteurs. Elle permet de saisir les informations nécessaires et de réaliser une signature sur la tablette. L'interface reste pensée pour un usage simple, sans demander à l'utilisateur de manipuler directement SharePoint ou Power Automate.
 
-Les données saisies sont enregistrées dans une liste SharePoint. Cette liste joue le rôle de registre numérique. Elle contient les informations principales du passage : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage. La date est automatique, ce qui limite la saisie manuelle de cette information.
-
-Les heures sont saisies via des listes déroulantes. Ce choix permet d'obtenir un format plus homogène que si l'utilisateur écrivait librement l'heure. Les heures sont ensuite conservées au format texte `HH:MM`. Ce fonctionnement correspond au besoin connu de la mission.
+Les données saisies sont enregistrées dans une liste SharePoint. Cette liste joue le rôle de registre numérique. Elle contient les informations principales du passage : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage.
 
 La signature est correctement enregistrée en pièce jointe PNG sur l'élément SharePoint créé. C'était le point le plus délicat de la mission, car il fallait transformer une signature dessinée dans Power Apps en fichier exploitable dans SharePoint. Les tests ont permis d'obtenir un fichier `signature.png` valide.
 
 Le flux Power Automate est fonctionnel. Il crée l'élément SharePoint, traite la signature et ajoute la pièce jointe. L'historique d'exécution a permis de vérifier les étapes et de corriger les erreurs rencontrées pendant les tests. Ce résultat montre que l'automatisation répond au besoin technique prévu.
+ 
+Pour l'entreprise, la plus-value reste à présenter avec prudence. À ce stade, la solution apporte surtout une base exploitable pour centraliser les enregistrements visiteurs, réduire la dépendance au papier et préparer un suivi plus structuré, sans que ces gains aient encore été mesurés en conditions réelles.
 
-La solution est donc prête côté applicatif. Elle a été validée techniquement, mais elle n'est pas encore utilisée à l'accueil. La mise en service dépend encore de l'installation d'un support physique pour sécuriser la tablette. Cette limite doit rester clairement indiquée, car elle change la manière de présenter le résultat.
+La solution est donc prête côté applicatif. Elle a été validée techniquement, mais elle n'est pas encore utilisée à l'accueil. La mise en service dépend encore de l'installation d'un support physique pour sécuriser la tablette. Cette limite doit rester clairement indiquée.
 
 Je ne peux pas annoncer de gain de temps mesuré, de nombre de visiteurs testés ou d'amélioration prouvée de la traçabilité. Ces éléments ne sont pas validés. Je peux seulement affirmer que la solution prépare une transition vers un registre numérique et que les fonctions attendues côté application, stockage et signature sont opérationnelles.
 
-### 2.7 Limites et points restant à suivre
+### 2.8 Limites et points restant à suivre
 
-La limite principale est l'absence de mise en service réelle à l'accueil. Même si la solution est validée techniquement, elle n'est pas encore utilisée au quotidien. Le registre papier ne doit donc pas être présenté comme remplacé. La solution vise à préparer cette transition, mais celle-ci dépend encore d'un élément matériel.
+La limite principale est l'absence de mise en service réelle à l'accueil. Même si la solution est validée techniquement, elle n'est pas encore utilisée au quotidien. Le registre papier ne doit donc pas être présenté comme remplacé.
 
 Le support physique de la tablette reste à installer par le service maintenance. Ce support doit permettre de sécuriser la tablette à l'accueil et d'éviter le vol. Tant que ce point n'est pas réglé, l'utilisation réelle ne peut pas être considérée comme finalisée.
 
@@ -242,13 +228,13 @@ Le statut du registre papier devra également être confirmé lors de la version
 
 Enfin, les moyens financiers et la période exacte restent à compléter si ces informations sont nécessaires dans la version finale. Je connais la durée approximative de la mission, environ un mois, mais pas forcément la période calendaire exacte à citer. De la même manière, je ne dispose pas d'un budget validé à intégrer dans le rapport.
 
-### 2.8 Recul personnel sur la mission
+### 2.9 Recul personnel sur la mission
 
 Cette mission m'a permis de découvrir plus concrètement Power Apps et Power Automate. Avant de travailler sur ce registre visiteurs, je voyais surtout ces outils comme des moyens de créer rapidement des applications internes. Avec la mission, j'ai compris qu'il fallait aussi gérer les limites techniques, les formats de données et les erreurs entre les outils.
 
-J'ai appris que le plus difficile n'était pas forcément de créer les champs du formulaire. La partie la plus délicate a été la signature, car elle passait par plusieurs transformations : image dans Power Apps, conversion en JSON avec données binaires, transmission au flux, nettoyage de la Data URI, conversion en binaire et ajout dans SharePoint. Cette chaîne m'a montré qu'une donnée simple pour l'utilisateur peut demander plusieurs traitements techniques.
+J'ai appris que le plus difficile n'était pas forcément de créer les champs du formulaire. La partie la plus délicate a été la signature, car une action simple pour l'utilisateur demandait en réalité plusieurs traitements techniques avant d'arriver correctement dans SharePoint.
 
-L'historique d'exécution Power Automate m'a aussi beaucoup aidé. Il m'a appris à diagnostiquer une automatisation étape par étape. Au lieu de chercher au hasard, je pouvais vérifier ce que le flux recevait, ce qu'il transformait et à quel moment l'erreur apparaissait. Cette méthode est utile au-delà de cette mission, car elle s'applique à beaucoup de situations de diagnostic.
+L'historique d'exécution Power Automate m'a aussi beaucoup aidé. Il m'a appris à diagnostiquer une automatisation étape par étape. Au lieu de chercher au hasard, je pouvais vérifier ce que le flux recevait, ce qu'il transformait et à quel moment l'erreur apparaissait. Ça m'a aussi appris à chercher une erreur étape par étape au lieu de tester au hasard.
 
 La gestion de la signature vide m'a également marqué. Au départ, on pourrait penser qu'une signature vide ne renvoie rien. En réalité, le contrôle pouvait produire une image blanche. Il fallait donc vérifier le comportement réel de l'outil et adapter la solution. Le seuil empirique autour de 7000 caractères n'est pas parfait, mais il répond au problème observé de manière simple et contrôlable.
 
@@ -256,7 +242,7 @@ Cette mission m'a aussi rappelé qu'une solution technique validée n'est pas fo
 
 Sur le plan professionnel, j'ai travaillé avec une autonomie importante sur la partie opérationnelle. J'ai pu créer, tester, corriger et ajuster la solution, tout en gardant le tuteur comme point de validation. Cette manière de travailler m'a aidé à progresser, car elle m'a obligé à chercher par moi-même tout en sachant quand demander une validation.
 
-Enfin, cette mission correspond bien au niveau CI1. Elle n'est pas une transformation complète de l'accueil ni un déploiement finalisé. C'est une contribution concrète à un besoin interne, avec une solution fonctionnelle, des limites identifiées et une mise en service encore dépendante d'un élément matériel. Elle m'a surtout appris à relier un besoin utilisateur, une solution technique et une démarche de vérification.
+Enfin, cette mission correspond bien au niveau CI1. Elle n'est pas une transformation complète de l'accueil ni un déploiement finalisé. C'est une contribution concrète à un besoin interne, avec une solution fonctionnelle, des limites identifiées et une mise en service encore dépendante d'un élément matériel. Cette mission m'a surtout appris à partir d'un besoin concret, à construire une solution, puis à vérifier qu'elle fonctionne vraiment.
 
 ## 3. Sécurité opérationnelle AD / Microsoft 365
 

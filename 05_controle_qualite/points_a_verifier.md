@@ -173,6 +173,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Statut réel de mise en service : techniquement validé, pas encore utilisé à l'accueil.
 - Suppression totale ou partielle du registre papier : non confirmée, ne pas annoncer comme réalisée.
 - Fiabilité finale du flow `FLOW_CreateVisitorWithSignature` : flow fonctionnel et signature PNG correctement enregistrée.
+- Données budgétaires exploitables pour cette mission : non intégrées à ce stade ; confirmer seulement si l'école ou l'entreprise souhaite faire apparaître un volet financier.
 - Absence de données visiteurs réelles dans le rapport : `[À vérifier]`.
 
 ### Sécurité opérationnelle AD / Microsoft 365
