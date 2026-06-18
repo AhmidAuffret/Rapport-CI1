@@ -94,6 +94,7 @@ Informations nécessaires pour rédiger correctement les missions :
 Informations utiles pour améliorer le rapport mais non nécessaires au premier brouillon :
 
 - titre définitif du rapport ;
+- validation finale du fil conducteur et du plan détaillé ;
 - promotion exacte ;
 - logos autorisés ;
 - liste définitive des personnes à remercier ;
