@@ -4,6 +4,31 @@ Statut : questionnaire prioritaire pour compléter le contexte avant rédaction.
 
 Chaque réponse doit être intégrée dans `00_contexte_source/12_reponses_utilisateur_a_integrer.md`, puis reportée dans les fichiers de contexte concernés. Si une réponse manque, conserver `[À compléter]` ou `[À vérifier]`.
 
+## Réponses intégrées le 2026-06-18
+
+Les réponses utilisateur suivantes ont été intégrées dans les fichiers de contexte :
+
+- activité principale de Leroux : entreprise industrielle agroalimentaire spécialisée dans la transformation de la chicorée ;
+- secteur : industrie agroalimentaire ;
+- sites principaux liés à l'activité : Orchies et Vieille-Église ;
+- effectif : environ 150 salariés selon l'ordre de grandeur interne connu ;
+- chiffres financiers et volumes de production : à sourcer publiquement avant utilisation ;
+- nom du service : "service informatique", sans nom spécifique ;
+- composition du service : responsable informatique et alternant administrateur systèmes et réseaux ;
+- changement de tuteur : Loïc Humman au début de l'année, puis Thierry Devigne après son départ ;
+- autonomie de l'étudiant : grande autonomie opérationnelle, avec validation finale des décisions structurantes ou financières par le tuteur ou l'entreprise ;
+- interactions : échanges réguliers avec les utilisateurs et déplacements auprès d'eux ;
+- mission Intune / Android Enterprise : environ deux mois, deux usages de tablettes, rôle opérationnel de bout en bout ;
+- mission registre visiteurs : environ un mois, demande initiale de Loïc Humman, solution techniquement validée mais pas encore utilisée à l'accueil ;
+- mission sécurité AD / Microsoft 365 : mission continue de diagnostic liée aux incidents et demandes quotidiennes, pas un projet unique ;
+- confidentialité : règle de prudence et anonymisation systématique des informations sensibles ;
+- illustrations : captures et schémas internes globalement autorisés s'ils sont anonymisés ;
+- remerciements : personnes à remercier identifiées, avec `Quentin ****` à conserver provisoirement.
+
+## Questions restant à poser ou vérifier
+
+Les questions ci-dessous restent utiles lorsqu'elles portent sur des informations non encore clairement données : sources publiques, chiffres financiers, volumes de production, périodes exactes, résultats mesurables, exemples anonymisés, outils précis, autorisation finale des captures, mention CONFIDENTIEL, orthographe complète de `Quentin ****`, raisons précises des remerciements et détails non sensibles des missions.
+
 ## Questions prioritaires avant rédaction de la Partie I
 
 ### A. Présentation de Leroux
@@ -110,15 +135,15 @@ Chaque réponse doit être intégrée dans `00_contexte_source/12_reponses_utili
 
 Nombre de questions de priorité haute : 42.
 
-Questions les plus urgentes :
+Questions les plus urgentes après intégration des réponses du 2026-06-18 :
 
-1. Quelle formulation officielle utiliser pour présenter l'activité principale de Leroux ?
-2. Quels chiffres clés publics sont autorisés dans le rapport ?
-3. Quel est le nom exact du service informatique ?
-4. Combien de personnes composent le service informatique ?
-5. Comment décrire précisément ton rôle d'alternant dans l'équipe ?
-6. Quel est l'état réel de validation ou de déploiement de la mission Intune ?
-7. Quel est l'état actuel du registre visiteurs Power Apps / SharePoint / Power Automate ?
-8. Quelles conclusions réelles peut-on tirer de la mission sécurité AD / Microsoft 365 ?
-9. Quelles règles de confidentialité l'entreprise impose-t-elle ?
-10. Quelles captures, schémas ou informations internes sont autorisés ?
+1. Quelles sources publiques utiliser pour l'histoire, l'activité, les produits, les sites et les chiffres clés de Leroux ?
+2. Peut-on utiliser l'effectif approximatif d'environ 150 salariés dans la version finale, ou faut-il le sourcer publiquement ?
+3. Quels chiffres financiers ou volumes de production peuvent être utilisés avec source publique ?
+4. Quelles périodes exactes ou approximatives faut-il retenir pour chaque mission principale ?
+5. Quels tests Intune ont été réalisés et quels résultats précis peuvent être annoncés ?
+6. Quel volume de tablettes peut être cité, si cette information est diffusable ?
+7. Le registre papier est-il maintenu jusqu'à l'installation du support physique de la tablette ?
+8. Quels exemples anonymisés peuvent illustrer la mission sécurité AD / Microsoft 365 ?
+9. La mention CONFIDENTIEL est-elle nécessaire sur le rapport ?
+10. Quelle est l'orthographe complète de `Quentin ****`, et faut-il la conserver anonymisée dans la version finale ?

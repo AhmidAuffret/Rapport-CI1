@@ -22,11 +22,12 @@ Statut général : le plan est cohérent pour commencer une première rédaction
 ### Incohérences ou fragilités détectées
 
 - Le critère IMT sur la présentation des métiers était présent mais insuffisamment explicite dans la section `3.3 Service informatique` du plan : clarification ajoutée dans `01_plan/plan_rapport.md`.
-- Les informations nécessaires à la Partie I restent trop incomplètes pour une rédaction définitive : activité exacte, chiffres clés, sources publiques, histoire, culture, valeurs, organisation et description du service.
-- Les dates, périodes, résultats mesurables et validations de production des missions principales restent à compléter ou vérifier.
+- Les informations nécessaires à la Partie I ont été partiellement complétées : activité exacte, secteur, sites principaux liés à l'activité, effectif approximatif, service informatique, composition du service, changement de tuteur et autonomie de l'étudiant.
+- Les informations nécessaires à une rédaction définitive restent incomplètes sur les sources publiques, l'histoire, la culture, les valeurs, les chiffres financiers, les volumes de production, le site exact du service informatique et certains détails d'organisation.
+- Les dates exactes, résultats mesurables et validations de production des missions principales restent à compléter ou vérifier.
 - Les moyens humains, financiers et documentaires doivent encore être précisés ; ne pas inventer de budget, d’équipe ou de décision d’achat.
 - Les illustrations sont prévues, mais aucune ne doit être réalisée ou intégrée avant validation du niveau de détail autorisé et de l’anonymisation.
-- Le niveau de confidentialité demandé par l’entreprise, la mention CONFIDENTIEL et les éléments diffusables restent à vérifier avant toute version finale.
+- Une règle de prudence a été établie pour la confidentialité : anonymisation systématique des informations sensibles. La mention CONFIDENTIEL et la liste finale des éléments diffusables restent à vérifier avant toute version finale.
 
 ### Décision avant rédaction
 
@@ -36,14 +37,14 @@ Statut général : le plan est cohérent pour commencer une première rédaction
 
 ## Points prioritaires avant rédaction
 
-- Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
-- Noms et postes des personnes à remercier : `[À compléter]`.
-- Description exacte de l’équipe informatique : `[À compléter]`.
-- Dates ou périodes des missions : `[À compléter]`.
+- Données officielles Leroux utilisables dans le rapport : activité, secteur, sites et effectif approximatif intégrés ; sources publiques encore à vérifier.
+- Noms et postes des personnes à remercier : intégrés ; orthographe complète de `Quentin ****` et autorisation finale `[À vérifier]`.
+- Description exacte de l’équipe informatique : service composé de deux personnes, responsable informatique et alternant administrateur systèmes et réseaux.
+- Dates ou périodes des missions : durée approximative Intune environ deux mois, registre visiteurs environ un mois ; périodes calendaires exactes `[À compléter]`.
 - Résultats mesurables disponibles : `[À vérifier]`.
 - Moyens humains, financiers et documentaires mobilisés pour chaque mission : `[À compléter]`.
-- Illustrations autorisées par l’entreprise : `[À vérifier]`.
-- Niveau de confidentialité demandé par l’entreprise : `[À vérifier]`.
+- Illustrations autorisées par l’entreprise : captures et schémas globalement autorisés si anonymisés ; liste finale `[À vérifier]`.
+- Niveau de confidentialité demandé par l’entreprise : règle de prudence intégrée ; mention CONFIDENTIEL `[À vérifier]`.
 - Décision finale sur Docker `prd-dkr01` : `[À valider]`.
 
 ## Informations bloquantes ou semi-bloquantes avant rédaction
@@ -52,41 +53,41 @@ Statut général : le plan est cohérent pour commencer une première rédaction
 
 Informations nécessaires pour rédiger correctement la présentation de l'entreprise et du service :
 
-- formulation officielle de l'activité principale de Leroux ;
+- formulation officielle de l'activité principale de Leroux : intégrée comme entreprise industrielle agroalimentaire spécialisée dans la transformation de la chicorée ;
 - sources publiques validées pour l'histoire, l'activité, l'implantation, la filière et les produits ;
-- chiffres clés publics utilisables ou décision explicite de ne pas en utiliser ;
-- sites Leroux pouvant être cités dans le rapport ;
-- description exacte du service informatique ;
-- nom exact du service ;
-- taille de l'équipe informatique ;
-- rôles ou métiers principaux présents dans l'équipe ;
-- rattachement ou positionnement du service dans l'organisation ;
-- interactions principales entre le service informatique et les autres services ;
-- positionnement réel de l'étudiant dans l'équipe ;
-- nom, fonction et autorisation de citation du maître d'apprentissage ;
-- niveau de confidentialité global du rapport ;
-- autorisation ou non d'utiliser des noms de personnes, sites, services, schémas ou captures.
+- chiffres clés publics utilisables ou décision explicite de ne pas en utiliser : effectif approximatif intégré ; chiffre d'affaires et volumes à sourcer ;
+- sites Leroux pouvant être cités dans le rapport : Orchies et Vieille-Église intégrés ;
+- description exacte du service informatique : intégrée ;
+- nom exact du service : "service informatique" ;
+- taille de l'équipe informatique : deux personnes ;
+- rôles ou métiers principaux présents dans l'équipe : responsable informatique et alternant administrateur systèmes et réseaux ;
+- rattachement ou positionnement du service dans l'organisation : responsable informatique rattaché au DAF Quentin **** `[orthographe / anonymisation à confirmer]` ;
+- interactions principales entre le service informatique et les autres services : échanges réguliers avec les utilisateurs intégrés ; services précis `[À compléter si nécessaire]` ;
+- positionnement réel de l'étudiant dans l'équipe : intégré avec grande autonomie opérationnelle et validation finale par le tuteur ou l'entreprise ;
+- nom, fonction et autorisation de citation du maître d'apprentissage : Loïc Humman puis Thierry Devigne intégrés ; autorisation finale de citation `[À vérifier]` ;
+- niveau de confidentialité global du rapport : règle de prudence intégrée ; mention CONFIDENTIEL `[À vérifier]` ;
+- autorisation ou non d'utiliser des noms de personnes, sites, services, schémas ou captures : partiellement intégrée ; validation finale `[À vérifier]`.
 
 ### Bloquant avant Partie II
 
 Informations nécessaires pour rédiger correctement les missions :
 
-- période exacte ou approximative de chaque mission principale ;
-- objectif réel de la mission Microsoft Intune / Android Enterprise ;
-- rôle exact de l'étudiant sur Intune ;
-- actions Intune réellement réalisées ;
+- période exacte ou approximative de chaque mission principale : durées approximatives intégrées pour Intune et registre visiteurs ; période de la mission sécurité et dates calendaires `[À compléter]` ;
+- objectif réel de la mission Microsoft Intune / Android Enterprise : administration homogène et sécurisée des tablettes, avec usages accueil et production ;
+- rôle exact de l'étudiant sur Intune : rôle opérationnel de bout en bout intégré ;
+- actions Intune réellement réalisées : compréhension du besoin, configuration, tests, enrôlement, ajustements, échanges et documentation si nécessaire intégrés ;
 - statut réel de validation ou de déploiement des tablettes ;
 - tests Intune réalisés et résultats confirmés ;
-- objectif réel du registre visiteurs Power Apps / SharePoint / Power Automate ;
-- état actuel du registre visiteurs : prototype, test, production ou utilisation partielle ;
+- objectif réel du registre visiteurs Power Apps / SharePoint / Power Automate : remplacement du registre papier par une solution numérique sur tablette ;
+- état actuel du registre visiteurs : solution techniquement validée mais pas encore utilisée à l'accueil ;
 - statut réel du registre papier : supprimé, maintenu ou remplacé partiellement ;
-- solutions Power Apps / Power Automate réellement validées ;
-- types d'incidents traités dans la mission sécurité AD / Microsoft 365 ;
+- solutions Power Apps / Power Automate réellement validées : application fonctionnelle, SharePoint, flow fonctionnel et signature PNG intégrés ;
+- types d'incidents traités dans la mission sécurité AD / Microsoft 365 : verrouillages AD, connexions suspectes, authentification, journaux, postes, Microsoft 365 / Entra, Wi-Fi, NPS et mots de passe enregistrés intégrés ;
 - rôle exact de l'étudiant dans les analyses de sécurité ;
 - outils précis utilisés pour les diagnostics ;
 - causes réellement identifiées ou hypothèses encore non confirmées ;
 - exemples anonymisés utilisables ;
-- limites de confidentialité propres aux missions techniques.
+- limites de confidentialité propres aux missions techniques : règle d'anonymisation systématique intégrée ; exemples précis `[À vérifier]`.
 
 ### Non bloquant mais à traiter avant version finale
 
@@ -109,10 +110,10 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ## Contexte entreprise
 
-- Données officielles Leroux utilisables dans le rapport : `[À vérifier]`.
+- Données officielles Leroux utilisables dans le rapport : activité, secteur, sites principaux et effectif approximatif intégrés ; sources publiques `[À vérifier]`.
 - Présentation officielle de Leroux validée : `[À vérifier]`.
-- Secteur et activité exacte : `[À vérifier]`.
-- Chiffres clés publics sourcés : `[À vérifier]`.
+- Secteur et activité exacte : industrie agroalimentaire, transformation de la chicorée.
+- Chiffres clés publics sourcés : effectif approximatif interne environ 150 salariés ; chiffre d'affaires et volumes `[À vérifier avec sources publiques]`.
 - Histoire, culture et valeurs : `[À vérifier]`.
 - Organisation, processus ou organigramme utilisables : `[À vérifier]`.
 - Clients, partenaires, concurrents ou environnement économique à mentionner : `[À vérifier]`.
@@ -120,21 +121,21 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ## Remerciements
 
-- Noms et postes des personnes à remercier : `[À compléter]`.
+- Noms et postes des personnes à remercier : Loïc Humman, Thierry Devigne, Quentin ****, Éloïse Six, Guilhain Lesaffre et collaborateurs du quotidien intégrés.
 - Raison précise du remerciement pour chaque personne : `[À compléter]`.
 - Validation de l’orthographe des noms et fonctions : `[À vérifier]`.
 - Accord pour citer les personnes nommément si nécessaire : `[À vérifier]`.
 
 ## Service informatique et rôle de l'étudiant
 
-- Description exacte de l’équipe informatique : `[À compléter]`.
-- Taille et organisation de l'équipe : `[À compléter]`.
-- Rattachement ou positionnement du service : `[À compléter]`.
+- Description exacte de l’équipe informatique : service informatique composé du responsable informatique et de l'alternant administrateur systèmes et réseaux.
+- Taille et organisation de l'équipe : deux personnes, organisation souple selon les besoins, priorités, projets et disponibilités.
+- Rattachement ou positionnement du service : responsable informatique rattaché au DAF Quentin **** `[orthographe / anonymisation à confirmer]`.
 - Métiers du service informatique et métiers internes en interaction avec l'étudiant : `[À compléter]`.
-- Positionnement de l'étudiant dans l'équipe : `[À compléter]`.
-- Nom et rôle du maître d'apprentissage : `[À vérifier]`.
-- Interactions avec les autres métiers ou services : `[À compléter]`.
-- Niveau d’autonomie réel de l’étudiant selon les missions : `[À compléter]`.
+- Positionnement de l'étudiant dans l'équipe : alternant administrateur systèmes et réseaux avec grande autonomie opérationnelle.
+- Nom et rôle du maître d'apprentissage : Loïc Humman au début de l'année, puis Thierry Devigne, responsables informatiques et tuteurs successifs.
+- Interactions avec les autres métiers ou services : échanges réguliers avec les utilisateurs ; services précis `[À compléter si nécessaire]`.
+- Niveau d’autonomie réel de l’étudiant selon les missions : autonomie opérationnelle importante, décisions finales structurantes ou financières validées par le tuteur ou l'entreprise.
 - Formulation évitant de présenter l'étudiant comme responsable unique du SI : `[À vérifier]`.
 
 ## Missions principales
@@ -143,8 +144,8 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
   - Microsoft Intune / Android Enterprise : `[À vérifier]` ;
   - registre visiteurs Power Apps / SharePoint / Power Automate : `[À vérifier]` ;
   - sécurité opérationnelle AD / Microsoft 365 : `[À vérifier]`.
-- Dates ou périodes de chaque mission : `[À compléter]`.
-- Étapes réellement réalisées par l'étudiant : `[À compléter]`.
+- Dates ou périodes de chaque mission : durée approximative Intune environ deux mois et registre visiteurs environ un mois ; période sécurité et dates calendaires `[À compléter]`.
+- Étapes réellement réalisées par l'étudiant : complétées pour Intune et registre visiteurs ; sécurité à détailler par exemples anonymisés.
 - Résultats mesurables disponibles : `[À vérifier]`.
 - Résultats obtenus, attendus ou encore à vérifier clairement distingués : `[À vérifier]`.
 - Moyens humains, matériels, techniques et éventuellement financiers identifiés : `[À compléter]`.
@@ -153,7 +154,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ### Microsoft Intune / Android Enterprise
 
-- Tests réalisés sur les tablettes : `[À compléter]`.
+- Tests réalisés sur les tablettes : tests et ajustements intégrés ; résultats précis `[À compléter]`.
 - Statut exact de validation de la configuration : `[À vérifier]`.
 - Volume de tablettes concernées si diffusable : `[À vérifier]`.
 - Applications réellement déployées ou seulement prévues : `[À vérifier]`.
@@ -161,11 +162,11 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ### Registre visiteurs Power Apps / SharePoint / Power Automate
 
-- Tablette utilisée à l’entrée : `[À vérifier]`.
-- Service ou utilisateurs concernés : `[À compléter]`.
-- Statut réel de mise en service : `[À vérifier]`.
-- Suppression totale ou partielle du registre papier : `[À vérifier]`.
-- Fiabilité finale du flow `FLOW_CreateVisitorWithSignature` : `[À vérifier]`.
+- Tablette utilisée à l’entrée : tablette d'accueil destinée au registre visiteurs ; modèle exact `[À vérifier]`.
+- Service ou utilisateurs concernés : accueil ; service précis `[À compléter si nécessaire]`.
+- Statut réel de mise en service : techniquement validé, pas encore utilisé à l'accueil.
+- Suppression totale ou partielle du registre papier : non confirmée, ne pas annoncer comme réalisée.
+- Fiabilité finale du flow `FLOW_CreateVisitorWithSignature` : flow fonctionnel et signature PNG correctement enregistrée.
 - Absence de données visiteurs réelles dans le rapport : `[À vérifier]`.
 
 ### Sécurité opérationnelle AD / Microsoft 365
@@ -205,8 +206,8 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ## Illustrations et annexes
 
-- Illustrations autorisées par l’entreprise : `[À vérifier]`.
-- Captures d’écran autorisées et anonymisées : `[À vérifier]`.
+- Illustrations autorisées par l’entreprise : globalement autorisées si anonymisées ; sélection finale `[À vérifier]`.
+- Captures d’écran autorisées et anonymisées : globalement autorisées si anonymisées ; captures exactes `[À vérifier]`.
 - Schéma simplifié du service informatique validé : `[À vérifier]`.
 - Architecture Intune / Android Enterprise validée : `[À vérifier]`.
 - Architecture Power Apps / SharePoint / Power Automate validée : `[À vérifier]`.
@@ -217,15 +218,15 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ## Confidentialité
 
-- Niveau de confidentialité demandé par l'entreprise : `[À vérifier]`.
+- Niveau de confidentialité demandé par l'entreprise : aucune directive spécifique donnée, règle de prudence appliquée.
 - Mention CONFIDENTIEL nécessaire ou non : `[À vérifier]`.
 - Niveau de confidentialité de chaque mission : `[À vérifier]`.
-- Noms de personnes validés ou remplacés par `[REDACTED]` : `[À vérifier]`.
-- Noms de comptes et utilisateurs anonymisés : `[À vérifier]`.
-- Adresses IP internes supprimées ou remplacées par `[REDACTED]` : `[À vérifier]`.
-- Noms de serveurs internes supprimés ou validés : `[À vérifier]`.
-- Journaux bruts exclus ou anonymisés : `[À vérifier]`.
-- Données visiteurs réelles exclues du rapport : `[À vérifier]`.
+- Noms de personnes validés ou remplacés par `[REDACTED]` : personnes à remercier intégrées ; autorisation finale et `Quentin ****` `[À vérifier]`.
+- Noms de comptes et utilisateurs anonymisés : à anonymiser systématiquement.
+- Adresses IP internes supprimées ou remplacées par `[REDACTED]` : à anonymiser systématiquement.
+- Noms de serveurs internes supprimés ou validés : à anonymiser systématiquement sauf validation explicite.
+- Journaux bruts exclus ou anonymisés : à anonymiser systématiquement ; éviter les journaux bruts.
+- Données visiteurs réelles exclues du rapport : à exclure ou anonymiser systématiquement.
 - Documents internes non diffusables exclus ou anonymisés : `[À vérifier]`.
 
 ## Conformité IMT
