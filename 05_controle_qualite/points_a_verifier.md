@@ -183,6 +183,8 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Chronologie des analyses : `[À compléter]`.
 - Causes réellement identifiées ou hypothèses non confirmées : `[À vérifier]`.
 - Exemples anonymisés disponibles : `[À vérifier]`.
+- Mention explicite de Microsoft Entra dans la rédaction finale : `[À vérifier]`.
+- Niveau de détail autorisé sur l’authentification réseau, le Wi-Fi et les journaux associés : `[À vérifier]`.
 - Aucun journal brut sensible inclus : `[À vérifier]`.
 
 ## Mission secondaire Docker

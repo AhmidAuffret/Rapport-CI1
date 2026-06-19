@@ -234,7 +234,7 @@ Cette mission m'a permis de découvrir plus concrètement Power Apps et Power Au
 
 J'ai appris que le plus difficile n'était pas forcément de créer les champs du formulaire. La partie la plus délicate a été la signature, car une action simple pour l'utilisateur demandait en réalité plusieurs traitements techniques avant d'arriver correctement dans SharePoint.
 
-L'historique d'exécution Power Automate m'a aussi beaucoup aidé. Il m'a appris à diagnostiquer une automatisation étape par étape. Au lieu de chercher au hasard, je pouvais vérifier ce que le flux recevait, ce qu'il transformait et à quel moment l'erreur apparaissait. Ça m'a aussi appris à chercher une erreur étape par étape au lieu de tester au hasard.
+L'historique d'exécution Power Automate m'a aussi beaucoup aidé. Il m'a appris à diagnostiquer une automatisation étape par étape. Au lieu de chercher au hasard, je pouvais vérifier ce que le flux recevait, ce qu'il transformait et à quel moment l'erreur apparaissait. Cette démarche m'a appris à avancer par vérifications successives plutôt que par essais désordonnés.
 
 La gestion de la signature vide m'a également marqué. Au départ, on pourrait penser qu'une signature vide ne renvoie rien. En réalité, le contrôle pouvait produire une image blanche. Il fallait donc vérifier le comportement réel de l'outil et adapter la solution. Le seuil empirique autour de 7000 caractères n'est pas parfait, mais il répond au problème observé de manière simple et contrôlable.
 
@@ -246,4 +246,114 @@ Enfin, cette mission correspond bien au niveau CI1. Elle n'est pas une transform
 
 ## 3. Sécurité opérationnelle AD / Microsoft 365
 
-[À rédiger dans une prochaine étape]
+### 3.1 Contexte et besoin initial
+
+La troisième mission principale présentée dans ce rapport concerne la sécurité opérationnelle autour d'Active Directory et de Microsoft 365. Contrairement aux deux premières missions, il ne s'agit pas d'un sujet avec un début, une phase de réalisation clairement isolée, puis une fin. Cette mission correspond plutôt à une activité continue du service informatique. Elle revient au fil des incidents, des demandes utilisateurs et des vérifications quotidiennes liées aux comptes, aux connexions et aux postes de travail.
+
+Dans le fonctionnement courant du service, certains problèmes peuvent paraître simples au premier abord. Un utilisateur signale par exemple qu'il ne peut plus se connecter, qu'un mot de passe semble ne plus fonctionner, que son compte se verrouille sans raison apparente ou qu'une connexion lui paraît inhabituelle. Pourtant, ce type de symptôme peut avoir plusieurs causes. Il peut s'agir d'une mauvaise saisie, d'un ancien mot de passe encore enregistré sur un poste ou un équipement, d'un problème de synchronisation, d'une authentification réseau liée au Wi-Fi, ou d'un comportement qui demande au contraire une vérification plus prudente.
+
+Dans ce contexte, mon rôle n'était pas de mener un audit complet de sécurité ni de prendre seul des décisions structurantes. J'ai surtout participé à une mission continue de diagnostic. Elle m'a amené à analyser des incidents liés aux verrouillages de comptes, aux échecs d'authentification, aux connexions suspectes, aux vérifications Microsoft 365 et aux journaux Windows. Cette mission s'inscrit directement dans le fil conducteur du rapport, car elle touche à la fois à la continuité de service, à la sécurité et à la méthode de travail.
+
+Elle répond aussi à un besoin très concret pour l'entreprise. Lorsqu'un compte reste bloqué ou qu'une authentification échoue, le problème n'est pas seulement technique. Il peut empêcher un utilisateur de travailler normalement, perturber un accès à un service ou faire perdre du temps au support. Il faut donc intervenir assez rapidement, mais sans conclure trop vite. C'est ce mélange de réactivité et de prudence qui revient le plus dans cette mission.
+
+### 3.2 Objectifs de la mission
+
+Le premier objectif était de comprendre l'origine probable d'un incident avant de proposer une correction. Dans cette mission, un symptôme ne suffit pas. Le fait qu'un compte soit verrouillé ne dit pas, à lui seul, pourquoi il l'est. Il fallait donc chercher des éléments de contexte, vérifier les journaux utiles et comparer plusieurs sources d'information.
+
+Le deuxième objectif était de contribuer à limiter l'impact des incidents sur les utilisateurs. Lorsqu'un problème d'authentification revient plusieurs fois, il ne suffit pas de débloquer le compte ou de réinitialiser un mot de passe. Il faut aussi essayer de comprendre si le problème vient du poste, d'un mot de passe enregistré, d'un équipement, d'un accès Wi-Fi ou d'un autre comportement technique encore actif.
+
+Le troisième objectif concernait la méthode. Cette mission m'a appris à avancer par hypothèses et recoupement d'informations. Je devais distinguer ce qui relevait du symptôme observé, de la piste probable, puis éventuellement de la cause confirmée. Cette distinction est importante dans un rapport comme dans le travail quotidien, car elle évite d'écrire ou de dire qu'un problème est résolu définitivement alors que les vérifications restent incomplètes.
+
+Enfin, un autre objectif était de mieux comprendre les liens entre Active Directory, Microsoft 365, les postes utilisateurs et les journaux de sécurité. Même lorsqu'un incident commence par une plainte très simple, comme "je n'arrive plus à me connecter", il peut demander de regarder plusieurs couches du système d'information avant de formuler une explication crédible.
+
+### 3.3 Moyens et outils utilisés
+
+Le premier outil utilisé dans cette mission était Active Directory, en particulier pour vérifier l'état d'un compte, observer les verrouillages et contrôler certains éléments liés à l'authentification. La console Utilisateurs et ordinateurs Active Directory servait de point d'entrée pour confirmer qu'un compte était bien concerné par le problème signalé.
+
+Selon les cas, les vérifications pouvaient aussi concerner Microsoft 365 et, lorsque l'incident touchait plus directement à l'identité ou aux connexions, Microsoft Entra. L'objectif n'était pas de faire une analyse exhaustive de l'environnement cloud, mais de vérifier si un comportement observé côté utilisateur pouvait aussi apparaître dans les contrôles liés à ces outils.
+
+Les journaux d'événements Windows ont joué un rôle central. Je ne les cite pas comme une liste technique à apprendre, mais comme des sources d'information qui permettent d'orienter le diagnostic. Certains événements de sécurité permettaient par exemple de confirmer un verrouillage de compte ou un échec d'authentification. Dans certains cas, un code d'état pouvait aussi indiquer qu'un compte était déjà verrouillé plutôt qu'en simple échec de saisie. Ces éléments orientaient l'analyse, mais ils ne suffisaient pas à eux seuls à confirmer l'origine exacte du problème sans recoupement avec le poste utilisateur, le contexte et les autres journaux.
+
+Lorsque le problème semblait lié à une authentification réseau, notamment sur le Wi-Fi, les journaux associés à cette authentification pouvaient aussi compléter l'analyse. Là encore, le but n'était pas de transformer la mission en documentation réseau, mais de vérifier si le refus venait réellement de ce niveau ou s'il fallait continuer les vérifications ailleurs.
+
+Le poste utilisateur concerné constituait également un moyen d'analyse important. Une partie du travail consistait à vérifier le contexte réel d'utilisation : session ouverte ou non, présence éventuelle d'informations d'identification enregistrées, comportement d'un logiciel, ou répétition automatique d'une tentative de connexion avec un ancien mot de passe.
+
+À cela s'ajoutaient les échanges avec l'utilisateur et la validation avec le tuteur. Les informations données par l'utilisateur permettaient souvent de mieux situer le moment du problème, le périphérique utilisé ou le changement récent qui pouvait expliquer l'incident. Le tuteur, de son côté, gardait la validation des actions importantes, notamment lorsqu'une correction dépassait la simple vérification locale.
+
+Les moyens humains et documentaires restaient donc essentiels dans cette mission. Il ne s'agissait pas seulement de lire des journaux. Il fallait aussi relier ce qui était visible dans les outils avec ce qui se passait réellement pour l'utilisateur. À mon niveau, cette mission mobilisait surtout des ressources techniques, humaines et documentaires ; aucun moyen financier spécifique n'a été identifié.
+
+### 3.4 Contraintes de la mission
+
+La première contrainte était la confidentialité. Cette mission porte sur des comptes, des authentifications, des journaux et parfois des comportements inhabituels. Je ne peux donc pas intégrer dans le rapport de noms de comptes, de noms de postes, d'adresses IP internes, de noms de serveurs ou de journaux bruts. Le texte doit rester anonymisé et centré sur la méthode.
+
+La deuxième contrainte venait de la complexité d'interprétation. Un même symptôme peut avoir plusieurs causes possibles, et plusieurs journaux peuvent montrer des éléments différents sans donner immédiatement une réponse unique. Il fallait donc rester prudent, car un verrouillage de compte ou un échec de connexion ne suffit pas à désigner un responsable, ni à confirmer une cause sans recoupement.
+
+Une autre difficulté est liée au caractère parfois intermittent des incidents. Certains problèmes ne se reproduisent pas au moment où l'on commence l'analyse. Dans ce cas, il faut s'appuyer sur les traces disponibles, sur le contexte donné par l'utilisateur et sur des vérifications indirectes. Cela demande plus de prudence qu'un incident facilement reproductible.
+
+La réactivité constituait aussi une contrainte importante. Lorsqu'un utilisateur ne peut plus se connecter, il faut essayer d'avancer rapidement. Mais cette rapidité ne doit pas conduire à faire une modification trop hâtive. Une action mal comprise peut masquer la cause réelle ou déplacer le problème sans le résoudre.
+
+Enfin, mon rôle d'alternant imposait une limite claire. Je pouvais participer à l'analyse, proposer des pistes et appliquer certaines vérifications, mais les actions importantes restaient validées par le tuteur ou par l'entreprise. Cette contrainte n'était pas un frein. Au contraire, elle m'a appris à structurer mes constats avant de proposer une conclusion.
+
+### 3.5 Démarche suivie
+
+La démarche suivie dans cette mission était assez stable, même si chaque incident gardait ses particularités. Je commençais d'abord par comprendre le symptôme signalé. Il fallait préciser si le problème concernait un verrouillage de compte, un refus de mot de passe, une connexion inhabituelle, un accès Wi-Fi ou un comportement observé dans Microsoft 365.
+
+Ensuite, je récupérais le contexte utile auprès de l'utilisateur ou à partir des informations déjà disponibles. L'heure approximative du problème, le poste utilisé, le changement récent de mot de passe, la présence d'un autre appareil ou d'une connexion automatique pouvaient déjà orienter le diagnostic. Cette étape était importante, car elle évitait de chercher dans les journaux sans point de départ.
+
+Après cela, je vérifiais les informations les plus immédiates. Côté Active Directory, cela pouvait consister à confirmer qu'un compte était verrouillé ou non. Côté poste utilisateur, il fallait parfois observer si une session restait ouverte, si un logiciel continuait à tenter une connexion, ou si des informations d'identification anciennes semblaient encore utilisées.
+
+La lecture des journaux venait ensuite appuyer ou contredire les premières hypothèses. Dans un cas de verrouillage de compte, certains événements de sécurité permettaient par exemple de confirmer qu'un verrouillage avait bien eu lieu ou qu'une tentative d'authentification échouait encore en arrière-plan. Si l'analyse concernait le Wi-Fi ou l'authentification réseau, il fallait compléter avec les journaux adaptés pour éviter d'attribuer trop vite le problème au seul compte utilisateur.
+
+À partir de là, la méthode consistait surtout à recouper. Un cas typique pouvait être celui d'un compte qui se verrouille à nouveau peu après avoir été débloqué. Dans une situation comme celle-ci, plusieurs explications restent possibles : un ancien mot de passe enregistré sur un poste, un appareil mobile qui essaye encore de se connecter, une authentification réseau répétée, ou un logiciel qui conserve une ancienne information. Le travail ne consistait donc pas à choisir la première cause plausible, mais à vérifier les hypothèses une par une. Dans ce genre de cas, il pouvait par exemple falloir contrôler le poste, supprimer une information d'identification enregistrée, puis vérifier si le verrouillage réapparaissait ou non.
+
+Lorsque les vérifications faisaient ressortir une cause probable, une correction pouvait être proposée ou appliquée sous validation. Cela pouvait passer par la suppression d'un mot de passe enregistré, un contrôle du poste, une vérification complémentaire côté Microsoft 365 ou Microsoft Entra, ou une action simple sur le compte lorsque cela était justifié. Même dans ce cas, le suivi restait important, car une correction n'est réellement crédible que si le problème ne réapparaît pas immédiatement.
+
+Enfin, lorsque c'était utile, une trace était conservée dans le cadre du suivi interne. Là encore, l'idée n'était pas de constituer un journal complet dans le rapport, mais de garder une méthode de travail exploitable pour le service informatique.
+
+### 3.6 Difficultés rencontrées
+
+La première difficulté a été le volume d'information à trier. Les journaux Windows donnent beaucoup d'éléments, mais tous ne sont pas utiles au même moment. Au début, il peut être tentant de tout lire, alors qu'il faut surtout apprendre à repérer les événements qui orientent réellement le diagnostic.
+
+La deuxième difficulté venait de la corrélation entre plusieurs sources. Un incident pouvait demander de regarder à la fois le contrôleur de domaine, le poste utilisateur, un contexte Microsoft 365 et, dans certains cas, l'authentification réseau. Le plus compliqué n'était donc pas seulement de trouver une ligne dans un journal, mais de comprendre le lien entre plusieurs observations.
+
+J'ai aussi rencontré une difficulté d'interprétation. Un même symptôme peut donner l'impression d'une cause évidente, alors qu'il reste ambigu. Par exemple, un verrouillage de compte peut faire penser à une simple erreur de mot de passe, mais les vérifications peuvent ensuite montrer qu'un ancien identifiant est encore utilisé automatiquement ailleurs. À l'inverse, une connexion inhabituelle ne doit pas être présentée trop vite comme un comportement malveillant tant que les éléments restent incomplets.
+
+Les échanges avec l'utilisateur pouvaient aussi être délicats, non pas sur le plan relationnel, mais parce que les informations remontées sont souvent partielles. Un utilisateur décrit ce qu'il voit, pas forcément ce qui a déclenché le problème. Il fallait donc reformuler, poser les bonnes questions et éviter de supposer trop vite qu'un détail était sans importance.
+
+Enfin, la mission demandait de garder une posture prudente. Dans un sujet de sécurité opérationnelle, il faut résister à l'envie de conclure trop vite. Cette difficulté est réelle, surtout lorsqu'on veut aider rapidement. Pourtant, c'est précisément ce point qui m'a fait progresser : comprendre qu'une hypothèse bien formulée vaut mieux qu'une conclusion rapide mais fragile.
+
+### 3.7 Résultats obtenus
+
+Le premier résultat de cette mission est une participation réelle au traitement d'incidents quotidiens liés aux comptes, aux authentifications et aux connexions. Je ne peux pas donner de volume chiffré, mais je peux affirmer que cette activité faisait partie du fonctionnement régulier du service informatique et qu'elle m'a placé dans des situations concrètes de diagnostic.
+
+La mission m'a aussi permis de mieux comprendre les verrouillages de comptes et les échecs d'authentification. Avant cette expérience, j'aurais eu tendance à voir ces incidents comme des problèmes isolés. Avec la pratique, j'ai compris qu'ils demandaient souvent une analyse plus large, en tenant compte du poste, du contexte d'utilisation, des accès réseau et des outils Microsoft associés.
+
+Un autre résultat important est la capacité à utiliser plusieurs sources d'information de façon plus structurée. Je me suis davantage habitué à croiser les journaux, le contexte utilisateur et les vérifications techniques, au lieu de m'appuyer sur une seule information. Cette progression ne signifie pas que chaque incident aboutit à une certitude complète, mais elle améliore nettement la qualité du diagnostic.
+
+Dans certains cas, cette démarche permettait d'identifier une cause probable suffisamment solide pour proposer une correction adaptée. Je reste volontairement prudent sur ce point. Je ne peux pas écrire que toutes les causes étaient confirmées de manière unique ni que tous les incidents ont été résolus définitivement. En revanche, je peux affirmer que cette mission m'a permis de contribuer à des analyses plus rigoureuses et plus utiles pour le support quotidien.
+
+Pour le service informatique, l'apport principal tient donc surtout à la méthode. Une meilleure lecture des symptômes, un meilleur recoupement des informations et une correction plus ciblée peuvent améliorer la fiabilité du traitement des incidents courants.
+
+### 3.8 Limites et points restant à suivre
+
+La première limite est qu'un incident de sécurité opérationnelle n'offre pas toujours une preuve unique. Il arrive que plusieurs hypothèses restent crédibles, même après plusieurs vérifications. Dans ce cas, il faut accepter de rester sur une cause probable plutôt que d'affirmer une certitude non démontrée.
+
+Les journaux peuvent aussi être incomplets ou difficiles à interpréter selon le moment où l'on intervient. Si un incident a déjà cessé, certaines traces peuvent être moins lisibles ou demander davantage de recoupement. Cela limite naturellement le niveau de détail que je peux présenter dans le rapport.
+
+Une autre limite concerne la confidentialité. Comme cette mission touche à des éléments sensibles, je dois volontairement rester général sur les exemples. Le rapport ne contient donc ni cas complet détaillé, ni log brut, ni élément nominatif. Cette retenue est nécessaire, mais elle empêche aussi de montrer tout le niveau de détail réel du diagnostic.
+
+Je ne dispose pas non plus d'indicateurs chiffrés validés sur cette activité. Je ne peux donc pas annoncer un nombre d'incidents traités, un temps moyen de résolution, ni une baisse mesurée des problèmes d'authentification. Les résultats doivent rester qualitatifs.
+
+Enfin, plusieurs points devront encore être vérifiés pour une version finale plus précise du rapport : la formulation exacte de certains outils Microsoft associés aux identités et aux accès, la période la plus pertinente à citer pour cette mission continue, et le niveau de détail autorisé sur certains exemples anonymisés.
+
+### 3.9 Recul personnel sur la mission
+
+Cette mission m'a beaucoup appris sur la manière d'aborder un problème de sécurité opérationnelle. Au départ, j'aurais pu voir un verrouillage de compte ou un échec de connexion comme un incident assez simple. En pratique, j'ai découvert qu'il fallait presque toujours prendre un peu de recul, replacer le symptôme dans son contexte et accepter que la première explication ne soit pas forcément la bonne.
+
+J'ai surtout progressé sur la méthode. Cette mission m'a appris à ne pas m'arrêter au premier indice, à comparer plusieurs sources et à distinguer clairement trois niveaux : ce que j'observe, ce que j'en déduis comme hypothèse, puis ce que je peux réellement considérer comme confirmé. Cette distinction me paraît aujourd'hui essentielle, non seulement pour la sécurité, mais pour le diagnostic informatique en général.
+
+Elle m'a aussi montré que la sécurité opérationnelle n'est pas séparée du support utilisateur. Derrière un compte verrouillé ou une authentification refusée, il y a avant tout une personne qui ne peut plus travailler normalement. Il faut donc garder une approche technique rigoureuse, tout en restant capable d'expliquer simplement ce que l'on vérifie et pourquoi.
+
+Cette mission m'a également appris à être plus prudent dans ma manière de conclure. En sécurité, un symptôme impressionnant n'est pas forcément grave, et un problème apparemment banal peut demander une vraie analyse. J'ai donc compris l'importance de ne pas dramatiser, mais aussi de ne pas banaliser trop vite.
+
+Enfin, cette activité continue correspond bien à mon niveau de première année. Elle ne me présente pas comme responsable de la sécurité globale de l'entreprise. En revanche, elle montre que j'ai commencé à travailler avec une méthode d'investigation plus rigoureuse, utile au quotidien du service informatique et cohérente avec la posture attendue d'un alternant administrateur systèmes et réseaux.
