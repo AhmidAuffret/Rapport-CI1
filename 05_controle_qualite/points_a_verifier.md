@@ -160,6 +160,11 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Volume de tablettes concernées si diffusable : `[À vérifier]`.
 - Applications réellement déployées ou seulement prévues : `[À vérifier]`.
 - Procédure ou documentation interne produite : `[À compléter]`.
+- Points déplacés ou reformulés lors de la correction v2 : période calendaire exacte, nombre exact de tablettes, résultats précis des tests, documentation interne éventuelle, niveau d'autorisation pour citer les paramètres, outils, modèle de tablette et version Android.
+- Paramètres précis à valider avant citation éventuelle : règle exacte de mot de passe, comportement exact d'effacement après échecs, plage horaire exacte de mise à jour, restrictions détaillées et applications réellement déployées ou seulement prévues.
+- Question à poser à l'étudiant : peux-tu confirmer la période exacte de la mission Intune, le nombre de tablettes concernées, les tests réellement validés, les paramètres exacts autorisés à citer et l'existence ou non d'une procédure interne ?
+- Pourquoi c'est nécessaire : ces informations permettent de préciser les résultats sans inventer de dates, de volumes, de gains ou de validation officielle.
+- Partie du rapport concernée : Partie II, section `1. Microsoft Intune / Android Enterprise`, principalement `1.3 Moyens et outils utilisés`, `1.4 Démarche suivie`, `1.6 Résultats obtenus` et `1.7 Limites et points restant à suivre`.
 
 ### Registre visiteurs Power Apps / SharePoint / Power Automate
 
@@ -168,15 +173,19 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Statut réel de mise en service : techniquement validé, pas encore utilisé à l'accueil.
 - Suppression totale ou partielle du registre papier : non confirmée, ne pas annoncer comme réalisée.
 - Fiabilité finale du flow `FLOW_CreateVisitorWithSignature` : flow fonctionnel et signature PNG correctement enregistrée.
+- Données budgétaires exploitables pour cette mission : non intégrées à ce stade ; confirmer seulement si l'école ou l'entreprise souhaite faire apparaître un volet financier.
 - Absence de données visiteurs réelles dans le rapport : `[À vérifier]`.
 
 ### Sécurité opérationnelle AD / Microsoft 365
 
-- Formulation exacte de l’environnement Microsoft / Entra : `[À vérifier]`.
+- Formulation exacte de l’environnement Microsoft 365 et des outils associés aux identités et aux accès : `[À vérifier]`.
 - Outils précis utilisés pour les journaux et diagnostics : `[À compléter]`.
 - Chronologie des analyses : `[À compléter]`.
 - Causes réellement identifiées ou hypothèses non confirmées : `[À vérifier]`.
 - Exemples anonymisés disponibles : `[À vérifier]`.
+- Mention explicite de Microsoft Entra dans la rédaction finale ou maintien d'une formulation plus générale : `[À vérifier]`.
+- Période la plus pertinente à citer pour cette mission continue : `[À compléter]`.
+- Niveau de détail autorisé sur l’authentification réseau, le Wi-Fi et les journaux associés : `[À vérifier]`.
 - Aucun journal brut sensible inclus : `[À vérifier]`.
 
 ## Mission secondaire Docker
