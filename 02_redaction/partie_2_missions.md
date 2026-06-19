@@ -50,7 +50,7 @@ La première contrainte était de trouver un équilibre entre sécurité et usag
 
 Il fallait aussi tenir compte des deux usages concernés. La tablette d'accueil pour le registre visiteurs et les tablettes de production ne répondent pas exactement aux mêmes contraintes, même si elles reposent sur le même cadre de gestion. La configuration devait donc rester cohérente sans devenir identique dans tous les cas.
 
-Une autre contrainte concernait la méthode. Les réglages devaient être testés avant usage, car une restriction mal appliquée ou trop stricte pouvait poser problème sur le terrain. Le périmètre exact des résultats devait donc rester formulé avec prudence, d'autant plus qu'aucun indicateur mesuré n'est disponible à ce stade.
+Une autre contrainte concernait la méthode. Les réglages devaient être testés avant usage, car une restriction mal appliquée ou trop stricte pouvait poser problème sur le terrain. Les résultats sont donc présentés de manière qualitative, puisqu'aucun indicateur mesuré n'est disponible à ce stade.
 
 Enfin, la mission touche à des paramètres internes de configuration. Je reste donc volontairement général sur certains éléments, comme les noms de groupes, de tokens ou le détail complet des règles appliquées, afin de respecter la confidentialité de l'environnement.
 
@@ -62,13 +62,13 @@ J'ai ensuite pris en main Microsoft Intune et Android Enterprise. Cette étape a
 
 Une fois le principe général compris, j'ai travaillé sur le mode Android Enterprise fully managed. L'enrôlement permettait de rattacher la tablette à la gestion Intune, puis de lui appliquer les paramètres associés au groupe prévu pour son usage.
 
-La configuration a ensuite porté sur les restrictions d'usage et sur la sécurité d'accès. J'ai préparé des paramètres destinés à limiter certaines modifications système ou réseau, à encadrer l'ajout de comptes et à définir une règle de mot de passe compatible avec l'usage prévu. J'ai aussi prévu une plage de mise à jour hors période d'utilisation principale pour limiter l'impact sur le travail. Le détail complet de ces réglages n'est pas repris ici, car il relève de la configuration interne et doit rester présenté avec prudence.
+La configuration a ensuite porté sur les restrictions d'usage et sur la sécurité d'accès. J'ai préparé des paramètres destinés à limiter certaines modifications système ou réseau, à encadrer l'ajout de comptes et à définir une règle de mot de passe compatible avec l'usage prévu. J'ai aussi prévu une plage de mise à jour hors période d'utilisation principale pour limiter l'impact sur le travail. Je ne détaille pas ici l'ensemble des réglages, car ils relèvent de la configuration interne.
 
 J'ai aussi travaillé sur les applications nécessaires. L'objectif était que les tablettes disposent des outils utiles sans laisser l'utilisateur chercher ou installer lui-même les applications. Les applications bureautiques, collaboratives et de consultation de documents devaient être disponibles selon les besoins. Les liens web utiles devaient également faciliter l'accès aux outils métiers ou de support prévus.
 
 Après la configuration, les tests ont été essentiels. Il fallait vérifier que la tablette s'enrôlait correctement, que les applications attendues apparaissaient et que les restrictions étaient bien prises en compte. Par exemple, un test non sensible consistait à contrôler qu'une tablette enrôlée affichait les applications prévues tout en restant utilisable malgré les restrictions appliquées. Les résultats précis de ces tests restent à détailler si des preuves ou validations supplémentaires sont disponibles.
 
-Les ajustements ont fait partie de la démarche. Une configuration Intune n'est pas forcément parfaite dès le premier essai. Certains paramètres peuvent être trop stricts, mal compris ou ne pas produire immédiatement l'effet attendu. J'ai donc avancé par essais, vérifications et corrections, en gardant le tuteur comme point de validation pour les choix importants.
+Les ajustements ont fait partie de la démarche. Une configuration Intune n'est pas forcément parfaite dès le premier essai. Certains paramètres peuvent être trop stricts, mal compris ou ne pas produire immédiatement l'effet attendu. J'ai donc avancé par essais, vérifications et corrections, avec un échange avec le tuteur pour les choix importants.
 
 Cette démarche m'a montré qu'un outil d'administration centralisée ne supprime pas le besoin de méthode. Intune permet de pousser des règles, mais il faut quand même comprendre le besoin, vérifier les effets réels et garder une trace de ce qui est fait.
 
@@ -106,15 +106,15 @@ Un autre point à suivre concerne l'usage réel des tablettes dans le temps. Une
 
 Les captures prévues en annexe permettent d'illustrer la gestion centralisée des tablettes dans Intune, notamment pour les équipements destinés à la production et les éléments liés à la configuration.
 
-[Figure à insérer : fig01_intune_appareils_production_anonymise.png — Vue des tablettes de production dans Intune]
+Figure 1 — Vue anonymisée des tablettes de production dans Microsoft Intune.
 
-[Figure à insérer : fig02_intune_profil_configuration_anonymise_production.png — Profil de configuration Intune appliqué aux tablettes de production]
+Figure 2 — Profil de configuration Intune appliqué aux tablettes de production.
 
-[Figure à insérer : fig02_intune_profil_configuration_anonymise_visiteur.png — Profil de configuration Intune lié à la tablette visiteurs]
+Figure 3 — Profil de configuration Intune lié à la tablette visiteurs.
 
 La confidentialité doit aussi rester surveillée. Les noms exacts des tokens, groupes, appareils ou paramètres internes ne sont pas indispensables à la compréhension du rapport. Ils sont donc volontairement remplacés par des formulations générales, ou par `[REDACTED]` si nécessaire.
 
-Enfin, cette mission reste dépendante de validations internes. Même si j'ai réalisé une grande partie du travail opérationnel, les décisions finales sont validées par le tuteur ou par l'entreprise.
+Enfin, cette mission reste liée au cadre interne de l'entreprise. Même si j'ai réalisé une grande partie du travail opérationnel, les décisions finales reviennent au tuteur ou à l'entreprise.
 
 ### 1.9 Recul personnel sur la mission
 
@@ -210,19 +210,19 @@ La signature est correctement enregistrée en pièce jointe PNG sur l'élément 
 
 Le flux Power Automate est fonctionnel. Il crée l'élément SharePoint, traite la signature et ajoute la pièce jointe. L'historique d'exécution a permis de vérifier les étapes et de corriger les erreurs rencontrées pendant les tests. Ce résultat montre que l'automatisation répond au besoin technique prévu.
  
-Pour l'entreprise, la plus-value reste à présenter avec prudence. À ce stade, la solution apporte surtout une base exploitable pour centraliser les enregistrements visiteurs et préparer un suivi plus structuré, sans que ces gains aient encore été mesurés en conditions réelles.
+Pour l'entreprise, l'intérêt principal est d'avoir une base exploitable pour centraliser les enregistrements visiteurs et préparer un suivi plus structuré, même si ces gains n'ont pas encore été mesurés en conditions réelles.
 
-La solution peut donc être considérée comme validée sur les plans applicatif et technique, mais pas encore comme déployée en usage réel à l'accueil. Je ne peux pas annoncer de gain de temps mesuré, de nombre de visiteurs testés ou d'amélioration prouvée de la traçabilité. Je peux seulement affirmer que la solution prépare une transition vers un registre numérique et que les fonctions attendues côté application, stockage et signature sont opérationnelles.
+La solution peut donc être considérée comme prête sur les plans applicatif et technique, mais pas encore comme déployée en usage réel à l'accueil. Je ne présente donc ni gain de temps mesuré, ni nombre de visiteurs testés, ni amélioration chiffrée de la traçabilité. En revanche, la transition vers un registre numérique est bien préparée et les fonctions attendues côté application, stockage et signature sont opérationnelles.
 
 Les captures prévues en annexe présentent le formulaire Power Apps, le flux Power Automate associé, ainsi que les listes SharePoint utilisées pour les visiteurs et les sociétés. Les données visibles dans ces captures correspondent à des valeurs de test, la solution n'étant pas encore utilisée en production à l'accueil.
 
-[Figure à insérer : fig03_powerapps_formulaire_visiteur_test.png — Formulaire Power Apps du registre visiteurs]
+Figure 4 — Formulaire Power Apps du registre visiteurs avec données de test.
 
-[Figure à insérer : fig04_powerautomate_flow_registre_visiteurs_anonymise.png — Flux Power Automate associé au registre visiteurs]
+Figure 5 — Flux Power Automate associé au registre visiteurs.
 
-[Figure à insérer : fig05_sharepoint_liste_visiteurs_test.png — Liste SharePoint des visiteurs avec données de test]
+Figure 6 — Liste SharePoint des visiteurs avec données de test.
 
-[Figure à insérer : fig06_sharepoint_liste_societes_anonymise.png — Liste SharePoint des sociétés avec données de test]
+Figure 7 — Liste SharePoint des sociétés avec données de test.
 
 ### 2.8 Limites et points restant à suivre
 
@@ -308,7 +308,18 @@ Je vérifiais ensuite les éléments les plus immédiats dans les outils d'admin
 
 Un exemple-type anonymisé illustre bien cette méthode : après le déblocage d'un compte, celui-ci pouvait se reverrouiller peu de temps après. Dans ce cas, je ne partais pas du principe que la cause était déjà connue. Je vérifiais plutôt plusieurs pistes possibles, comme un ancien mot de passe encore enregistré, un logiciel qui retentait une connexion, un autre équipement ou une authentification réseau répétée. La correction n'était proposée qu'après ce recoupement, puis suivie pour voir si le symptôme réapparaissait ou non.
 
-Lorsque les vérifications faisaient ressortir une cause probable suffisamment solide, une action pouvait être proposée ou appliquée sous validation. Je ne parlais de cause confirmée que lorsque plusieurs traces convergeaient et que le symptôme ne réapparaissait plus après correction. Enfin, lorsque c'était utile, une trace était conservée dans le suivi interne afin de garder une méthode exploitable par le service, sans reproduire dans le rapport des éléments sensibles ou des journaux bruts.
+Lorsque les vérifications faisaient ressortir une cause probable suffisamment solide, une action pouvait être proposée ou appliquée. Je parlais de cause confirmée lorsque plusieurs traces convergeaient et que le symptôme ne réapparaissait plus après correction. Enfin, lorsque c'était utile, une trace était conservée dans le suivi interne afin de garder une méthode exploitable par le service, sans reproduire dans le rapport des éléments sensibles ou des journaux bruts.
+
+Le tableau suivant résume un cas-type anonymisé qui correspond bien à cette manière de travailler :
+
+| Étape | Exemple anonymisé |
+| --- | --- |
+| Symptôme observé | Un compte utilisateur peut se verrouiller plusieurs fois sans que la cause soit immédiatement visible. |
+| Hypothèses étudiées | Mot de passe mémorisé, session encore ouverte, équipement mobile, connexion Wi-Fi ou ancien identifiant conservé dans un service. |
+| Sources consultées | Active Directory, Microsoft Entra, journaux Windows et échanges avec l'utilisateur concerné. |
+| Analyse réalisée | Recouper les informations plutôt que conclure uniquement à partir du premier message d'erreur. |
+| Résultat recherché | Isoler la cause probable, rétablir l'usage et éviter que le problème se répète. |
+| Apprentissage | Ne pas confondre le symptôme visible avec la cause réelle de l'incident. |
 
 ### 3.6 Difficultés rencontrées
 
@@ -338,7 +349,7 @@ Les journaux peuvent aussi être incomplets ou difficiles à interpréter selon 
 
 Une autre limite concerne la confidentialité. Comme cette mission touche à des éléments sensibles, je dois volontairement rester général sur les exemples. Le rapport ne contient donc ni cas complet détaillé, ni log brut, ni élément nominatif. Cette retenue est nécessaire, mais elle empêche aussi de montrer tout le niveau de détail réel du diagnostic.
 
-Je ne dispose pas non plus d'indicateurs chiffrés validés sur cette activité. Je ne peux donc pas annoncer un nombre d'incidents traités, un temps moyen de résolution, ni une baisse mesurée des problèmes d'authentification. Les résultats doivent rester qualitatifs.
+Je ne dispose pas non plus d'indicateurs chiffrés sur cette activité. Je ne donne donc ni nombre d'incidents traités, ni temps moyen de résolution, ni baisse mesurée des problèmes d'authentification. Les résultats restent qualitatifs.
 
 Enfin, cette mission doit rester présentée avec un niveau de détail compatible avec la confidentialité. Pour la partie sécurité, un schéma méthodologique anonymisé est préférable à une capture de logs ou de comptes réels.
 
@@ -350,4 +361,4 @@ J'ai surtout progressé sur la méthode. Cette mission m'a appris à ne pas m'ar
 
 Elle m'a aussi montré que la sécurité opérationnelle n'est pas séparée du support utilisateur. Derrière un compte verrouillé ou une authentification refusée, il y a d'abord une personne qui ne peut plus travailler normalement. Il faut donc rester rigoureux sur le plan technique, tout en expliquant simplement ce que l'on vérifie et pourquoi.
 
-Enfin, cette activité continue correspond bien à mon niveau de première année. Elle ne me présente pas comme responsable de la sécurité globale de l'entreprise, mais elle montre que j'ai commencé à construire une méthode d'investigation plus rigoureuse. Le point le plus important que j'en retiens est la nécessité de distinguer clairement ce qui est observé, ce qui est supposé et ce qui est réellement confirmé.
+Enfin, cette activité continue correspond bien à une première année d'alternance. Elle ne me présente pas comme responsable de la sécurité globale de l'entreprise, mais elle montre que j'ai commencé à construire une méthode d'investigation plus rigoureuse. Le point le plus important que j'en retiens est la nécessité de distinguer clairement ce qui est observé, ce qui est supposé et ce qui est réellement confirmé.
