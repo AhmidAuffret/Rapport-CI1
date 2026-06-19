@@ -1,6 +1,6 @@
 # Partie III — Méthodes, outils et ressources mobilisés
 
-Cette partie ne reprend pas en détail les missions de la Partie II. Mon objectif est plutôt d'expliquer comment j'ai travaillé pendant cette première année d'alternance, avec quels outils, avec quelles ressources et avec quelles limites. Même si les sujets étaient différents, j'ai retrouvé une logique assez constante : partir d'un besoin concret, le reformuler, tester progressivement et rester prudent tant qu'un résultat n'était pas vraiment validé.
+Cette partie ne reprend pas en détail les missions de la Partie II. Mon objectif est plutôt d'expliquer comment j'ai travaillé pendant cette première année d'alternance, avec quels outils, avec quelles ressources et avec quelles limites. Même si les sujets étaient différents, j'ai retrouvé une logique assez constante : partir d'un besoin concret, le reformuler, tester progressivement et vérifier le résultat avant d'aller plus loin.
 
 ## 3.1 Démarche de travail et traitement d’un besoin
 
@@ -14,7 +14,7 @@ L'organisation du travail restait assez souple. Le tuteur définissait général
 
 Je n'ai donc pas travaillé avec une logique de solution immédiate. J'avançais plutôt par étapes : comprendre la demande, vérifier le besoin réel, tester une piste, puis voir si elle répondait vraiment à l'usage. Un paramètre peut sembler correct dans l'outil et se comporter autrement sur l'équipement réel. De la même manière, en sécurité opérationnelle, un symptôme peut faire penser à une cause évidente alors qu'il faut encore recouper plusieurs éléments.
 
-Avant de considérer une solution comme acceptable, une validation restait nécessaire. Selon les cas, il fallait distinguer la piste testée, la solution techniquement valable et la réponse réellement adaptée au besoin. Avec le recul, c'est sans doute ce que je retiens le plus de ma méthode de travail : comprendre le besoin, avancer par étapes et distinguer ce qui est encore une hypothèse de ce qui est réellement validé.
+Avant de considérer une solution comme acceptable, il fallait distinguer la piste testée, la solution techniquement valable et la réponse réellement adaptée au besoin. Avec le recul, c'est sans doute ce que je retiens le plus de ma méthode de travail : comprendre le besoin, avancer par étapes et distinguer ce qui reste une hypothèse de ce qui est réellement confirmé.
 
 ## 3.2 Outils techniques mobilisés
 
@@ -52,7 +52,7 @@ Cette logique m'a surtout appris à comparer ce qui était attendu avec ce qui s
 
 J'ai aussi mieux compris la différence entre une validation technique et une mise en service réelle. Cette dernière dépend parfois d'autres conditions, comme un support physique, un contexte utilisateur, un délai de maintenance ou une validation interne supplémentaire. C'est un point qui m'a marqué pendant l'année, parce qu'il montre qu'une solution techniquement valable ne suffit pas toujours à clore une mission.
 
-La gestion des limites fait également partie de cette démarche. Je suis en première année d'alternance, donc certaines situations demandaient du recul, un échange avec le tuteur ou une validation avant d'aller plus loin. Cette posture m'a aidé à rester plus rigoureux et à ne pas annoncer trop vite qu'un sujet était terminé.
+La gestion des limites fait également partie de cette démarche. Je suis en première année d'alternance, donc certaines situations demandaient du recul ou un échange avec le tuteur avant d'aller plus loin. Cette posture m'a aidé à rester plus rigoureux et à ne pas annoncer trop vite qu'un sujet était terminé.
 
 Plus largement, j'ai retenu qu'il fallait garder une trace claire de ce qui était validé et de ce qui restait à vérifier. Dans le travail quotidien comme dans le rapport, cette distinction évite de mélanger objectif, essai concluant et résultat final.
 
@@ -64,4 +64,4 @@ Concrètement, cela m'a obligé à rester général sur certains points. Dans le
 
 Cette contrainte ne m'a pas empêché d'expliquer ce que j'ai fait. Elle m'a surtout appris à trouver un équilibre entre précision technique, responsabilité de communication et protection de l'information. Dans un rapport d'alternance, il faut pouvoir expliquer une méthode de travail sans transformer l'expérience en documentation interne complète.
 
-Cette logique rejoint aussi la posture professionnelle attendue d'un alternant. Savoir faire une action technique ne suffit pas. Il faut aussi savoir ce qu'on peut écrire, ce qu'on doit anonymiser et ce qui doit rester interne. J'ai pu gagner en autonomie sur la partie opérationnelle, mais j'ai aussi compris qu'il fallait savoir quoi communiquer, comment le formuler et à quel moment une validation restait nécessaire. Avec le recul, cette prudence fait partie de ce que cette première année m'a appris.
+Cette logique rejoint aussi la posture professionnelle attendue d'un alternant. Savoir faire une action technique ne suffit pas. Il faut aussi savoir ce qu'on peut écrire, ce qu'on doit anonymiser et ce qui doit rester interne. J'ai pu gagner en autonomie sur la partie opérationnelle, mais j'ai aussi compris qu'il fallait savoir quoi communiquer, comment le formuler et quand demander un avis avant d'aller plus loin. Avec le recul, cette attention fait partie de ce que cette première année m'a appris.
