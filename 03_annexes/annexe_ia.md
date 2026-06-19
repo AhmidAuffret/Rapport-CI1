@@ -6,7 +6,7 @@ Les outils d'intelligence artificielle utilisés dans le cadre de ce rapport son
 
 ## Usages réalisés
 
-Ces outils ont été utilisés comme aide à la structuration du rapport, à la rédaction de certains passages, à la reformulation, à la relecture et au contrôle qualité. Ils ont aussi été utilisés pour préparer des prompts de travail dans Codex, vérifier la cohérence entre les parties du rapport et signaler les points qui restaient à compléter ou à vérifier.
+Ces outils ont été utilisés comme aide à la structuration du rapport, à la rédaction de certains passages, à la reformulation, à la relecture et au contrôle qualité. Ils ont aussi été utilisés pour préparer des prompts de travail dans Codex, vérifier la cohérence entre les parties du rapport et signaler les passages qui demandaient une reformulation plus prudente.
 
 ## Niveau d'intervention
 
@@ -18,7 +18,7 @@ L'usage de l'IA a concerné principalement la structuration générale du rappor
 
 ## Validation humaine
 
-L'étudiant reste entièrement responsable du contenu final du rapport. Les propositions générées par l'IA ont été relues, triées, corrigées et validées humainement avant intégration. Les informations internes, sensibles ou incomplètes ont été anonymisées, retirées ou signalées comme restant à confirmer lorsqu'une validation manquait.
+L'étudiant reste entièrement responsable du contenu final du rapport. Les propositions générées par l'IA ont été relues, triées, corrigées et validées humainement avant intégration. Les informations internes, sensibles ou incomplètes ont été anonymisées, retirées ou reformulées avec prudence lorsqu'une validation manquait.
 
 ## Limites d'usage
 

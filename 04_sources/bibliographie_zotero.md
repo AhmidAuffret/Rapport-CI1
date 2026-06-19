@@ -1,18 +1,23 @@
-# Bibliographie Zotero
+# Bibliographie et sources
 
-## Sources à importer
+## Sources publiques
 
-- Sources publiques officielles de Leroux : pages institutionnelles et pages publiques sur l'entreprise, la fabrication, la filière et les produits.
-- Documentation officielle Microsoft Learn et documentation Microsoft associée : pages générales utilisées pour vérifier la terminologie et les bonnes pratiques autour de Microsoft Intune, Android Enterprise, Power Apps, SharePoint, Power Automate, Active Directory, Microsoft 365 et Microsoft Entra.
-- Consignes IMT Nord Europe : `00_contexte_source/01_consignes_imt.md`.
-- Grille d'évaluation IMT Nord Europe : `00_contexte_source/02_grille_evaluation.md`.
-- Source interne anonymisée : échanges et éléments de contexte internes utilisés pour décrire le service informatique, les missions et leur état réel, sans reprise de données sensibles.
+- Leroux SAS. Site officiel de Leroux. Pages publiques de présentation de l'entreprise, de son activité et de ses produits. Consulté en juin 2026.
 
-Les sources retenues regroupent les pages publiques officielles de Leroux, la documentation officielle Microsoft Learn, les documents pédagogiques IMT et des sources internes anonymisées.
+## Documentation Microsoft
 
-## Règles
+- Microsoft. *What is Microsoft Intune?* Microsoft Learn. Consulté en juin 2026. URL : https://learn.microsoft.com/en-us/intune/fundamentals/what-is-intune
+- Microsoft. *Connect to SharePoint from a canvas app*. Microsoft Learn. Consulté en juin 2026. URL : https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/connections/connection-sharepoint-online
+- Microsoft. *Create a cloud flow in Power Automate*. Microsoft Learn. Consulté en juin 2026. URL : https://learn.microsoft.com/en-us/power-automate/get-started-logic-flow
+- Microsoft. *Sign-in logs in Microsoft Entra ID*. Microsoft Learn. Consulté en juin 2026. URL : https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins
 
-- Ne pas ajouter de source non vérifiée.
-- Vérifier la date, l'auteur et l'éditeur.
-- Conserver les liens consultés uniquement s'ils sont utiles et validés.
-- Distinguer clairement les sources publiques, la documentation technique et les sources internes anonymisées.
+## Sources internes anonymisées
+
+- Échanges avec le service informatique de Leroux SAS, informations anonymisées.
+- Observations réalisées pendant les missions d'alternance, informations anonymisées.
+- Captures internes anonymisées ou réalisées avec des données de test, utilisées uniquement pour illustrer les outils et démarches.
+
+## Documents pédagogiques
+
+- IMT Nord Europe. *Note pédagogique — Évaluation « Activités en entreprise » CI1/CI2*. Document pédagogique fourni à l'étudiant.
+- IMT Nord Europe. *Grille d'évaluation du rapport d'activité en entreprise — CI1*. Document pédagogique fourni à l'étudiant.

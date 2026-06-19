@@ -8,7 +8,7 @@ La première mission principale que je présente concerne la gestion des tablett
 
 Chez Leroux, les tablettes répondent à deux besoins distincts. Le premier concerne une tablette destinée au registre visiteurs à l'accueil. Le second concerne des tablettes utilisées en production. Les usages ne sont pas les mêmes, mais l'objectif reste proche : disposer d'appareils configurés de manière cohérente, avec les applications utiles, les restrictions nécessaires et un niveau de sécurité adapté à un contexte professionnel.
 
-La mission a représenté environ deux mois de travail. Cette durée comprend la prise en main de Microsoft Intune, la configuration de la tablette destinée au registre visiteurs et la configuration des tablettes de production. La période exacte n'est pas indispensable pour comprendre la mission et pourra être confirmée dans la version finale.
+La mission a représenté environ deux mois de travail. Cette durée comprend la prise en main de Microsoft Intune, la configuration de la tablette destinée au registre visiteurs et la configuration des tablettes de production. Cette durée donne un ordre de grandeur suffisant pour comprendre le déroulement de la mission.
 
 Microsoft Intune a été utilisé avec Android Enterprise en mode fully managed. Ce mode correspond à des appareils entièrement gérés par l'entreprise. La tablette n'est donc pas pensée comme un appareil personnel auquel on ajoute quelques règles, mais comme un équipement professionnel préparé pour un usage défini.
 
@@ -42,7 +42,7 @@ Les moyens humains mobilisés reposaient principalement sur le service informati
 
 Sur le plan financier, aucune licence payante supplémentaire spécifique n'a été identifiée dans le cadre de cette mission ; le travail s'est appuyé sur les outils déjà disponibles dans l'environnement Microsoft de l'entreprise. Je me limite donc aux moyens matériels, techniques, humains et documentaires réellement connus.
 
-La documentation a aussi été une ressource importante, même si l'existence d'une procédure formelle reste à confirmer. Pour prendre en main Intune, je me suis appuyé sur la documentation officielle Microsoft Learn, sur les recommandations Microsoft associées à Intune et à Android Enterprise, ainsi que sur les tests réalisés directement dans l'environnement.
+La documentation a aussi été une ressource importante. Pour prendre en main Intune, je me suis appuyé sur la documentation officielle Microsoft Learn, sur les recommandations Microsoft associées à Intune et à Android Enterprise, ainsi que sur les tests réalisés directement dans l'environnement.
 
 ### 1.4 Contraintes de la mission
 
@@ -96,11 +96,11 @@ Pour moi, le résultat est également une montée en compétence sur un outil d'
 
 ### 1.8 Limites et points restant à suivre
 
-Plusieurs limites doivent être indiquées clairement pour éviter de survaloriser la mission. Le nombre exact de tablettes, la période calendaire précise et le périmètre complet du déploiement devront être confirmés dans la version finale.
+Plusieurs limites doivent être indiquées clairement pour éviter de survaloriser la mission. Le nombre exact de tablettes, la période calendaire précise et le périmètre complet du déploiement ne sont pas détaillés davantage, car ils ne sont pas indispensables à la compréhension du sujet.
 
 Les résultats mesurables ne sont pas disponibles à ce stade. Je ne peux donc pas indiquer de gain de temps, de baisse d'incidents, de taux de conformité ou de pourcentage de déploiement. Les résultats sont donc présentés de manière qualitative.
 
-La documentation reste également à confirmer. Si une procédure interne ou une note de configuration a été produite, elle pourra être mentionnée de manière générale, sans exposer de détails sensibles. Sinon, il faudra indiquer que la formalisation documentaire reste un axe d'amélioration.
+La formalisation documentaire reste également un point à suivre. Une éventuelle procédure interne ou note de configuration peut être mentionnée de manière générale, sans exposer de détails sensibles. À défaut, cet aspect peut être présenté comme un axe d'amélioration.
 
 Un autre point à suivre concerne l'usage réel des tablettes dans le temps. Une configuration peut fonctionner au moment des tests, mais elle doit encore être observée dans la durée pour vérifier qu'elle reste adaptée aux usages.
 
@@ -112,7 +112,7 @@ Les captures prévues en annexe permettent d'illustrer la gestion centralisée d
 
 [Figure à insérer : fig02_intune_profil_configuration_anonymise_visiteur.png — Profil de configuration Intune lié à la tablette visiteurs]
 
-La confidentialité doit aussi rester surveillée. Les noms exacts des tokens, groupes, appareils ou paramètres internes ne sont pas indispensables à la compréhension du rapport. Dans la version finale, il faudra conserver une formulation générale ou remplacer les éléments sensibles par `[REDACTED]` si l'entreprise le demande.
+La confidentialité doit aussi rester surveillée. Les noms exacts des tokens, groupes, appareils ou paramètres internes ne sont pas indispensables à la compréhension du rapport. Ils sont donc volontairement remplacés par des formulations générales, ou par `[REDACTED]` si nécessaire.
 
 Enfin, cette mission reste dépendante de validations internes. Même si j'ai réalisé une grande partie du travail opérationnel, les décisions finales sont validées par le tuteur ou par l'entreprise.
 
@@ -186,7 +186,7 @@ Les tests ont pris une place importante dans la démarche. J'ai beaucoup utilis�
 
 J'ai aussi testé plusieurs cas autour de la signature. Une vraie signature devait produire un fichier PNG exploitable. Une signature vide devait être détectée pour éviter d'enregistrer une image blanche comme si elle était valide. Ces tests ont montré que le contrôle de signature pouvait renvoyer une image même lorsqu'aucune vraie signature n'était faite.
 
-À partir de ces essais, un seuil empirique a été retenu. Une signature vide renvoyait quand même une image blanche. Un seuil autour de 7000 caractères a donc été utilisé, dans ce contexte testé, pour détecter qu'un tracé avait bien été saisi. Ce seuil n'est pas une règle universelle. C'est une solution pragmatique issue des tests réalisés sur cette application et il resterait à revérifier si l'application, le contrôle ou l'appareil changeaient.
+À partir de ces essais, un seuil empirique a été retenu. Une signature vide renvoyait quand même une image blanche. Un seuil autour de 7000 caractères a donc été utilisé, dans ce contexte testé, pour détecter qu'un tracé avait bien été saisi. Ce seuil n'est pas une règle universelle. C'est une solution pragmatique issue des tests réalisés sur cette application et il devra être réévalué si l'application, le contrôle ou l'appareil changent.
 
 Une fois les erreurs principales corrigées, la solution a été validée techniquement avec le tuteur. L'application permet de saisir les informations, le flux crée l'élément dans SharePoint et la signature est ajoutée en pièce jointe PNG. La partie applicative peut donc être considérée comme prête côté technique, mais la mise en service réelle reste dépendante du support physique de la tablette.
 
@@ -234,9 +234,9 @@ La confidentialité reste un point à surveiller. Un registre visiteurs contient
 
 Le seuil de détection de signature doit aussi être suivi. Le seuil autour de 7000 caractères fonctionne comme solution pragmatique dans le contexte testé. Il faudra cependant rester prudent si le comportement du contrôle Power Apps évolue, si l'application est modifiée ou si un autre appareil produit des images de taille différente.
 
-Le statut du registre papier devra également être confirmé lors de la version finale. À ce stade, je ne peux pas écrire qu'il est supprimé. Il faut rester sur une formulation prudente : la solution vise à remplacer ou réduire l'usage du registre papier, sous réserve de la mise en service réelle de la tablette.
+Le registre papier ne doit pas être présenté comme supprimé. La formulation retenue reste donc prudente : la solution vise à remplacer ou à réduire son usage, sous réserve de la mise en service réelle de la tablette.
 
-Enfin, les moyens financiers et la période exacte restent à compléter si ces informations sont nécessaires dans la version finale. Je connais la durée approximative de la mission, environ un mois, mais pas forcément la période calendaire exacte à citer. De la même manière, je ne dispose pas d'un budget validé à intégrer dans le rapport.
+Enfin, les moyens financiers et la période exacte sont volontairement présentés de façon sobre. Je retiens la durée approximative d'environ un mois, et je n'intègre pas de budget non validé dans le rapport.
 
 ### 2.9 Recul personnel sur la mission
 
@@ -292,7 +292,7 @@ Cette mission repose surtout sur des moyens techniques, humains et documentaires
 
 La première contrainte était la confidentialité. Cette mission porte sur des comptes, des authentifications, des journaux et parfois des comportements inhabituels. Je ne peux donc pas intégrer dans le rapport de noms de comptes, de noms de postes, d'adresses IP internes, de noms de serveurs ou de journaux bruts. Le texte doit rester anonymisé et centré sur la méthode.
 
-La deuxième contrainte venait de la complexité d'interprétation. Un même symptôme peut avoir plusieurs causes possibles, et plusieurs journaux peuvent montrer des éléments différents sans donner immédiatement une réponse unique. Il fallait donc rester prudent, car un verrouillage de compte ou un échec de connexion ne suffit pas à désigner un responsable, ni à confirmer une cause sans recoupement.
+La deuxième contrainte venait de la complexité d'interprétation. Un même symptôme peut avoir plusieurs causes possibles, et plusieurs journaux peuvent montrer des éléments différents sans donner immédiatement une réponse unique. Il fallait donc rester prudent, car un verrouillage de compte ou un échec de connexion ne suffit pas à désigner un responsable, ni à établir une cause sans recoupement.
 
 Une autre difficulté est liée au caractère parfois intermittent des incidents. Certains problèmes ne se reproduisent pas au moment où l'on commence l'analyse. Dans ce cas, il faut s'appuyer sur les traces disponibles, sur le contexte donné par l'utilisateur et sur des vérifications indirectes. Cela demande plus de prudence qu'un incident facilement reproductible.
 
@@ -304,7 +304,7 @@ Enfin, mon rôle d'alternant imposait une limite claire. Je pouvais participer �
 
 La démarche suivie dans cette mission restait assez stable, même si chaque incident gardait ses particularités. Je partais d'abord du symptôme signalé, puis je cherchais le contexte utile : poste concerné, changement récent de mot de passe, présence d'un autre appareil, connexion automatique ou incident réseau possible. Cette première étape évitait de lire les journaux sans point de départ.
 
-Je vérifiais ensuite les éléments les plus immédiats dans les outils d'administration Active Directory, sur le poste utilisateur et, si nécessaire, dans Microsoft 365, Microsoft Entra ou dans les outils liés aux identités et aux accès. La lecture des journaux servait alors à confirmer ou à écarter les premières hypothèses. L'idée n'était pas de trouver un événement isolé, mais de recouper plusieurs indices avant de proposer une explication probable.
+Je vérifiais ensuite les éléments les plus immédiats dans les outils d'administration Active Directory, sur le poste utilisateur et, si nécessaire, dans Microsoft 365, Microsoft Entra ou dans les outils liés aux identités et aux accès. La lecture des journaux servait alors à étayer ou à écarter les premières hypothèses. L'idée n'était pas de trouver un événement isolé, mais de recouper plusieurs indices avant de proposer une explication probable.
 
 Un exemple-type anonymisé illustre bien cette méthode : après le déblocage d'un compte, celui-ci pouvait se reverrouiller peu de temps après. Dans ce cas, je ne partais pas du principe que la cause était déjà connue. Je vérifiais plutôt plusieurs pistes possibles, comme un ancien mot de passe encore enregistré, un logiciel qui retentait une connexion, un autre équipement ou une authentification réseau répétée. La correction n'était proposée qu'après ce recoupement, puis suivie pour voir si le symptôme réapparaissait ou non.
 
