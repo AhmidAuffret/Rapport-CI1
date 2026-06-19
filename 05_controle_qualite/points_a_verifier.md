@@ -99,6 +99,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - logos autorisés ;
 - liste définitive des personnes à remercier ;
 - formulation finale des résumés français et anglais ;
+- harmonisation finale des éléments préliminaires avec la pagination, le sommaire et la mise en forme Word ;
 - choix définitif des illustrations ;
 - table des figures et tableaux ;
 - niveau de détail des annexes techniques ;
@@ -106,6 +107,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - autorisation de mentionner SFR Cloud Agility si Docker est cité ;
 - bibliographie finale avec dates de consultation ;
 - annexe IA complète, incluant l'impact environnemental ou le bilan carbone ;
+- niveau final de détail retenu dans l'annexe IA par rapport aux consignes de l'école ;
 - correction orthographique et harmonisation de style avant export ;
 - validation finale de la mention CONFIDENTIEL.
 
@@ -123,9 +125,16 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 ## Remerciements
 
 - Noms et postes des personnes à remercier : Loïc Humman, Thierry Devigne, Quentin ****, Éloïse Six, Guilhain Lesaffre et collaborateurs du quotidien intégrés.
-- Raison précise du remerciement pour chaque personne : `[À compléter]`.
+- Raison précise du remerciement pour chaque personne : remerciements rédigés de manière sobre et groupée ; si une formulation plus individualisée est souhaitée dans la version Word, elle reste `[À compléter]`.
 - Validation de l’orthographe des noms et fonctions : `[À vérifier]`.
 - Accord pour citer les personnes nommément si nécessaire : `[À vérifier]`.
+
+## Éléments préliminaires
+
+- Résumé français rédigé et cohérent avec les Parties I à V : `[À vérifier]`.
+- Abstract anglais simple rédigé et aligné sur le résumé français : `[À vérifier]`.
+- Mots-clés et keywords cohérents avec le contenu final du rapport : `[À vérifier]`.
+- Remerciements présents conformément aux consignes IMT : `[À vérifier]`.
 
 ## Service informatique et rôle de l'étudiant
 
@@ -245,13 +254,13 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 - Rapport entre 25 et 40 pages hors annexes : `[À vérifier]`.
 - Structure minimale IMT respectée : `[À vérifier]`.
-- Annexe IA présente et transparente : `[À vérifier]`.
-- Impact environnemental ou bilan carbone de l’usage IA renseigné : `[À compléter]`.
+- Annexe IA présente et transparente : complétée ; `[À vérifier]` en relecture finale.
+- Impact environnemental ou bilan carbone de l’usage IA renseigné : mention sobre d'usage raisonné intégrée ; vérifier si l'école attend une formulation plus précise.
 - Mise en forme conforme : `[À vérifier]`.
 - Illustrations titrées, numérotées, annotées et utiles : `[À vérifier]`.
 - Bibliographie présente pour les sources publiques et techniques : `[À vérifier]`.
 - Introduction présentant le sujet, les objectifs des missions et le plan : `[À vérifier]`.
-- Conclusion répondant au fil conducteur : `[À vérifier]`.
+- Conclusion répondant au fil conducteur : complétée ; `[À vérifier]` en cohérence finale avec l'ensemble du rapport.
 
 ## Risques principaux
 
