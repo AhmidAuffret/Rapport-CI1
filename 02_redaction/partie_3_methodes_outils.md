@@ -24,7 +24,7 @@ Un premier ensemble d'outils concerne la gestion des équipements mobiles. Dans 
 
 Un deuxième ensemble concerne la création d'une solution interne simple à utiliser. Pour cela, j'ai mobilisé Power Apps, SharePoint et Power Automate. Cet ensemble était cohérent pour créer une application interne sans développement lourd, stocker les données dans un outil déjà utilisé dans l'environnement Microsoft et automatiser l'enregistrement de manière plus fiable.
 
-Un troisième ensemble regroupe les outils liés aux comptes, aux identités, aux accès et au diagnostic. On y retrouve Active Directory, Microsoft 365 et les outils Microsoft associés à la gestion des comptes et des accès, selon les vérifications nécessaires, ainsi que les journaux Windows. Cet ensemble était cohérent avec l'environnement existant pour comprendre un verrouillage de compte, un échec d'authentification ou une connexion à vérifier. Dans cette famille d'outils, ce qui comptait le plus n'était pas de connaître une seule console, mais de croiser plusieurs sources d'information.
+Un troisième ensemble regroupe les outils liés aux comptes, aux identités, aux accès et au diagnostic. On y retrouve Active Directory, Microsoft 365, Microsoft Entra et les journaux Windows. Cet ensemble était cohérent avec l'environnement existant pour comprendre un verrouillage de compte, un échec d'authentification ou une connexion à vérifier. Dans cette famille d'outils, ce qui comptait le plus n'était pas de connaître une seule console, mais de croiser plusieurs sources d'information.
 
 Si ces outils ont été mobilisés, c'est aussi parce qu'ils étaient déjà cohérents avec l'existant. Je n'étais pas dans une logique de choix libre entre plusieurs solutions. Le plus souvent, il fallait utiliser ce qui était déjà présent dans l'entreprise, ce qui s'intégrait bien au reste du système d'information et ce qui répondait au besoin sans ajouter de complexité inutile.
 
@@ -40,9 +40,9 @@ Certaines missions dépendaient aussi d'autres interlocuteurs internes. Le servi
 
 Les ressources matérielles ont eu leur importance : postes de travail, tablettes Android professionnelles, environnement de test et tablette destinée à l'accueil. Sans équipement réel, plusieurs validations auraient été beaucoup plus théoriques que pratiques.
 
-Les ressources documentaires ont aussi été utiles. La documentation Microsoft m'a servi à comprendre certains comportements ou certaines possibilités des outils. L'historique d'exécution de Power Automate m'a aidé à diagnostiquer plus précisément ce qui se passait dans le flux. Sur les sujets de sécurité, les recherches techniques, les journaux consultés, les échanges avec le tuteur, les retours des utilisateurs et les observations directes pendant les tests m'ont surtout aidé à mieux interpréter les événements observés.
+Les ressources documentaires ont aussi été utiles. La documentation officielle Microsoft Learn et les recommandations Microsoft associées aux outils utilisés m'ont servi à comprendre certains comportements ou certaines possibilités d'Intune, d'Android Enterprise, de Power Apps, de Power Automate, de SharePoint, de Microsoft 365 et de Microsoft Entra. L'historique d'exécution de Power Automate m'a aidé à diagnostiquer plus précisément ce qui se passait dans le flux. Sur les sujets de sécurité, les recherches techniques, les journaux consultés, les échanges avec le tuteur, les retours des utilisateurs et les observations directes pendant les tests m'ont surtout aidé à mieux interpréter les événements observés.
 
-Les coûts, licences ou arbitrages budgétaires précis ne sont pas documentés à ce stade dans les éléments dont je dispose. Je préfère donc ne pas développer un volet financier sans donnée validée ; ce point pourra être complété dans la version finale si une information fiable est transmise.
+Aucun coût, arbitrage budgétaire ou licence payante supplémentaire spécifique n'a été identifié dans les éléments dont je dispose. Les missions se sont appuyées sur les outils déjà disponibles dans l'environnement Microsoft de l'entreprise.
 
 ## 3.4 Tests, validations et gestion des limites
 

@@ -2,13 +2,15 @@
 
 Objectif : préparer la page de garde, les remerciements, le résumé, l'abstract, le sommaire et les tables.
 
+Rapport confidentiel - diffusion limitée à l'IMT Nord Europe et à l'entreprise Leroux.
+
 ## Remerciements
 
-Je tiens à remercier Loïc Humman, qui a été mon tuteur et responsable informatique au début de mon alternance, pour son accompagnement lors de mes premiers mois en entreprise et pour la confiance qu'il m'a accordée sur mes premières missions.
+Je tiens à remercier Loïc Humann, qui a été mon tuteur et responsable informatique au début de mon alternance, pour son accompagnement lors de mes premiers mois en entreprise et pour la confiance qu'il m'a accordée sur mes premières missions.
 
 Je remercie également Thierry Devigne, qui a repris ce rôle par la suite, pour son suivi, ses conseils et la continuité de l'accompagnement pendant cette première année.
 
-Je remercie aussi Quentin ****, DAF, pour l'accueil et le cadre donné à mon alternance, ainsi qu'Éloïse Six, DRH, et Guilhain Lesaffre, PDG, pour leur accueil au sein de l'entreprise.
+Je remercie aussi Quentin Despelchin, directeur administratif et financier, pour l'accueil et le cadre donné à mon alternance, ainsi qu'Éloïse Six, directrice des ressources humaines, et Ghislain Lesaffre, président-directeur général, pour leur accueil au sein de l'entreprise.
 
 Enfin, je remercie les collaborateurs avec lesquels j'ai pu travailler au quotidien. Leurs échanges, leurs retours et leur disponibilité m'ont permis de mieux comprendre les besoins du terrain et de progresser dans mes missions.
 

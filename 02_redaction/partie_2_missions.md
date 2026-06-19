@@ -32,7 +32,7 @@ Enfin, la mission devait permettre de tester les configurations avant de les con
 
 Les principaux outils utilisés ont été Microsoft Intune et Android Enterprise. Intune a servi à créer et appliquer les configurations. Android Enterprise a fourni le cadre de gestion des tablettes Android professionnelles, avec un mode fully managed adapté à des appareils appartenant à l'entreprise.
 
-Les appareils concernés sont des tablettes Android professionnelles. Le modèle exact et la version Android sont connus dans le contexte de travail, mais leur citation devra être confirmée avant la version finale. Dans cette section, je parle donc des tablettes de manière générale, sans indiquer de volume précis.
+Les appareils concernés sont trois tablettes Samsung Galaxy Tab S10 FE+ destinées à la production, ainsi qu'une tablette distincte prévue pour le registre visiteurs à l'accueil. Cette distinction est importante, car les usages ne sont pas les mêmes même si la logique de gestion centralisée reste commune.
 
 Pour les tablettes de production, l'enrôlement s'appuyait sur un token dédié et sur un groupe associé à cet usage. Comme ces noms correspondent à une configuration interne, je ne les détaille pas. Dans le rapport, il est suffisant de parler d'un token d'enrôlement dédié et d'un groupe de tablettes de production.
 
@@ -42,9 +42,9 @@ Des liens web utiles étaient aussi prévus sur les tablettes, notamment vers la
 
 Les moyens humains mobilisés reposaient principalement sur le service informatique. Mon tuteur définissait le cadre et validait les décisions importantes. De mon côté, j'ai pris en charge la partie opérationnelle : recherches, configuration, tests, enrôlement, ajustements et échanges lorsque cela était nécessaire. Les choix techniques structurants et les décisions financières restaient validés par le tuteur ou par l'entreprise.
 
-Les moyens financiers ne sont pas détaillés dans ce brouillon, car je ne dispose pas d'information validée sur un budget, un coût d'achat ou un arbitrage financier lié aux tablettes et aux licences. Je me limite donc aux moyens matériels, techniques, humains et documentaires réellement connus.
+Sur le plan financier, aucune licence payante supplémentaire spécifique n'a été identifiée dans le cadre de cette mission ; le travail s'est appuyé sur les outils déjà disponibles dans l'environnement Microsoft de l'entreprise. Je me limite donc aux moyens matériels, techniques, humains et documentaires réellement connus.
 
-La documentation a aussi été une ressource importante, même si l'existence d'une procédure formelle reste à confirmer. Pour prendre en main Intune, il a fallu s'appuyer sur les informations disponibles, tester directement dans l'environnement et vérifier le résultat sur les tablettes.
+La documentation a aussi été une ressource importante, même si l'existence d'une procédure formelle reste à confirmer. Pour prendre en main Intune, je me suis appuyé sur la documentation officielle Microsoft Learn, sur les recommandations Microsoft associées à Intune et à Android Enterprise, ainsi que sur les tests réalisés directement dans l'environnement.
 
 ### 1.4 Contraintes de la mission
 
@@ -106,6 +106,8 @@ La documentation reste également à confirmer. Si une procédure interne ou une
 
 Un autre point à suivre concerne l'usage réel des tablettes dans le temps. Une configuration peut fonctionner au moment des tests, mais elle doit encore être observée dans la durée pour vérifier qu'elle reste adaptée aux usages.
 
+Pour les illustrations, il faut rester prudent. Une capture anonymisée de la console Intune pourra illustrer la gestion de plusieurs tablettes de production. En revanche, la tablette destinée au registre visiteurs n'apparaissant pas dans la vue disponible, elle ne doit pas être présentée comme visible sur cette capture. Une capture anonymisée du profil de configuration permet aussi d'illustrer le principe de gestion centralisée, même si tous les paramètres ne sont pas visibles sur un seul écran.
+
 La confidentialité doit aussi rester surveillée. Les noms exacts des tokens, groupes, appareils ou paramètres internes ne sont pas indispensables à la compréhension du rapport. Dans la version finale, il faudra conserver une formulation générale ou remplacer les éléments sensibles par `[REDACTED]` si l'entreprise le demande.
 
 Enfin, cette mission reste dépendante de validations internes. Même si j'ai réalisé une grande partie du travail opérationnel, les décisions finales sont validées par le tuteur ou par l'entreprise.
@@ -150,11 +152,11 @@ Enfin, je devais fiabiliser l'enregistrement avec Power Automate et rester prude
 
 Je me suis appuyé sur trois outils principaux. Power Apps m'a servi à construire l'interface sur tablette, SharePoint à stocker les informations du registre, et Power Automate à automatiser la création de l'enregistrement ainsi que l'ajout de la signature.
 
-La tablette d'accueil fait partie des moyens matériels mobilisés. Son modèle exact reste `[À vérifier]`, mais ce point n'est pas indispensable pour comprendre la mission. L'historique d'exécution Power Automate a aussi été un moyen de travail important, car il m'a permis de vérifier les valeurs reçues et de comprendre les erreurs pendant les tests.
+La tablette d'accueil fait partie des moyens matériels mobilisés. L'historique d'exécution Power Automate a aussi été un moyen de travail important, car il m'a permis de vérifier les valeurs reçues et de comprendre les erreurs pendant les tests.
 
 Les moyens humains reposaient principalement sur le service informatique. Mon tuteur de l'époque a exprimé le besoin initial et validé les choix importants. De mon côté, j'ai pris en charge la partie opérationnelle : compréhension du besoin, création de l'application, configuration de la liste SharePoint, préparation du flux, tests et corrections. Le service maintenance intervient aussi indirectement, car la mise en service dépend du support physique de la tablette.
 
-Pour les moyens financiers, aucune donnée budgétaire exploitable n'est intégrée à ce stade dans le rapport. Je ne peux donc pas détailler de coût matériel, de coût de licence ou d'arbitrage financier sans validation.
+Pour les moyens financiers, aucune licence payante supplémentaire spécifique n'a été identifiée ; la mission s'est appuyée sur les outils déjà disponibles dans l'environnement Microsoft de l'entreprise. Je ne détaille donc ni coût matériel ni arbitrage financier non validé.
 
 ### 2.4 Contraintes de la mission
 
@@ -170,7 +172,7 @@ Dans un premier temps, j'ai cherché à comprendre le besoin métier. Le but n'�
 
 Le travail s'est organisé en plusieurs phases assez simples : cadrage du besoin, préparation de la liste SharePoint, création de l'application Power Apps, mise en place du flux Power Automate, puis tests et ajustements.
 
-La première étape technique a consisté à préparer la liste SharePoint. Cette liste devait contenir les champs nécessaires au registre : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage. La date est renseignée automatiquement et les heures sont saisies via des listes déroulantes dans Power Apps, ce qui limite les erreurs de format.
+La première étape technique a consisté à préparer la structure SharePoint. La solution s'appuie sur une liste principale pour les enregistrements visiteurs et sur une liste complémentaire dédiée aux sociétés, ce qui permet de structurer davantage les informations saisies dans l'application. La liste principale contient les champs nécessaires au registre : nom, prénom, société, personne visitée, heure d'arrivée, heure de départ et date de passage. La date est renseignée automatiquement et les heures sont saisies via des listes déroulantes dans Power Apps, ce qui limite les erreurs de format.
 
 J'ai ensuite travaillé sur l'application Power Apps. L'objectif était de créer un formulaire clair, avec les champs nécessaires et une zone de signature. La signature est réalisée directement sur la tablette, puis envoyée au flux Power Automate en même temps que les autres informations.
 
@@ -208,13 +210,15 @@ Pour l'entreprise, la plus-value reste à présenter avec prudence. À ce stade,
 
 La solution peut donc être considérée comme validée sur les plans applicatif et technique, mais pas encore comme déployée en usage réel à l'accueil. Je ne peux pas annoncer de gain de temps mesuré, de nombre de visiteurs testés ou d'amélioration prouvée de la traçabilité. Je peux seulement affirmer que la solution prépare une transition vers un registre numérique et que les fonctions attendues côté application, stockage et signature sont opérationnelles.
 
+Les captures disponibles permettent d'illustrer plusieurs éléments de la mission, à condition de rester sur des données de test ou anonymisées : le formulaire Power Apps, le flux Power Automate, la liste SharePoint principale des visiteurs et la liste complémentaire des sociétés.
+
 ### 2.8 Limites et points restant à suivre
 
 La limite principale est l'absence de mise en service réelle à l'accueil. La solution est validée techniquement, mais l'utilisation quotidienne reste suspendue à l'installation par la maintenance du support physique destiné à sécuriser la tablette. Le registre papier ne doit donc pas être présenté comme remplacé.
 
 Une autre limite concerne les tests en conditions réelles. Les tests techniques ont permis de valider l'application, le flux et la signature. En revanche, l'utilisation par l'accueil sur une période réelle pourra faire apparaître des ajustements à prévoir : ergonomie, compréhension des champs, rythme de saisie ou cas particuliers non rencontrés pendant les tests.
 
-La confidentialité reste un point à surveiller. Un registre visiteurs contient des données personnelles. Il faut donc éviter les captures non anonymisées, les exports contenant de vrais noms ou les exemples basés sur des visiteurs réels. Si des illustrations sont ajoutées plus tard, elles devront être anonymisées ou remplacées par un schéma simplifié.
+La confidentialité reste un point à surveiller. Un registre visiteurs contient des données personnelles. Il faut donc éviter les captures non anonymisées, les exports contenant de vrais noms ou les exemples basés sur des visiteurs réels. Si des illustrations sont ajoutées, elles devront s'appuyer uniquement sur des données de test ou sur des données anonymisées.
 
 Le seuil de détection de signature doit aussi être suivi. Le seuil autour de 7000 caractères fonctionne comme solution pragmatique dans le contexte testé. Il faudra cependant rester prudent si le comportement du contrôle Power Apps évolue, si l'application est modifiée ou si un autre appareil produit des images de taille différente.
 
@@ -242,11 +246,11 @@ Cette mission reste à l'échelle d'une première année d'alternance. Elle ne c
 
 ### 3.1 Contexte et besoin initial
 
-J'ai également participé à une mission continue de sécurité opérationnelle autour d'Active Directory et de Microsoft 365. Contrairement aux deux premières missions, il ne s'agit pas d'un sujet avec un début, une phase de réalisation clairement isolée, puis une fin. Cette activité revient au fil des incidents, des demandes utilisateurs et des vérifications quotidiennes liées aux comptes, aux connexions et aux postes de travail.
+J'ai également participé à une mission continue de sécurité opérationnelle autour d'Active Directory, de Microsoft 365 et de Microsoft Entra. Contrairement aux deux premières missions, il ne s'agit pas d'un sujet avec un début, une phase de réalisation clairement isolée, puis une fin. Cette activité s'est déroulée de manière continue sur l'année, au fil des incidents, des demandes utilisateurs et des vérifications quotidiennes liées aux comptes, aux connexions et aux postes de travail.
 
 Dans le fonctionnement courant du service, certains problèmes peuvent paraître simples au premier abord. Un utilisateur signale par exemple qu'il ne peut plus se connecter, qu'un mot de passe semble ne plus fonctionner, que son compte se verrouille sans raison apparente ou qu'une connexion lui paraît inhabituelle. Pourtant, ce type de symptôme peut avoir plusieurs causes. Il peut s'agir d'une mauvaise saisie, d'un ancien mot de passe encore enregistré sur un poste ou un équipement, d'un problème de synchronisation, d'une authentification réseau liée au Wi-Fi, ou d'un comportement qui demande au contraire une vérification plus prudente.
 
-Dans ce contexte, mon rôle n'était pas de mener un audit complet de sécurité ni de prendre seul des décisions structurantes. J'ai surtout participé à une mission continue de diagnostic. Elle m'a amené à analyser des incidents liés aux verrouillages de comptes, aux échecs d'authentification, aux connexions suspectes, aux vérifications Microsoft 365 et aux journaux Windows. Cette mission s'inscrit directement dans le fil conducteur du rapport, car elle touche à la fois à la continuité de service, à la sécurité et à la méthode de travail.
+Dans ce contexte, mon rôle n'était pas de mener un audit complet de sécurité ni de prendre seul des décisions structurantes. J'ai surtout participé à une mission continue de diagnostic. Elle m'a amené à analyser des incidents liés aux verrouillages de comptes, aux échecs d'authentification, aux connexions suspectes, aux vérifications Microsoft 365 et Microsoft Entra, ainsi qu'aux journaux Windows. Cette mission s'inscrit directement dans le fil conducteur du rapport, car elle touche à la fois à la continuité de service, à la sécurité et à la méthode de travail.
 
 Elle répond aussi à un besoin très concret pour l'entreprise. Lorsqu'un compte reste bloqué ou qu'une authentification échoue, le problème n'est pas seulement technique. Il peut empêcher un utilisateur de travailler normalement, perturber un accès à un service ou faire perdre du temps au support. Il faut donc intervenir assez rapidement, mais sans conclure trop vite. C'est ce mélange de réactivité et de prudence qui revient le plus dans cette mission.
 
@@ -264,13 +268,13 @@ Enfin, un autre objectif était de mieux comprendre les liens entre Active Direc
 
 Cette mission s'appuyait d'abord sur les outils d'administration Active Directory, utilisés pour vérifier l'état d'un compte, observer un verrouillage et contrôler les premiers éléments liés à l'authentification. L'objectif n'était pas de détailler une console précise, mais d'utiliser les outils disponibles pour confirmer que le compte concerné correspondait bien au problème signalé.
 
-Selon les cas, les vérifications pouvaient aussi concerner Microsoft 365 et les outils associés à la gestion des identités et des accès, selon les points à vérifier dans l'environnement utilisé. Il ne s'agissait pas d'analyser tout l'environnement Microsoft, mais de voir si certaines connexions ou certains comportements observés côté utilisateur apparaissaient aussi dans ces contrôles.
+Selon les cas, les vérifications pouvaient aussi concerner Microsoft 365, Microsoft Entra et les outils associés à la gestion des identités et des accès. Il ne s'agissait pas d'analyser tout l'environnement Microsoft, mais de voir si certaines connexions ou certains comportements observés côté utilisateur apparaissaient aussi dans ces contrôles.
 
 Les journaux d'événements Windows ont ensuite joué un rôle central. Je ne les présente pas comme une liste technique à apprendre, mais comme des sources d'information qui permettent d'orienter le diagnostic. Certains événements de sécurité pouvaient, par exemple, confirmer un verrouillage de compte ou un échec d'authentification. Dans certains cas, un code d'état aidait aussi à comprendre si le compte était déjà verrouillé plutôt qu'en simple erreur de saisie. Ces éléments restaient cependant à recouper avec le contexte utilisateur et les autres vérifications.
 
 Lorsque le problème semblait lié à une authentification réseau, notamment sur le Wi-Fi, les journaux associés à cette partie pouvaient compléter l'analyse. Le poste utilisateur concerné constituait lui aussi un moyen important, car il fallait parfois vérifier si une session restait ouverte, si des informations d'identification anciennes étaient encore enregistrées, ou si un logiciel répétait automatiquement une tentative de connexion.
 
-Cette mission repose surtout sur des moyens techniques, humains et documentaires. Elle ne correspond pas à un achat ou à un projet budgétaire identifié, mais à une activité continue de diagnostic dans le fonctionnement du service informatique. Les échanges avec l'utilisateur, la validation du tuteur, l'expérience du service et la documentation disponible comptaient donc autant que la lecture des journaux eux-mêmes.
+Cette mission repose surtout sur des moyens techniques, humains et documentaires. Elle ne correspond pas à un achat ou à un projet budgétaire identifié, mais à une activité continue de diagnostic dans le fonctionnement du service informatique. Aucune licence payante supplémentaire spécifique n'a été identifiée ; les analyses se sont appuyées sur les outils déjà disponibles dans l'environnement de l'entreprise. Les échanges avec l'utilisateur, la validation du tuteur, l'expérience du service et la documentation disponible comptaient donc autant que la lecture des journaux eux-mêmes.
 
 ### 3.4 Contraintes de la mission
 
@@ -288,7 +292,7 @@ Enfin, mon rôle d'alternant imposait une limite claire. Je pouvais participer �
 
 La démarche suivie dans cette mission restait assez stable, même si chaque incident gardait ses particularités. Je partais d'abord du symptôme signalé, puis je cherchais le contexte utile : poste concerné, changement récent de mot de passe, présence d'un autre appareil, connexion automatique ou incident réseau possible. Cette première étape évitait de lire les journaux sans point de départ.
 
-Je vérifiais ensuite les éléments les plus immédiats dans les outils d'administration Active Directory, sur le poste utilisateur et, si nécessaire, dans Microsoft 365 ou dans les outils liés aux identités et aux accès. La lecture des journaux servait alors à confirmer ou à écarter les premières hypothèses. L'idée n'était pas de trouver un événement isolé, mais de recouper plusieurs indices avant de proposer une explication probable.
+Je vérifiais ensuite les éléments les plus immédiats dans les outils d'administration Active Directory, sur le poste utilisateur et, si nécessaire, dans Microsoft 365, Microsoft Entra ou dans les outils liés aux identités et aux accès. La lecture des journaux servait alors à confirmer ou à écarter les premières hypothèses. L'idée n'était pas de trouver un événement isolé, mais de recouper plusieurs indices avant de proposer une explication probable.
 
 Un exemple-type anonymisé illustre bien cette méthode : après le déblocage d'un compte, celui-ci pouvait se reverrouiller peu de temps après. Dans ce cas, je ne partais pas du principe que la cause était déjà connue. Je vérifiais plutôt plusieurs pistes possibles, comme un ancien mot de passe encore enregistré, un logiciel qui retentait une connexion, un autre équipement ou une authentification réseau répétée. La correction n'était proposée qu'après ce recoupement, puis suivie pour voir si le symptôme réapparaissait ou non.
 
@@ -324,7 +328,7 @@ Une autre limite concerne la confidentialité. Comme cette mission touche à des
 
 Je ne dispose pas non plus d'indicateurs chiffrés validés sur cette activité. Je ne peux donc pas annoncer un nombre d'incidents traités, un temps moyen de résolution, ni une baisse mesurée des problèmes d'authentification. Les résultats doivent rester qualitatifs.
 
-Enfin, plusieurs points devront encore être vérifiés pour une version finale plus précise du rapport : la formulation exacte des outils Microsoft associés aux identités et aux accès [À vérifier], la période la plus pertinente à citer pour cette mission continue, et le niveau de détail autorisé sur certains exemples anonymisés.
+Enfin, cette mission doit rester présentée avec un niveau de détail compatible avec la confidentialité. Pour la partie sécurité, un schéma méthodologique anonymisé est préférable à une capture de logs ou de comptes réels.
 
 ### 3.9 Recul personnel sur la mission
 

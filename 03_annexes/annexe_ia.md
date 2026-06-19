@@ -20,7 +20,7 @@ L'usage de l'IA a concerné principalement la structuration générale du rappor
 
 ## Validation humaine
 
-L'étudiant reste entièrement responsable du contenu final du rapport. Les propositions générées par l'IA ont été relues, triées, corrigées et validées humainement avant intégration. Les informations internes, sensibles ou incomplètes ont été anonymisées, retirées ou marquées `[À vérifier]` lorsqu'une confirmation restait nécessaire.
+L'étudiant reste entièrement responsable du contenu final du rapport. Les propositions générées par l'IA ont été relues, triées, corrigées et validées humainement avant intégration. Les informations internes, sensibles ou incomplètes ont été anonymisées, retirées ou signalées comme restant à confirmer lorsqu'une validation manquait.
 
 ## Limites d'usage
 
