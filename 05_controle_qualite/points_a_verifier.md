@@ -213,6 +213,8 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Style ni trop académique, ni trop générique, ni trop soutenu : `[À vérifier]`.
 - Répétitions et formulations lourdes corrigées sans dénaturer la logique d’écriture de l’étudiant : `[À vérifier]`.
 - Objectifs, actions réalisées, résultats obtenus et points `[À vérifier]` clairement distingués : `[À vérifier]`.
+- Partie IV suffisamment réflexive sans répéter excessivement la Partie II : `[À vérifier]`.
+- Partie V formulée en perspectives réalistes et non en promesses de déploiement : `[À vérifier]`.
 
 ## Illustrations et annexes
 
