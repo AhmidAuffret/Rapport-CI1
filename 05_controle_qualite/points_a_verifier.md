@@ -37,8 +37,8 @@ Statut général : le plan est cohérent pour commencer une première rédaction
 
 ## Points prioritaires avant rédaction
 
-- Données officielles Leroux utilisables dans le rapport : activité, secteur, sites et effectif approximatif intégrés ; sources publiques encore à vérifier.
-- Noms et postes des personnes à remercier : intégrés ; orthographe complète de `Quentin ****` et autorisation finale `[À vérifier]`.
+- Données officielles Leroux utilisables dans le rapport : activité, secteur, sites et effectif approximatif intégrés avec une formulation prudente sur l'ordre de la centaine de salariés ; sources publiques encore à vérifier.
+- Noms et postes des personnes à remercier : intégrés avec Quentin Despelchin, Loïc Humann, Thierry Devigne, Éloïse Six et Ghislain Lesaffre ; autorisation finale de citation `[À vérifier]`.
 - Description exacte de l’équipe informatique : service composé de deux personnes, responsable informatique et alternant administrateur systèmes et réseaux.
 - Dates ou périodes des missions : durée approximative Intune environ deux mois, registre visiteurs environ un mois ; périodes calendaires exactes `[À compléter]`.
 - Résultats mesurables disponibles : `[À vérifier]`.
@@ -55,16 +55,16 @@ Informations nécessaires pour rédiger correctement la présentation de l'entre
 
 - formulation officielle de l'activité principale de Leroux : intégrée comme entreprise industrielle agroalimentaire spécialisée dans la transformation de la chicorée ;
 - sources publiques validées pour l'histoire, l'activité, l'implantation, la filière et les produits ;
-- chiffres clés publics utilisables ou décision explicite de ne pas en utiliser : effectif approximatif intégré ; chiffre d'affaires et volumes à sourcer ;
+- chiffres clés publics utilisables ou décision explicite de ne pas en utiliser : effectif rendu volontairement prudent dans la rédaction ; chiffre d'affaires et volumes à sourcer ;
 - sites Leroux pouvant être cités dans le rapport : Orchies et Vieille-Église intégrés ;
 - description exacte du service informatique : intégrée ;
 - nom exact du service : "service informatique" ;
 - taille de l'équipe informatique : deux personnes ;
 - rôles ou métiers principaux présents dans l'équipe : responsable informatique et alternant administrateur systèmes et réseaux ;
-- rattachement ou positionnement du service dans l'organisation : responsable informatique rattaché au DAF Quentin **** `[orthographe / anonymisation à confirmer]` ;
+- rattachement ou positionnement du service dans l'organisation : responsable informatique rattaché au directeur administratif et financier Quentin Despelchin ;
 - interactions principales entre le service informatique et les autres services : échanges réguliers avec les utilisateurs intégrés ; services précis `[À compléter si nécessaire]` ;
 - positionnement réel de l'étudiant dans l'équipe : intégré avec grande autonomie opérationnelle et validation finale par le tuteur ou l'entreprise ;
-- nom, fonction et autorisation de citation du maître d'apprentissage : Loïc Humman puis Thierry Devigne intégrés ; autorisation finale de citation `[À vérifier]` ;
+- nom, fonction et autorisation de citation du maître d'apprentissage : Loïc Humann puis Thierry Devigne intégrés ; autorisation finale de citation `[À vérifier]` ;
 - niveau de confidentialité global du rapport : règle de prudence intégrée ; mention CONFIDENTIEL `[À vérifier]` ;
 - autorisation ou non d'utiliser des noms de personnes, sites, services, schémas ou captures : partiellement intégrée ; validation finale `[À vérifier]`.
 
@@ -99,6 +99,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - logos autorisés ;
 - liste définitive des personnes à remercier ;
 - formulation finale des résumés français et anglais ;
+- harmonisation finale des éléments préliminaires avec la pagination, le sommaire et la mise en forme Word ;
 - choix définitif des illustrations ;
 - table des figures et tableaux ;
 - niveau de détail des annexes techniques ;
@@ -106,15 +107,16 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - autorisation de mentionner SFR Cloud Agility si Docker est cité ;
 - bibliographie finale avec dates de consultation ;
 - annexe IA complète, incluant l'impact environnemental ou le bilan carbone ;
+- niveau final de détail retenu dans l'annexe IA par rapport aux consignes de l'école ;
 - correction orthographique et harmonisation de style avant export ;
 - validation finale de la mention CONFIDENTIEL.
 
 ## Contexte entreprise
 
-- Données officielles Leroux utilisables dans le rapport : activité, secteur, sites principaux et effectif approximatif intégrés ; sources publiques `[À vérifier]`.
+- Données officielles Leroux utilisables dans le rapport : activité, secteur, sites principaux et effectif approximatif intégrés avec une formulation prudente ; sources publiques `[À vérifier]`.
 - Présentation officielle de Leroux validée : `[À vérifier]`.
 - Secteur et activité exacte : industrie agroalimentaire, transformation de la chicorée.
-- Chiffres clés publics sourcés : effectif approximatif interne environ 150 salariés ; chiffre d'affaires et volumes `[À vérifier avec sources publiques]`.
+- Chiffres clés publics sourcés : effectif rendu volontairement prudent dans la rédaction ; chiffre d'affaires et volumes `[À vérifier avec sources publiques]`.
 - Histoire, culture et valeurs : `[À vérifier]`.
 - Organisation, processus ou organigramme utilisables : `[À vérifier]`.
 - Clients, partenaires, concurrents ou environnement économique à mentionner : `[À vérifier]`.
@@ -122,19 +124,26 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ## Remerciements
 
-- Noms et postes des personnes à remercier : Loïc Humman, Thierry Devigne, Quentin ****, Éloïse Six, Guilhain Lesaffre et collaborateurs du quotidien intégrés.
-- Raison précise du remerciement pour chaque personne : `[À compléter]`.
+- Noms et postes des personnes à remercier : Loïc Humann, Thierry Devigne, Quentin Despelchin, Éloïse Six, Ghislain Lesaffre et collaborateurs du quotidien intégrés.
+- Raison précise du remerciement pour chaque personne : remerciements rédigés de manière sobre et groupée ; si une formulation plus individualisée est souhaitée dans la version Word, elle reste `[À compléter]`.
 - Validation de l’orthographe des noms et fonctions : `[À vérifier]`.
 - Accord pour citer les personnes nommément si nécessaire : `[À vérifier]`.
+
+## Éléments préliminaires
+
+- Résumé français rédigé et cohérent avec les Parties I à V : `[À vérifier]`.
+- Abstract anglais simple rédigé et aligné sur le résumé français : `[À vérifier]`.
+- Mots-clés et keywords cohérents avec le contenu final du rapport : `[À vérifier]`.
+- Remerciements présents conformément aux consignes IMT : `[À vérifier]`.
 
 ## Service informatique et rôle de l'étudiant
 
 - Description exacte de l’équipe informatique : service informatique composé du responsable informatique et de l'alternant administrateur systèmes et réseaux.
 - Taille et organisation de l'équipe : deux personnes, organisation souple selon les besoins, priorités, projets et disponibilités.
-- Rattachement ou positionnement du service : responsable informatique rattaché au DAF Quentin **** `[orthographe / anonymisation à confirmer]`.
+- Rattachement ou positionnement du service : responsable informatique rattaché au directeur administratif et financier Quentin Despelchin.
 - Métiers du service informatique et métiers internes en interaction avec l'étudiant : `[À compléter]`.
 - Positionnement de l'étudiant dans l'équipe : alternant administrateur systèmes et réseaux avec grande autonomie opérationnelle.
-- Nom et rôle du maître d'apprentissage : Loïc Humman au début de l'année, puis Thierry Devigne, responsables informatiques et tuteurs successifs.
+- Nom et rôle du maître d'apprentissage : Loïc Humann au début de l'année, puis Thierry Devigne, responsables informatiques et tuteurs successifs.
 - Interactions avec les autres métiers ou services : échanges réguliers avec les utilisateurs ; services précis `[À compléter si nécessaire]`.
 - Niveau d’autonomie réel de l’étudiant selon les missions : autonomie opérationnelle importante, décisions finales structurantes ou financières validées par le tuteur ou l'entreprise.
 - Formulation évitant de présenter l'étudiant comme responsable unique du SI : `[À vérifier]`.
@@ -157,7 +166,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 - Tests réalisés sur les tablettes : tests et ajustements intégrés ; résultats précis `[À compléter]`.
 - Statut exact de validation de la configuration : `[À vérifier]`.
-- Volume de tablettes concernées si diffusable : `[À vérifier]`.
+- Volume de tablettes concernées si diffusable : intégré avec trois tablettes Samsung Galaxy Tab S10 FE+ pour la production et une tablette distincte pour le registre visiteurs.
 - Applications réellement déployées ou seulement prévues : `[À vérifier]`.
 - Procédure ou documentation interne produite : `[À compléter]`.
 - Points déplacés ou reformulés lors de la correction v2 : période calendaire exacte, nombre exact de tablettes, résultats précis des tests, documentation interne éventuelle, niveau d'autorisation pour citer les paramètres, outils, modèle de tablette et version Android.
@@ -168,10 +177,10 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ### Registre visiteurs Power Apps / SharePoint / Power Automate
 
-- Tablette utilisée à l’entrée : tablette d'accueil destinée au registre visiteurs ; modèle exact `[À vérifier]`.
+- Tablette utilisée à l’entrée : tablette d'accueil distincte destinée au registre visiteurs ; ne pas lui attribuer le modèle des tablettes de production sans validation supplémentaire.
 - Service ou utilisateurs concernés : accueil ; service précis `[À compléter si nécessaire]`.
 - Statut réel de mise en service : techniquement validé, pas encore utilisé à l'accueil.
-- Suppression totale ou partielle du registre papier : non confirmée, ne pas annoncer comme réalisée.
+- Suppression totale ou partielle du registre papier : non confirmée ; le registre papier reste utilisé tant que la tablette n'est pas installée sur un support physique sécurisé.
 - Fiabilité finale du flow `FLOW_CreateVisitorWithSignature` : flow fonctionnel et signature PNG correctement enregistrée.
 - Données budgétaires exploitables pour cette mission : non intégrées à ce stade ; confirmer seulement si l'école ou l'entreprise souhaite faire apparaître un volet financier.
 - Absence de données visiteurs réelles dans le rapport : `[À vérifier]`.
@@ -183,7 +192,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Chronologie des analyses : `[À compléter]`.
 - Causes réellement identifiées ou hypothèses non confirmées : `[À vérifier]`.
 - Exemples anonymisés disponibles : `[À vérifier]`.
-- Mention explicite de Microsoft Entra dans la rédaction finale ou maintien d'une formulation plus générale : `[À vérifier]`.
+- Mention explicite de Microsoft Entra dans la rédaction finale : intégrée dans la mission sécurité et dans les parties transversales.
 - Période la plus pertinente à citer pour cette mission continue : `[À compléter]`.
 - Niveau de détail autorisé sur l’authentification réseau, le Wi-Fi et les journaux associés : `[À vérifier]`.
 - Aucun journal brut sensible inclus : `[À vérifier]`.
@@ -213,6 +222,8 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Style ni trop académique, ni trop générique, ni trop soutenu : `[À vérifier]`.
 - Répétitions et formulations lourdes corrigées sans dénaturer la logique d’écriture de l’étudiant : `[À vérifier]`.
 - Objectifs, actions réalisées, résultats obtenus et points `[À vérifier]` clairement distingués : `[À vérifier]`.
+- Partie IV suffisamment réflexive sans répéter excessivement la Partie II : `[À vérifier]`.
+- Partie V formulée en perspectives réalistes et non en promesses de déploiement : `[À vérifier]`.
 
 ## Illustrations et annexes
 
@@ -231,7 +242,7 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 - Niveau de confidentialité demandé par l'entreprise : aucune directive spécifique donnée, règle de prudence appliquée.
 - Mention CONFIDENTIEL nécessaire ou non : `[À vérifier]`.
 - Niveau de confidentialité de chaque mission : `[À vérifier]`.
-- Noms de personnes validés ou remplacés par `[REDACTED]` : personnes à remercier intégrées ; autorisation finale et `Quentin ****` `[À vérifier]`.
+- Noms de personnes validés ou remplacés par `[REDACTED]` : personnes à remercier intégrées avec les orthographes validées ; autorisation finale de citation `[À vérifier]`.
 - Noms de comptes et utilisateurs anonymisés : à anonymiser systématiquement.
 - Adresses IP internes supprimées ou remplacées par `[REDACTED]` : à anonymiser systématiquement.
 - Noms de serveurs internes supprimés ou validés : à anonymiser systématiquement sauf validation explicite.
@@ -243,13 +254,13 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 - Rapport entre 25 et 40 pages hors annexes : `[À vérifier]`.
 - Structure minimale IMT respectée : `[À vérifier]`.
-- Annexe IA présente et transparente : `[À vérifier]`.
-- Impact environnemental ou bilan carbone de l’usage IA renseigné : `[À compléter]`.
+- Annexe IA présente et transparente : complétée ; `[À vérifier]` en relecture finale.
+- Impact environnemental ou bilan carbone de l’usage IA renseigné : mention sobre d'usage raisonné intégrée ; vérifier si l'école attend une formulation plus précise.
 - Mise en forme conforme : `[À vérifier]`.
 - Illustrations titrées, numérotées, annotées et utiles : `[À vérifier]`.
 - Bibliographie présente pour les sources publiques et techniques : `[À vérifier]`.
 - Introduction présentant le sujet, les objectifs des missions et le plan : `[À vérifier]`.
-- Conclusion répondant au fil conducteur : `[À vérifier]`.
+- Conclusion répondant au fil conducteur : complétée ; `[À vérifier]` en cohérence finale avec l'ensemble du rapport.
 
 ## Risques principaux
 
