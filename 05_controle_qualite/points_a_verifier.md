@@ -178,12 +178,13 @@ Informations utiles pour améliorer le rapport mais non nécessaires au premier 
 
 ### Sécurité opérationnelle AD / Microsoft 365
 
-- Formulation exacte de l’environnement Microsoft / Entra : `[À vérifier]`.
+- Formulation exacte de l’environnement Microsoft 365 et des outils associés aux identités et aux accès : `[À vérifier]`.
 - Outils précis utilisés pour les journaux et diagnostics : `[À compléter]`.
 - Chronologie des analyses : `[À compléter]`.
 - Causes réellement identifiées ou hypothèses non confirmées : `[À vérifier]`.
 - Exemples anonymisés disponibles : `[À vérifier]`.
-- Mention explicite de Microsoft Entra dans la rédaction finale : `[À vérifier]`.
+- Mention explicite de Microsoft Entra dans la rédaction finale ou maintien d'une formulation plus générale : `[À vérifier]`.
+- Période la plus pertinente à citer pour cette mission continue : `[À compléter]`.
 - Niveau de détail autorisé sur l’authentification réseau, le Wi-Fi et les journaux associés : `[À vérifier]`.
 - Aucun journal brut sensible inclus : `[À vérifier]`.
 
