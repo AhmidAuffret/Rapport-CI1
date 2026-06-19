@@ -1,7 +1,5 @@
 # Annexe — Usage de l'IA
 
-Statut : version rédigée à relire avant export final.
-
 ## Outils utilisés
 
 Les outils d'intelligence artificielle utilisés dans le cadre de ce rapport sont ChatGPT et Codex.

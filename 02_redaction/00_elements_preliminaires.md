@@ -1,7 +1,5 @@
 # Éléments préliminaires
 
-Objectif : préparer la page de garde, les remerciements, le résumé, l'abstract, le sommaire et les tables.
-
 Rapport confidentiel - diffusion limitée à l'IMT Nord Europe et à l'entreprise Leroux.
 
 ## Remerciements
@@ -41,5 +39,3 @@ This report therefore presents the context of my apprenticeship, the methods and
 ## Keywords
 
 Apprenticeship ; IT department ; systems and network administration ; Microsoft Intune ; Android Enterprise ; Power Apps ; SharePoint ; Power Automate ; Active Directory ; Microsoft 365 ; operational security
-
-Statut : brouillon rédigé à harmoniser avec la mise en forme finale du rapport.

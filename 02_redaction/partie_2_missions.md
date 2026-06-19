@@ -1,7 +1,5 @@
 # Partie II — Missions réalisées
 
-Statut : Version brouillon en cours
-
 ## 1. Microsoft Intune / Android Enterprise
 
 ### 1.1 Contexte et besoin initial
@@ -10,7 +8,7 @@ La première mission principale que je présente concerne la gestion des tablett
 
 Chez Leroux, les tablettes répondent à deux besoins distincts. Le premier concerne une tablette destinée au registre visiteurs à l'accueil. Le second concerne des tablettes utilisées en production. Les usages ne sont pas les mêmes, mais l'objectif reste proche : disposer d'appareils configurés de manière cohérente, avec les applications utiles, les restrictions nécessaires et un niveau de sécurité adapté à un contexte professionnel.
 
-La mission a représenté environ deux mois de travail. Cette durée comprend la prise en main de Microsoft Intune, la configuration de la tablette destinée au registre visiteurs et la configuration des tablettes de production. La période exacte n'est pas indispensable pour comprendre la mission dans ce brouillon ; elle devra être confirmée dans la version finale.
+La mission a représenté environ deux mois de travail. Cette durée comprend la prise en main de Microsoft Intune, la configuration de la tablette destinée au registre visiteurs et la configuration des tablettes de production. La période exacte n'est pas indispensable pour comprendre la mission et pourra être confirmée dans la version finale.
 
 Microsoft Intune a été utilisé avec Android Enterprise en mode fully managed. Ce mode correspond à des appareils entièrement gérés par l'entreprise. La tablette n'est donc pas pensée comme un appareil personnel auquel on ajoute quelques règles, mais comme un équipement professionnel préparé pour un usage défini.
 
@@ -106,7 +104,13 @@ La documentation reste également à confirmer. Si une procédure interne ou une
 
 Un autre point à suivre concerne l'usage réel des tablettes dans le temps. Une configuration peut fonctionner au moment des tests, mais elle doit encore être observée dans la durée pour vérifier qu'elle reste adaptée aux usages.
 
-Pour les illustrations, il faut rester prudent. Une capture anonymisée de la console Intune pourra illustrer la gestion de plusieurs tablettes de production. En revanche, la tablette destinée au registre visiteurs n'apparaissant pas dans la vue disponible, elle ne doit pas être présentée comme visible sur cette capture. Une capture anonymisée du profil de configuration permet aussi d'illustrer le principe de gestion centralisée, même si tous les paramètres ne sont pas visibles sur un seul écran.
+Les captures prévues en annexe permettent d'illustrer la gestion centralisée des tablettes dans Intune, notamment pour les équipements destinés à la production et les éléments liés à la configuration.
+
+[Figure à insérer : fig01_intune_appareils_production_anonymise.png — Vue des tablettes de production dans Intune]
+
+[Figure à insérer : fig02_intune_profil_configuration_anonymise_production.png — Profil de configuration Intune appliqué aux tablettes de production]
+
+[Figure à insérer : fig02_intune_profil_configuration_anonymise_visiteur.png — Profil de configuration Intune lié à la tablette visiteurs]
 
 La confidentialité doit aussi rester surveillée. Les noms exacts des tokens, groupes, appareils ou paramètres internes ne sont pas indispensables à la compréhension du rapport. Dans la version finale, il faudra conserver une formulation générale ou remplacer les éléments sensibles par `[REDACTED]` si l'entreprise le demande.
 
@@ -210,7 +214,15 @@ Pour l'entreprise, la plus-value reste à présenter avec prudence. À ce stade,
 
 La solution peut donc être considérée comme validée sur les plans applicatif et technique, mais pas encore comme déployée en usage réel à l'accueil. Je ne peux pas annoncer de gain de temps mesuré, de nombre de visiteurs testés ou d'amélioration prouvée de la traçabilité. Je peux seulement affirmer que la solution prépare une transition vers un registre numérique et que les fonctions attendues côté application, stockage et signature sont opérationnelles.
 
-Les captures disponibles permettent d'illustrer plusieurs éléments de la mission, à condition de rester sur des données de test ou anonymisées : le formulaire Power Apps, le flux Power Automate, la liste SharePoint principale des visiteurs et la liste complémentaire des sociétés.
+Les captures prévues en annexe présentent le formulaire Power Apps, le flux Power Automate associé, ainsi que les listes SharePoint utilisées pour les visiteurs et les sociétés. Les données visibles dans ces captures correspondent à des valeurs de test, la solution n'étant pas encore utilisée en production à l'accueil.
+
+[Figure à insérer : fig03_powerapps_formulaire_visiteur_test.png — Formulaire Power Apps du registre visiteurs]
+
+[Figure à insérer : fig04_powerautomate_flow_registre_visiteurs_anonymise.png — Flux Power Automate associé au registre visiteurs]
+
+[Figure à insérer : fig05_sharepoint_liste_visiteurs_test.png — Liste SharePoint des visiteurs avec données de test]
+
+[Figure à insérer : fig06_sharepoint_liste_societes_anonymise.png — Liste SharePoint des sociétés avec données de test]
 
 ### 2.8 Limites et points restant à suivre
 
