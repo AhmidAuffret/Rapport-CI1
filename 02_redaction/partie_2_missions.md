@@ -34,11 +34,11 @@ Les principaux outils utilisés ont été Microsoft Intune et Android Enterprise
 
 Les appareils concernés sont des tablettes Android professionnelles. Le modèle exact et la version Android sont connus dans le contexte de travail, mais leur citation devra être confirmée avant la version finale. Dans cette section, je parle donc des tablettes de manière générale, sans indiquer de volume précis.
 
-L'enrôlement des tablettes s'appuyait sur un token dédié et sur un groupe associé à l'usage production. Comme ces noms correspondent à une configuration interne, je ne les détaille pas. Dans le rapport, il est suffisant de parler d'un token d'enrôlement dédié et d'un groupe de tablettes de production.
+Pour les tablettes de production, l'enrôlement s'appuyait sur un token dédié et sur un groupe associé à cet usage. Comme ces noms correspondent à une configuration interne, je ne les détaille pas. Dans le rapport, il est suffisant de parler d'un token d'enrôlement dédié et d'un groupe de tablettes de production.
 
 Les applications prévues ou déployées sur les tablettes comprenaient des outils bureautiques et collaboratifs comme Word, Excel, PowerPoint, OneNote, Teams et Outlook. D'autres applications utiles étaient également disponibles, comme Collabora et Adobe Reader. Ces applications correspondent à des besoins d'usage professionnel : consultation, saisie, communication ou ouverture de documents.
 
-Des liens web utiles étaient aussi prévus sur les tablettes, notamment vers la GMAO, Fastilog et GLPI. GLPI est ici seulement cité comme lien ou outil disponible sur tablette. Il ne s'agit pas d'une mission principale du rapport, conformément aux règles du projet.
+Des liens web utiles étaient aussi prévus sur les tablettes, notamment vers la GMAO, GLPI et d'autres outils métiers internes. GLPI est ici seulement cité comme lien ou outil disponible sur tablette. Il ne s'agit pas d'une mission principale du rapport, conformément aux règles du projet.
 
 Les moyens humains mobilisés reposaient principalement sur le service informatique. Mon tuteur définissait le cadre et validait les décisions importantes. De mon côté, j'ai pris en charge la partie opérationnelle : recherches, configuration, tests, enrôlement, ajustements et échanges lorsque cela était nécessaire. Les choix techniques structurants et les décisions financières restaient validés par le tuteur ou par l'entreprise.
 
@@ -46,7 +46,17 @@ Les moyens financiers ne sont pas détaillés dans ce brouillon, car je ne dispo
 
 La documentation a aussi été une ressource importante, même si l'existence d'une procédure formelle reste à confirmer. Pour prendre en main Intune, il a fallu s'appuyer sur les informations disponibles, tester directement dans l'environnement et vérifier le résultat sur les tablettes.
 
-### 1.4 Démarche suivie
+### 1.4 Contraintes de la mission
+
+La première contrainte était de trouver un équilibre entre sécurité et usage. Une tablette professionnelle doit être cadrée, mais elle doit aussi rester simple à utiliser pour des besoins concrets. Une restriction trop large ou mal adaptée peut gêner le travail au lieu de le sécuriser.
+
+Il fallait aussi tenir compte des deux usages concernés. La tablette d'accueil pour le registre visiteurs et les tablettes de production ne répondent pas exactement aux mêmes contraintes, même si elles reposent sur le même cadre de gestion. La configuration devait donc rester cohérente sans devenir identique dans tous les cas.
+
+Une autre contrainte concernait la méthode. Les réglages devaient être testés avant usage, car une restriction mal appliquée ou trop stricte pouvait poser problème sur le terrain. Le périmètre exact des résultats devait donc rester formulé avec prudence, d'autant plus qu'aucun indicateur mesuré n'est disponible à ce stade.
+
+Enfin, la mission touche à des paramètres internes de configuration. Je reste donc volontairement général sur certains éléments, comme les noms de groupes, de tokens ou le détail complet des règles appliquées, afin de respecter la confidentialité de l'environnement.
+
+### 1.5 Démarche suivie
 
 Dans un premier temps, j'ai cherché à comprendre le besoin. Il ne s'agissait pas seulement de savoir quelles tablettes devaient être configurées, mais aussi de comprendre leur usage. La tablette d'accueil était liée au registre visiteurs, alors que les tablettes de production répondaient à un autre contexte d'utilisation. Cette distinction évitait d'appliquer une configuration unique sans tenir compte du terrain.
 
@@ -54,11 +64,7 @@ J'ai ensuite pris en main Microsoft Intune et Android Enterprise. Cette étape a
 
 Une fois le principe général compris, j'ai travaillé sur le mode Android Enterprise fully managed. L'enrôlement permettait de rattacher la tablette à la gestion Intune, puis de lui appliquer les paramètres associés au groupe prévu pour son usage.
 
-La configuration a ensuite porté sur les restrictions d'usage. Plusieurs paramètres ont été appliqués ou préparés pour cadrer l'utilisation professionnelle : limitation de certaines modifications système ou réseau, restriction de certains usages non prévus et encadrement de l'ajout de comptes. Ces choix permettent de limiter les manipulations qui pourraient sortir la tablette de son usage prévu. Le détail exact de certains paramètres devra être confirmé avant la version finale.
-
-La sécurité de l'accès à l'appareil a également été prise en compte. Une règle de mot de passe a été définie, avec un effacement prévu après plusieurs échecs selon le comportement de la stratégie appliquée. Cette règle doit être présentée avec prudence : elle renforce la protection de l'appareil, mais elle demande aussi d'être expliquée aux utilisateurs concernés pour éviter les mauvaises manipulations.
-
-La gestion des mises à jour faisait aussi partie de la configuration. Une plage horaire hors période d'usage principal a été prévue pour limiter l'impact sur l'utilisation de la tablette pendant le travail. Ce réglage montre qu'une configuration technique doit tenir compte du moment où l'appareil est réellement utilisé.
+La configuration a ensuite porté sur les restrictions d'usage et sur la sécurité d'accès. J'ai préparé des paramètres destinés à limiter certaines modifications système ou réseau, à encadrer l'ajout de comptes et à définir une règle de mot de passe compatible avec l'usage prévu. J'ai aussi prévu une plage de mise à jour hors période d'utilisation principale pour limiter l'impact sur le travail. Le détail complet de ces réglages n'est pas repris ici, car il relève de la configuration interne et doit rester présenté avec prudence.
 
 J'ai aussi travaillé sur les applications nécessaires. L'objectif était que les tablettes disposent des outils utiles sans laisser l'utilisateur chercher ou installer lui-même les applications. Les applications bureautiques, collaboratives et de consultation de documents devaient être disponibles selon les besoins. Les liens web utiles devaient également faciliter l'accès aux outils métiers ou de support prévus.
 
@@ -68,51 +74,43 @@ Les ajustements ont fait partie de la démarche. Une configuration Intune n'est 
 
 Cette démarche m'a montré qu'un outil d'administration centralisée ne supprime pas le besoin de méthode. Intune permet de pousser des règles, mais il faut quand même comprendre le besoin, vérifier les effets réels et garder une trace de ce qui est fait.
 
-### 1.5 Difficultés rencontrées
+### 1.6 Difficultés rencontrées
 
 La première difficulté a été la prise en main de Microsoft Intune. L'outil est complet, mais il peut être difficile à aborder au début. Plusieurs notions se ressemblent ou s'enchaînent : enrôlement, groupe, profil, restriction, application, affectation. Comprendre le rôle de chaque élément a demandé du temps.
 
-Une autre difficulté a été de distinguer ce qui se configure dans le portail et ce qui est réellement appliqué sur la tablette. Le fait de créer une règle ne suffit pas. Il faut que l'appareil soit bien enrôlé, qu'il appartienne au bon groupe, qu'il synchronise les paramètres et que la restriction soit compatible avec le mode de gestion choisi. Cette vérification est importante, car elle évite de croire qu'une configuration est effective alors qu'elle ne l'est pas encore.
+Une autre difficulté a été de distinguer ce qui se configure dans le portail et ce qui est réellement appliqué sur la tablette. Le fait de créer une règle ne suffit pas. Il faut que l'appareil soit bien enrôlé, qu'il appartienne au bon groupe, qu'il synchronise les paramètres et que la restriction soit compatible avec le mode de gestion choisi.
 
-La gestion des restrictions a aussi demandé de la prudence. Certaines restrictions semblent évidentes sur le papier, mais elles peuvent avoir un impact sur l'usage réel. Par exemple, limiter des modifications système ou réseau peut être pertinent pour éviter des changements non maîtrisés, mais cela suppose que la configuration prévue soit correcte. De la même manière, encadrer certains usages non prévus renforce le cadre professionnel, mais il faut vérifier que cela ne bloque pas un besoin légitime.
+La gestion des restrictions a aussi demandé de la prudence. Certaines règles paraissent logiques sur le papier, mais elles peuvent devenir gênantes si elles ne correspondent pas à l'usage réel de la tablette. Il fallait donc vérifier que le niveau de sécurité restait compatible avec le besoin.
 
 La différence entre la tablette d'accueil et les tablettes de production a également nécessité de réfléchir aux usages. Une tablette destinée au registre visiteurs n'a pas forcément les mêmes besoins qu'une tablette utilisée en production. Même si la mission porte globalement sur Intune et Android Enterprise, il ne fallait pas oublier que les équipements correspondent à des situations différentes.
 
-Le manque de données mesurées constitue une limite pour la rédaction. Je peux affirmer que les tablettes ont été configurées via Intune et que les tablettes de production sont utilisées en production, car ces éléments sont validés dans le contexte. En revanche, je ne peux pas inventer un nombre exact de tablettes, un gain de temps, une baisse d'incidents ou un indicateur chiffré. Ces éléments devront être complétés seulement s'ils sont confirmés.
+### 1.7 Résultats obtenus
 
-Enfin, cette mission demandait de rester à ma place d'alternant. J'ai géré le processus de bout en bout sur la partie opérationnelle, mais cela ne signifie pas que j'ai décidé seul des orientations importantes. Les choix finaux, surtout lorsqu'ils engagent l'entreprise, restent validés par le tuteur ou par l'entreprise. Cette limite est normale et elle rend la présentation plus juste.
+Le premier résultat est la mise en place d'une configuration Intune pour les tablettes Android professionnelles concernées. Les tablettes ont été configurées avec Android Enterprise en mode fully managed, ce qui donne un cadre de gestion plus homogène qu'une configuration réalisée appareil par appareil.
 
-### 1.6 Résultats obtenus
+Les tablettes de production sont utilisées en production. Cette information peut être présentée, car elle est validée dans les fichiers de contexte. La mission a également couvert la tablette destinée au registre visiteurs, tout en conservant la distinction entre cet usage d'accueil et l'usage en production.
 
-Le premier résultat est la mise en place d'une configuration Intune pour les tablettes Android professionnelles concernées. Les tablettes ont été configurées avec Android Enterprise en mode fully managed, ce qui permet une gestion plus cadrée que des appareils configurés individuellement.
+La configuration contribue aussi à mieux cadrer l'usage professionnel des appareils. Les restrictions, les applications utiles et les liens prévus permettent de préparer un environnement plus cohérent pour les utilisateurs, sans avoir à présenter cela comme un résultat mesuré.
 
-Les tablettes de production sont utilisées en production. Cette information peut être présentée, car elle est validée dans les fichiers de contexte. Il faut toutefois rester prudent sur le périmètre exact : le nombre de tablettes, les dates précises et l'étendue complète du déploiement restent à confirmer.
+Pour le service informatique, l'apport principal est donc un cadre de gestion plus centralisé du parc mobile. Il permet de mieux préparer, suivre et ajuster les tablettes selon leur usage, tout en laissant la place à des vérifications et à des ajustements ultérieurs.
 
-La configuration contribue à mieux cadrer l'usage professionnel des appareils. Les restrictions appliquées donnent au service informatique une meilleure maîtrise des tablettes, notamment sur les usages qui ne correspondent pas au cadre prévu. La règle de mot de passe et l'effacement prévu après plusieurs échecs ajoutent aussi une protection supplémentaire, sous réserve de confirmer le comportement exact de la stratégie appliquée.
+Pour moi, le résultat est également une montée en compétence sur un outil d'administration utilisé dans beaucoup d'environnements professionnels.
 
-Les applications prévues ont été configurées ou rendues disponibles selon les besoins identifiés, avec des outils comme Word, Excel, PowerPoint, OneNote, Teams, Outlook, Collabora et Adobe Reader. Les liens web utiles, notamment vers la GMAO, Fastilog et GLPI, permettent aussi de rapprocher la tablette de ses usages concrets. Là encore, GLPI reste uniquement cité comme lien ou outil disponible, pas comme sujet principal.
+### 1.8 Limites et points restant à suivre
 
-Un autre résultat est l'amélioration de l'homogénéité de la configuration. Grâce à Intune, les tablettes peuvent recevoir une configuration commune selon leur groupe et leur usage. Cela facilite le suivi par le service informatique et limite les écarts entre appareils. Je formule ce point comme une amélioration de maîtrise, sans que cela constitue un indicateur chiffré de performance.
-
-La mission a aussi permis de mieux structurer la gestion du parc mobile. Le service informatique dispose d'un cadre plus centralisé pour suivre et configurer les tablettes. Cela ne veut pas dire que tout est terminé ou que plus aucun ajustement ne sera nécessaire. Les usages réels doivent continuer à être observés, surtout dans un environnement où les besoins peuvent évoluer.
-
-Pour l'entreprise, l'apport principal est donc une configuration qui contribue à mieux homogénéiser et cadrer les tablettes professionnelles. Pour moi, le résultat est aussi une montée en compétence sur un outil d'administration moderne, utilisé dans beaucoup d'environnements professionnels.
-
-### 1.7 Limites et points restant à suivre
-
-Plusieurs limites doivent être indiquées clairement pour éviter de survaloriser la mission. Le nombre exact de tablettes, la période calendaire précise et l'étendue complète du déploiement devront être confirmés dans la version finale.
+Plusieurs limites doivent être indiquées clairement pour éviter de survaloriser la mission. Le nombre exact de tablettes, la période calendaire précise et le périmètre complet du déploiement devront être confirmés dans la version finale.
 
 Les résultats mesurables ne sont pas disponibles à ce stade. Je ne peux donc pas indiquer de gain de temps, de baisse d'incidents, de taux de conformité ou de pourcentage de déploiement. Les résultats sont donc présentés de manière qualitative.
 
-La documentation reste également à confirmer. Si une procédure interne ou une note de configuration a été produite, elle pourra être mentionnée de manière générale, sans exposer de détails sensibles. Si elle n'a pas été formalisée, il faudra indiquer que la documentation reste un axe d'amélioration.
+La documentation reste également à confirmer. Si une procédure interne ou une note de configuration a été produite, elle pourra être mentionnée de manière générale, sans exposer de détails sensibles. Sinon, il faudra indiquer que la formalisation documentaire reste un axe d'amélioration.
 
-Un autre point à suivre concerne l'usage réel des tablettes dans le temps. Une configuration peut fonctionner au moment des tests, mais il faut observer si elle reste adaptée après plusieurs jours ou semaines d'utilisation. Les retours des utilisateurs et du tuteur sont donc importants pour ajuster les restrictions ou les applications si nécessaire.
+Un autre point à suivre concerne l'usage réel des tablettes dans le temps. Une configuration peut fonctionner au moment des tests, mais elle doit encore être observée dans la durée pour vérifier qu'elle reste adaptée aux usages.
 
 La confidentialité doit aussi rester surveillée. Les noms exacts des tokens, groupes, appareils ou paramètres internes ne sont pas indispensables à la compréhension du rapport. Dans la version finale, il faudra conserver une formulation générale ou remplacer les éléments sensibles par `[REDACTED]` si l'entreprise le demande.
 
-Enfin, cette mission reste dépendante de validations internes. Même si j'ai réalisé une grande partie du travail opérationnel, les décisions finales sont validées par le tuteur ou par l'entreprise. Cette limite doit rester visible pour ne pas donner une image incorrecte de mon rôle.
+Enfin, cette mission reste dépendante de validations internes. Même si j'ai réalisé une grande partie du travail opérationnel, les décisions finales sont validées par le tuteur ou par l'entreprise.
 
-### 1.8 Recul personnel sur la mission
+### 1.9 Recul personnel sur la mission
 
 Cette mission m'a permis de mieux comprendre la gestion des terminaux mobiles en entreprise. Avant de travailler sur Intune, je voyais surtout la tablette comme un appareil à configurer. Avec cette mission, j'ai compris qu'il fallait raisonner en parc, en usages, en restrictions, en applications et en suivi.
 
@@ -124,13 +122,13 @@ Cette mission m'a également montré l'importance des tests. Dans un portail d'a
 
 Sur le plan professionnel, cette mission m'a donné plus d'autonomie. J'ai pu prendre en charge la recherche, la configuration, les essais et les ajustements. En même temps, j'ai gardé en tête que certaines décisions devaient être validées par le tuteur. Cette limite m'a appris à travailler de façon plus responsable : avancer seul quand c'est possible, mais demander validation quand le sujet peut avoir un impact plus large.
 
-Enfin, cette mission fait le lien avec le fil conducteur du rapport. Elle contribue à la modernisation du système d'information par la gestion centralisée des tablettes, à la sécurité par les restrictions et les règles d'accès, et à la continuité par une configuration plus homogène des équipements utilisés. Elle reste cependant une mission de première année : elle montre surtout une progression, une méthode et une meilleure compréhension des contraintes d'un environnement professionnel.
+Au-delà de l'outil lui-même, cette mission m'a surtout appris qu'une configuration utile en entreprise doit rester cohérente, testée et adaptée à l'usage réel. C'est ce point qui m'a le plus fait progresser.
 
 ## 2. Registre visiteurs Power Apps / SharePoint / Power Automate
 
 ### 2.1 Contexte et besoin initial
 
-La deuxième mission principale que je présente concerne la création d'un registre visiteurs numérique avec Power Apps, SharePoint et Power Automate. Elle répond à un besoin concret de l'accueil : remplacer à terme le registre papier par une solution plus simple à utiliser et plus facile à suivre côté informatique.
+J'ai aussi travaillé sur la création d'un registre visiteurs numérique avec Power Apps, SharePoint et Power Automate. Cette mission répond à un besoin concret de l'accueil : remplacer à terme le registre papier par une solution plus simple à utiliser et plus facile à suivre côté informatique.
 
 Au départ, les passages des visiteurs étaient notés sur un support papier. Ce fonctionnement restait utilisable, mais il limitait la centralisation des informations et le suivi des enregistrements. La demande initiale est venue de mon tuteur de l'époque, qui était alors responsable informatique. Le besoin était de disposer d'une application sur tablette capable d'enregistrer les visiteurs, de stocker les données dans SharePoint et d'ajouter une signature réalisée directement sur l'écran.
 
@@ -164,7 +162,7 @@ La première contrainte était de garder une utilisation simple sur tablette, ca
 
 La fiabilité de l'enregistrement constituait une autre contrainte importante, en particulier pour la signature. Il ne suffisait pas que l'application fonctionne en apparence : il fallait vérifier que les données et la signature arrivaient correctement jusqu'à SharePoint.
 
-Enfin, la mission restait dépendante d'un point matériel extérieur à la partie applicative. Même avec une solution validée techniquement, l'absence de support physique empêchait une mise en service immédiate à l'accueil.
+Enfin, la mise en service restait dépendante d'un point matériel extérieur à la partie applicative : l'installation d'un support physique pour sécuriser la tablette à l'accueil.
 
 ### 2.5 Démarche suivie
 
@@ -206,17 +204,13 @@ La signature est correctement enregistrée en pièce jointe PNG sur l'élément 
 
 Le flux Power Automate est fonctionnel. Il crée l'élément SharePoint, traite la signature et ajoute la pièce jointe. L'historique d'exécution a permis de vérifier les étapes et de corriger les erreurs rencontrées pendant les tests. Ce résultat montre que l'automatisation répond au besoin technique prévu.
  
-Pour l'entreprise, la plus-value reste à présenter avec prudence. À ce stade, la solution apporte surtout une base exploitable pour centraliser les enregistrements visiteurs, réduire la dépendance au papier et préparer un suivi plus structuré, sans que ces gains aient encore été mesurés en conditions réelles.
+Pour l'entreprise, la plus-value reste à présenter avec prudence. À ce stade, la solution apporte surtout une base exploitable pour centraliser les enregistrements visiteurs et préparer un suivi plus structuré, sans que ces gains aient encore été mesurés en conditions réelles.
 
-La solution est donc prête côté applicatif. Elle a été validée techniquement, mais elle n'est pas encore utilisée à l'accueil. La mise en service dépend encore de l'installation d'un support physique pour sécuriser la tablette. Cette limite doit rester clairement indiquée.
-
-Je ne peux pas annoncer de gain de temps mesuré, de nombre de visiteurs testés ou d'amélioration prouvée de la traçabilité. Ces éléments ne sont pas validés. Je peux seulement affirmer que la solution prépare une transition vers un registre numérique et que les fonctions attendues côté application, stockage et signature sont opérationnelles.
+La solution peut donc être considérée comme validée sur les plans applicatif et technique, mais pas encore comme déployée en usage réel à l'accueil. Je ne peux pas annoncer de gain de temps mesuré, de nombre de visiteurs testés ou d'amélioration prouvée de la traçabilité. Je peux seulement affirmer que la solution prépare une transition vers un registre numérique et que les fonctions attendues côté application, stockage et signature sont opérationnelles.
 
 ### 2.8 Limites et points restant à suivre
 
-La limite principale est l'absence de mise en service réelle à l'accueil. Même si la solution est validée techniquement, elle n'est pas encore utilisée au quotidien. Le registre papier ne doit donc pas être présenté comme remplacé.
-
-Le support physique de la tablette reste à installer par le service maintenance. Ce support doit permettre de sécuriser la tablette à l'accueil et d'éviter le vol. Tant que ce point n'est pas réglé, l'utilisation réelle ne peut pas être considérée comme finalisée.
+La limite principale est l'absence de mise en service réelle à l'accueil. La solution est validée techniquement, mais l'utilisation quotidienne reste suspendue à l'installation par la maintenance du support physique destiné à sécuriser la tablette. Le registre papier ne doit donc pas être présenté comme remplacé.
 
 Une autre limite concerne les tests en conditions réelles. Les tests techniques ont permis de valider l'application, le flux et la signature. En revanche, l'utilisation par l'accueil sur une période réelle pourra faire apparaître des ajustements à prévoir : ergonomie, compréhension des champs, rythme de saisie ou cas particuliers non rencontrés pendant les tests.
 
@@ -242,13 +236,13 @@ Cette mission m'a aussi rappelé qu'une solution technique validée n'est pas fo
 
 Sur le plan professionnel, j'ai travaillé avec une autonomie importante sur la partie opérationnelle. J'ai pu créer, tester, corriger et ajuster la solution, tout en gardant le tuteur comme point de validation. Cette manière de travailler m'a aidé à progresser, car elle m'a obligé à chercher par moi-même tout en sachant quand demander une validation.
 
-Enfin, cette mission correspond bien au niveau CI1. Elle n'est pas une transformation complète de l'accueil ni un déploiement finalisé. C'est une contribution concrète à un besoin interne, avec une solution fonctionnelle, des limites identifiées et une mise en service encore dépendante d'un élément matériel. Cette mission m'a surtout appris à partir d'un besoin concret, à construire une solution, puis à vérifier qu'elle fonctionne vraiment.
+Cette mission reste à l'échelle d'une première année d'alternance. Elle ne correspond pas à une transformation complète de l'accueil ni à un déploiement finalisé. C'est une contribution concrète à un besoin interne, avec une solution fonctionnelle, des limites identifiées et une mise en service encore dépendante d'un élément matériel. Elle m'a surtout appris à partir d'un besoin concret, à construire une solution, puis à vérifier qu'elle fonctionne vraiment.
 
 ## 3. Sécurité opérationnelle AD / Microsoft 365
 
 ### 3.1 Contexte et besoin initial
 
-La troisième mission principale présentée dans ce rapport concerne la sécurité opérationnelle autour d'Active Directory et de Microsoft 365. Contrairement aux deux premières missions, il ne s'agit pas d'un sujet avec un début, une phase de réalisation clairement isolée, puis une fin. Cette mission correspond plutôt à une activité continue du service informatique. Elle revient au fil des incidents, des demandes utilisateurs et des vérifications quotidiennes liées aux comptes, aux connexions et aux postes de travail.
+J'ai également participé à une mission continue de sécurité opérationnelle autour d'Active Directory et de Microsoft 365. Contrairement aux deux premières missions, il ne s'agit pas d'un sujet avec un début, une phase de réalisation clairement isolée, puis une fin. Cette activité revient au fil des incidents, des demandes utilisateurs et des vérifications quotidiennes liées aux comptes, aux connexions et aux postes de travail.
 
 Dans le fonctionnement courant du service, certains problèmes peuvent paraître simples au premier abord. Un utilisateur signale par exemple qu'il ne peut plus se connecter, qu'un mot de passe semble ne plus fonctionner, que son compte se verrouille sans raison apparente ou qu'une connexion lui paraît inhabituelle. Pourtant, ce type de symptôme peut avoir plusieurs causes. Il peut s'agir d'une mauvaise saisie, d'un ancien mot de passe encore enregistré sur un poste ou un équipement, d'un problème de synchronisation, d'une authentification réseau liée au Wi-Fi, ou d'un comportement qui demande au contraire une vérification plus prudente.
 
@@ -298,7 +292,7 @@ Je vérifiais ensuite les éléments les plus immédiats dans les outils d'admin
 
 Un exemple-type anonymisé illustre bien cette méthode : après le déblocage d'un compte, celui-ci pouvait se reverrouiller peu de temps après. Dans ce cas, je ne partais pas du principe que la cause était déjà connue. Je vérifiais plutôt plusieurs pistes possibles, comme un ancien mot de passe encore enregistré, un logiciel qui retentait une connexion, un autre équipement ou une authentification réseau répétée. La correction n'était proposée qu'après ce recoupement, puis suivie pour voir si le symptôme réapparaissait ou non.
 
-Lorsque les vérifications faisaient ressortir une cause probable suffisamment solide, une action pouvait être proposée ou appliquée sous validation. Enfin, lorsque c'était utile, une trace était conservée dans le suivi interne afin de garder une méthode exploitable par le service, sans reproduire dans le rapport des éléments sensibles ou des journaux bruts.
+Lorsque les vérifications faisaient ressortir une cause probable suffisamment solide, une action pouvait être proposée ou appliquée sous validation. Je ne parlais de cause confirmée que lorsque plusieurs traces convergeaient et que le symptôme ne réapparaissait plus après correction. Enfin, lorsque c'était utile, une trace était conservée dans le suivi interne afin de garder une méthode exploitable par le service, sans reproduire dans le rapport des éléments sensibles ou des journaux bruts.
 
 ### 3.6 Difficultés rencontrées
 
@@ -316,9 +310,9 @@ Le premier résultat de cette mission est une participation régulière à des d
 
 Cette mission m'a surtout permis de structurer davantage ma démarche de diagnostic. J'ai appris à mieux distinguer le symptôme initial, les hypothèses possibles, puis les éléments réellement confirmés après vérification. Cela m'a aussi aidé à mieux comprendre les verrouillages de comptes et les échecs d'authentification dans un contexte plus large que le simple message vu par l'utilisateur.
 
-Le recours à plusieurs sources d'information a également contribué à rendre mes analyses plus méthodiques. Au lieu de m'appuyer sur une seule trace, j'ai davantage croisé les journaux, le contexte utilisateur et les vérifications techniques. Dans certains cas, cette démarche a aidé à proposer des pistes plus ciblées ou une correction plus adaptée, sans que cela constitue un indicateur chiffré de performance.
+Le recours à plusieurs sources d'information a également contribué à rendre mes analyses plus méthodiques. Au lieu de m'appuyer sur une seule trace, j'ai davantage croisé les journaux, le contexte utilisateur et les vérifications techniques. Dans certains cas, cette démarche a aidé à mieux cibler une piste, par exemple un ancien mot de passe encore mémorisé ou une authentification répétée, sans que cela constitue un indicateur chiffré de performance.
 
-Pour le service informatique, l'apport principal de cette mission reste donc lié à la méthode de traitement. Il ne s'agit pas de présenter un bilan mesuré de performance, mais de montrer une façon plus rigoureuse d'aborder des incidents quotidiens.
+Pour le service informatique, l'apport principal de cette mission reste donc lié à la méthode de traitement. Elle a permis de mieux structurer l'ordre des vérifications sur certains incidents quotidiens, sans qu'il s'agisse pour autant d'un bilan mesuré de performance.
 
 ### 3.8 Limites et points restant à suivre
 
